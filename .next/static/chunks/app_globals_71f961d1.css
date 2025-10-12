@@ -1432,6 +1432,10 @@ img, video {
   transition-duration: 1s;
 }
 
+.duration-500 {
+  transition-duration: .5s;
+}
+
 .ease-linear {
   transition-timing-function: linear;
 }

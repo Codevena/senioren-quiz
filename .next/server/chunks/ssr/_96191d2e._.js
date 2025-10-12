@@ -140,63 +140,76 @@ function useSounds() {
     const successSound = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const failureSound = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const introSound = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const [initialized, setInitialized] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const initializedRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        // Initialize audio elements
-        successSound.current = new Audio('/sounds/success.wav');
-        failureSound.current = new Audio('/sounds/failure.mp3');
-        introSound.current = new Audio('/sounds/intro.wav');
-        // Set volume
-        if (successSound.current) successSound.current.volume = 0.7;
-        if (failureSound.current) failureSound.current.volume = 0.7;
-        if (introSound.current) introSound.current.volume = 0.5;
-        // Preload
-        successSound.current.load();
-        failureSound.current.load();
-        introSound.current.load();
+        // Initialize audio elements only once
+        if (!successSound.current) {
+            successSound.current = new Audio('/sounds/success.wav');
+            successSound.current.volume = 0.8;
+            successSound.current.load();
+        }
+        if (!failureSound.current) {
+            failureSound.current = new Audio('/sounds/failure.mp3');
+            failureSound.current.volume = 0.8;
+            failureSound.current.load();
+        }
+        if (!introSound.current) {
+            introSound.current = new Audio('/sounds/intro.wav');
+            introSound.current.volume = 0.6;
+            introSound.current.load();
+        }
         // Enable audio on first user interaction
         const enableAudio = ()=>{
-            if (!initialized) {
-                successSound.current?.play().then(()=>successSound.current?.pause()).catch(()=>{});
-                failureSound.current?.play().then(()=>failureSound.current?.pause()).catch(()=>{});
-                introSound.current?.play().then(()=>introSound.current?.pause()).catch(()=>{});
-                setInitialized(true);
+            if (!initializedRef.current) {
+                console.log('🔊 Enabling audio...');
+                // Unlock audio by playing and pausing
+                const unlockPromises = [
+                    successSound.current?.play().then(()=>successSound.current?.pause()),
+                    failureSound.current?.play().then(()=>failureSound.current?.pause()),
+                    introSound.current?.play().then(()=>introSound.current?.pause())
+                ];
+                Promise.all(unlockPromises).then(()=>{
+                    console.log('✅ Audio unlocked!');
+                    initializedRef.current = true;
+                }).catch((err)=>console.log('Audio unlock failed:', err));
             }
         };
         // Listen for any user interaction
-        document.addEventListener('click', enableAudio, {
+        window.addEventListener('click', enableAudio, {
             once: true
         });
-        document.addEventListener('keydown', enableAudio, {
+        window.addEventListener('keydown', enableAudio, {
+            once: true
+        });
+        window.addEventListener('touchstart', enableAudio, {
             once: true
         });
         return ()=>{
             // Cleanup
-            successSound.current?.pause();
-            failureSound.current?.pause();
-            introSound.current?.pause();
-            document.removeEventListener('click', enableAudio);
-            document.removeEventListener('keydown', enableAudio);
+            window.removeEventListener('click', enableAudio);
+            window.removeEventListener('keydown', enableAudio);
+            window.removeEventListener('touchstart', enableAudio);
         };
-    }, [
-        initialized
-    ]);
+    }, []);
     const playSuccess = ()=>{
+        console.log('🎵 Playing success sound...');
         if (successSound.current) {
             successSound.current.currentTime = 0;
-            successSound.current.play().catch((err)=>console.log('Success sound play failed:', err));
+            successSound.current.play().then(()=>console.log('✅ Success sound played')).catch((err)=>console.error('❌ Success sound failed:', err));
         }
     };
     const playFailure = ()=>{
+        console.log('🎵 Playing failure sound...');
         if (failureSound.current) {
             failureSound.current.currentTime = 0;
-            failureSound.current.play().catch((err)=>console.log('Failure sound play failed:', err));
+            failureSound.current.play().then(()=>console.log('✅ Failure sound played')).catch((err)=>console.error('❌ Failure sound failed:', err));
         }
     };
     const playIntro = ()=>{
+        console.log('🎵 Playing intro sound...');
         if (introSound.current) {
             introSound.current.currentTime = 0;
-            introSound.current.play().catch((err)=>console.log('Intro sound play failed:', err));
+            introSound.current.play().then(()=>console.log('✅ Intro sound played')).catch((err)=>console.error('❌ Intro sound failed:', err));
         }
     };
     return {
@@ -475,24 +488,24 @@ function PresenterQuizPage() {
         duration: timerDuration,
         onComplete: ()=>{
             // Auto-reveal on timeout
-            if (correctIndex === null) {
+            if (correctIndex === null && !isWaitingAfterReveal) {
                 handleReveal();
-                // If autopilot is enabled, wait 5 seconds then go to next question
+                // If autopilot is enabled, wait 7 seconds then go to next question
                 if (autopilotEnabled) {
                     setIsWaitingAfterReveal(true);
                     setTimeout(()=>{
                         setIsWaitingAfterReveal(false);
                         handleNextQuestion();
-                    }, 5000);
+                    }, 7000);
                 }
             }
         }
     });
-    // Load questions and play intro
+    // Load questions
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         async function loadQuestions() {
             try {
-                const response = await fetch('/api/quiz?limit=121');
+                const response = await fetch('/api/quiz?limit=200');
                 const data = await response.json();
                 if (data.success) {
                     // Shuffle questions randomly
@@ -504,15 +517,7 @@ function PresenterQuizPage() {
                     const savedAutomode = localStorage.getItem('automodeEnabled');
                     if (savedAutomode === 'true') {
                         setAutopilotEnabled(true);
-                        // Auto-start timer if automode is enabled
-                        setTimeout(()=>{
-                            timer.start();
-                        }, 1000);
                     }
-                    // Play intro sound when questions are loaded
-                    setTimeout(()=>{
-                        playIntro();
-                    }, 500);
                 }
             } catch (error) {
                 console.error('Failed to load questions:', error);
@@ -521,7 +526,44 @@ function PresenterQuizPage() {
             }
         }
         loadQuestions();
+    }, []);
+    // Play intro sound after first interaction
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (!loading && questions.length > 0) {
+            let played = false;
+            const playIntroOnce = ()=>{
+                if (!played) {
+                    console.log('🎵 Attempting to play intro...');
+                    setTimeout(()=>{
+                        playIntro();
+                    }, 300);
+                    played = true;
+                }
+            };
+            // Try multiple events
+            window.addEventListener('click', playIntroOnce, {
+                once: true
+            });
+            window.addEventListener('keydown', playIntroOnce, {
+                once: true
+            });
+            window.addEventListener('touchstart', playIntroOnce, {
+                once: true
+            });
+            // Also try to play after a short delay (might work if user already interacted)
+            const timeoutId = setTimeout(()=>{
+                playIntroOnce();
+            }, 1000);
+            return ()=>{
+                clearTimeout(timeoutId);
+                window.removeEventListener('click', playIntroOnce);
+                window.removeEventListener('keydown', playIntroOnce);
+                window.removeEventListener('touchstart', playIntroOnce);
+            };
+        }
     }, [
+        loading,
+        questions.length,
         playIntro
     ]);
     // Broadcast state to screen view
@@ -586,36 +628,34 @@ function PresenterQuizPage() {
         handleReveal
     ]);
     const handleNextQuestion = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
-        if (currentQuestionIndex < questions.length - 1) {
+        if (currentQuestionIndex < questions.length - 1 && !isWaitingAfterReveal) {
             setCurrentQuestionIndex((prev)=>prev + 1);
             setSelectedIndex(null);
             setCorrectIndex(null);
             setIsWaitingAfterReveal(false);
             timer.reset();
-            // Auto-start timer if autopilot is enabled
-            if (autopilotEnabled) {
-                setTimeout(()=>{
-                    timer.start();
-                }, 300);
-            }
         }
     }, [
         currentQuestionIndex,
         questions.length,
         timer,
-        autopilotEnabled
+        isWaitingAfterReveal
     ]);
-    // Auto-start timer when autopilot is enabled
+    // Auto-start timer when autopilot is enabled (only once per question)
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        if (autopilotEnabled && timer.state === 'idle' && !loading) {
-            setTimeout(()=>{
+        if (autopilotEnabled && timer.state === 'idle' && !loading && !isWaitingAfterReveal && correctIndex === null) {
+            const timeoutId = setTimeout(()=>{
                 timer.start();
-            }, 500);
+            }, 800);
+            return ()=>clearTimeout(timeoutId);
         }
     }, [
         autopilotEnabled,
         timer.state,
-        loading
+        loading,
+        currentQuestionIndex,
+        isWaitingAfterReveal,
+        correctIndex
     ]);
     const handlePrevQuestion = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
         if (currentQuestionIndex > 0) {
@@ -712,12 +752,12 @@ function PresenterQuizPage() {
                 children: "Lädt Quiz..."
             }, void 0, false, {
                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                lineNumber: 244,
+                lineNumber: 263,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/presenter/quiz/page.tsx",
-            lineNumber: 243,
+            lineNumber: 262,
             columnNumber: 7
         }, this);
     }
@@ -732,7 +772,7 @@ function PresenterQuizPage() {
                         children: "Keine Fragen gefunden"
                     }, void 0, false, {
                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                        lineNumber: 255,
+                        lineNumber: 274,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -744,25 +784,25 @@ function PresenterQuizPage() {
                                 children: "npm run db:seed"
                             }, void 0, false, {
                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                lineNumber: 259,
+                                lineNumber: 278,
                                 columnNumber: 30
                             }, this),
                             " aus"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                        lineNumber: 258,
+                        lineNumber: 277,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                lineNumber: 254,
+                lineNumber: 273,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/presenter/quiz/page.tsx",
-            lineNumber: 253,
+            lineNumber: 272,
             columnNumber: 7
         }, this);
     }
@@ -783,14 +823,14 @@ function PresenterQuizPage() {
                                     className: "w-7 h-7"
                                 }, void 0, false, {
                                     fileName: "[project]/app/presenter/quiz/page.tsx",
-                                    lineNumber: 275,
+                                    lineNumber: 294,
                                     columnNumber: 13
                                 }, this),
                                 "Presenter-Steuerung"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                            lineNumber: 274,
+                            lineNumber: 293,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -803,18 +843,18 @@ function PresenterQuizPage() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                            lineNumber: 278,
+                            lineNumber: 297,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/presenter/quiz/page.tsx",
-                    lineNumber: 273,
+                    lineNumber: 292,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                lineNumber: 272,
+                lineNumber: 291,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -831,7 +871,7 @@ function PresenterQuizPage() {
                                         children: "Frage"
                                     }, void 0, false, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 289,
+                                        lineNumber: 308,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -839,7 +879,7 @@ function PresenterQuizPage() {
                                         children: currentQuestion.prompt
                                     }, void 0, false, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 290,
+                                        lineNumber: 309,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -850,7 +890,7 @@ function PresenterQuizPage() {
                                                     children: tag
                                                 }, i, false, {
                                                     fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                    lineNumber: 295,
+                                                    lineNumber: 314,
                                                     columnNumber: 17
                                                 }, this)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -858,19 +898,19 @@ function PresenterQuizPage() {
                                                 children: currentQuestion.difficulty
                                             }, void 0, false, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 299,
+                                                lineNumber: 318,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 293,
+                                        lineNumber: 312,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                lineNumber: 288,
+                                lineNumber: 307,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -881,7 +921,7 @@ function PresenterQuizPage() {
                                         children: "Antwortmöglichkeiten"
                                     }, void 0, false, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 311,
+                                        lineNumber: 330,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -904,7 +944,7 @@ function PresenterQuizPage() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 331,
+                                                        lineNumber: 350,
                                                         columnNumber: 21
                                                     }, this),
                                                     " ",
@@ -912,19 +952,19 @@ function PresenterQuizPage() {
                                                 ]
                                             }, index, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 320,
+                                                lineNumber: 339,
                                                 columnNumber: 19
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 312,
+                                        lineNumber: 331,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                lineNumber: 310,
+                                lineNumber: 329,
                                 columnNumber: 11
                             }, this),
                             correctIndex !== null && currentQuestion.fact && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -935,7 +975,7 @@ function PresenterQuizPage() {
                                         children: "💡 Wussten Sie:"
                                     }, void 0, false, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 341,
+                                        lineNumber: 360,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -943,19 +983,19 @@ function PresenterQuizPage() {
                                         children: currentQuestion.fact
                                     }, void 0, false, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 342,
+                                        lineNumber: 361,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                lineNumber: 340,
+                                lineNumber: 359,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                        lineNumber: 286,
+                        lineNumber: 305,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -974,14 +1014,14 @@ function PresenterQuizPage() {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 353,
+                                                        lineNumber: 372,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Autopilot"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 352,
+                                                lineNumber: 371,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -998,7 +1038,7 @@ function PresenterQuizPage() {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                            lineNumber: 371,
+                                                            lineNumber: 390,
                                                             columnNumber: 21
                                                         }, this),
                                                         "AN"
@@ -1009,7 +1049,7 @@ function PresenterQuizPage() {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                            lineNumber: 376,
+                                                            lineNumber: 395,
                                                             columnNumber: 21
                                                         }, this),
                                                         "AUS"
@@ -1017,13 +1057,13 @@ function PresenterQuizPage() {
                                                 }, void 0, true)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 356,
+                                                lineNumber: 375,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 351,
+                                        lineNumber: 370,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1037,14 +1077,14 @@ function PresenterQuizPage() {
                                                             className: "w-3 h-3"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                            lineNumber: 386,
+                                                            lineNumber: 405,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Auto-Start Timer"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                    lineNumber: 385,
+                                                    lineNumber: 404,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1054,7 +1094,7 @@ function PresenterQuizPage() {
                                                             className: "w-3 h-3"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                            lineNumber: 390,
+                                                            lineNumber: 409,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Auto-Reveal nach ",
@@ -1063,7 +1103,7 @@ function PresenterQuizPage() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                    lineNumber: 389,
+                                                    lineNumber: 408,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1073,14 +1113,14 @@ function PresenterQuizPage() {
                                                             className: "w-3 h-3"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                            lineNumber: 394,
+                                                            lineNumber: 413,
                                                             columnNumber: 21
                                                         }, this),
-                                                        "Auto-Weiter nach 5s"
+                                                        "Auto-Weiter nach 7s"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                    lineNumber: 393,
+                                                    lineNumber: 412,
                                                     columnNumber: 19
                                                 }, this),
                                                 isWaitingAfterReveal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1090,27 +1130,27 @@ function PresenterQuizPage() {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                            lineNumber: 399,
+                                                            lineNumber: 418,
                                                             columnNumber: 23
                                                         }, this),
-                                                        "Warte 5s..."
+                                                        "Warte 7s..."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                    lineNumber: 398,
+                                                    lineNumber: 417,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true) : 'Manuelle Steuerung aktiv'
                                     }, void 0, false, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 382,
+                                        lineNumber: 401,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                lineNumber: 350,
+                                lineNumber: 369,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1123,14 +1163,14 @@ function PresenterQuizPage() {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 413,
+                                                lineNumber: 432,
                                                 columnNumber: 15
                                             }, this),
                                             "Timer"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 412,
+                                        lineNumber: 431,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1144,7 +1184,7 @@ function PresenterQuizPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 417,
+                                                lineNumber: 436,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1157,13 +1197,13 @@ function PresenterQuizPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 424,
+                                                lineNumber: 443,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 416,
+                                        lineNumber: 435,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1179,7 +1219,7 @@ function PresenterQuizPage() {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                            lineNumber: 440,
+                                                            lineNumber: 459,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Pause (Space)"
@@ -1190,7 +1230,7 @@ function PresenterQuizPage() {
                                                             className: "w-5 h-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                            lineNumber: 445,
+                                                            lineNumber: 464,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Start (Space)"
@@ -1198,7 +1238,7 @@ function PresenterQuizPage() {
                                                 }, void 0, true)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 433,
+                                                lineNumber: 452,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1212,14 +1252,14 @@ function PresenterQuizPage() {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 454,
+                                                        lineNumber: 473,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Reset (R)"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 450,
+                                                lineNumber: 469,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1230,7 +1270,7 @@ function PresenterQuizPage() {
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 461,
+                                                        lineNumber: 480,
                                                         columnNumber: 17
                                                     }, this),
                                                     timerDuration,
@@ -1239,19 +1279,19 @@ function PresenterQuizPage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 457,
+                                                lineNumber: 476,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 432,
+                                        lineNumber: 451,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                lineNumber: 411,
+                                lineNumber: 430,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1262,7 +1302,7 @@ function PresenterQuizPage() {
                                         children: "Navigation"
                                     }, void 0, false, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 469,
+                                        lineNumber: 488,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1277,14 +1317,14 @@ function PresenterQuizPage() {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 476,
+                                                        lineNumber: 495,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Zurück (←/Backspace)"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 471,
+                                                lineNumber: 490,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1297,13 +1337,13 @@ function PresenterQuizPage() {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 485,
+                                                        lineNumber: 504,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 479,
+                                                lineNumber: 498,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1315,26 +1355,26 @@ function PresenterQuizPage() {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 492,
+                                                        lineNumber: 511,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Lösung zeigen (S)"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 487,
+                                                lineNumber: 506,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 470,
+                                        lineNumber: 489,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                lineNumber: 468,
+                                lineNumber: 487,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$TeamScoring$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TeamScoring"], {
@@ -1344,7 +1384,7 @@ function PresenterQuizPage() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                lineNumber: 499,
+                                lineNumber: 518,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1355,7 +1395,7 @@ function PresenterQuizPage() {
                                         children: "Tastenkürzel"
                                     }, void 0, false, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 508,
+                                        lineNumber: 527,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1368,14 +1408,14 @@ function PresenterQuizPage() {
                                                         children: "A/B/C/D"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 510,
+                                                        lineNumber: 529,
                                                         columnNumber: 20
                                                     }, this),
                                                     " Antwort wählen"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 510,
+                                                lineNumber: 529,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1385,14 +1425,14 @@ function PresenterQuizPage() {
                                                         children: "Space"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 511,
+                                                        lineNumber: 530,
                                                         columnNumber: 20
                                                     }, this),
                                                     " Timer Start/Pause"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 511,
+                                                lineNumber: 530,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1402,14 +1442,14 @@ function PresenterQuizPage() {
                                                         children: "Enter"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 512,
+                                                        lineNumber: 531,
                                                         columnNumber: 20
                                                     }, this),
                                                     " Nächste Frage"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 512,
+                                                lineNumber: 531,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1419,14 +1459,14 @@ function PresenterQuizPage() {
                                                         children: "←"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 513,
+                                                        lineNumber: 532,
                                                         columnNumber: 20
                                                     }, this),
                                                     " Vorherige Frage"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 513,
+                                                lineNumber: 532,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1436,14 +1476,14 @@ function PresenterQuizPage() {
                                                         children: "R"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 514,
+                                                        lineNumber: 533,
                                                         columnNumber: 20
                                                     }, this),
                                                     " Timer Reset"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 514,
+                                                lineNumber: 533,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1453,44 +1493,44 @@ function PresenterQuizPage() {
                                                         children: "S"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                        lineNumber: 515,
+                                                        lineNumber: 534,
                                                         columnNumber: 20
                                                     }, this),
                                                     " Lösung zeigen"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                                lineNumber: 515,
+                                                lineNumber: 534,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                                        lineNumber: 509,
+                                        lineNumber: 528,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                                lineNumber: 507,
+                                lineNumber: 526,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/presenter/quiz/page.tsx",
-                        lineNumber: 348,
+                        lineNumber: 367,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/presenter/quiz/page.tsx",
-                lineNumber: 284,
+                lineNumber: 303,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/presenter/quiz/page.tsx",
-        lineNumber: 270,
+        lineNumber: 289,
         columnNumber: 5
     }, this);
 }
