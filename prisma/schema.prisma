@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -10,20 +7,14 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum QuizDifficulty {
-  EASY
-  MEDIUM
-  HARD
-}
-
 model QuizQuestion {
   id          String         @id @default(cuid())
   prompt      String
-  choices     String         // JSON array of 3-4 options
-  answerIndex Int            // 0..3
-  fact        String?        // optional 1-sentence fun fact
-  tags        String         @default("[]") // JSON array ["Deutschland","Allgemeinwissen"]
-  difficulty  QuizDifficulty @default(EASY)
+  choices     String
+  answerIndex Int
+  fact        String?
+  tags        String         @default("[]")
+  difficulty  QuizDifficulty @default("EASY")
   createdAt   DateTime       @default(now())
 }
 
@@ -31,4 +22,10 @@ model Session {
   id        String   @id @default(cuid())
   code      String   @unique
   createdAt DateTime @default(now())
+}
+
+enum QuizDifficulty {
+  EASY
+  MEDIUM
+  HARD
 }

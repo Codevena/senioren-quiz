@@ -1,0 +1,5687 @@
+[
+  {
+    "id": "cmgo7pygl00002mgxthy6twwx",
+    "prompt": "Wie heißt die Hauptstadt Deutschlands?",
+    "choices": [
+      "Berlin",
+      "München",
+      "Hamburg",
+      "Bonn"
+    ],
+    "answerIndex": 0,
+    "fact": "Berlin ist seit 1990 wieder Hauptstadt des vereinten Deutschlands.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygm00012mgx0lkno88r",
+    "prompt": "Welche Farben hat die deutsche Flagge?",
+    "choices": [
+      "Schwarz-Rot-Gold",
+      "Schwarz-Gold-Rot",
+      "Rot-Schwarz-Gold"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Farben sind in horizontalen Streifen angeordnet.",
+    "tags": [
+      "Deutschland",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygn00022mgxk9os8vti",
+    "prompt": "Welcher Fluss fließt durch Köln?",
+    "choices": [
+      "Rhein",
+      "Elbe",
+      "Weser",
+      "Main"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Rhein ist der längste Fluss, der durch Deutschland fließt.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygn00032mgxq2syg7dp",
+    "prompt": "Wofür ist München weltbekannt im Herbst?",
+    "choices": [
+      "Oktoberfest",
+      "Karneval",
+      "Documenta"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Oktoberfest ist das größte Volksfest der Welt.",
+    "tags": [
+      "Kultur",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygo00042mgxs0110j1j",
+    "prompt": "Wann ist der Tag der Deutschen Einheit?",
+    "choices": [
+      "3. Oktober",
+      "9. November",
+      "1. Mai",
+      "17. Juni"
+    ],
+    "answerIndex": 0,
+    "fact": "Seit 1990 ist der 3. Oktober gesetzlicher Feiertag.",
+    "tags": [
+      "Geschichte",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygo00052mgxhzisixeq",
+    "prompt": "Wie viele Bundesländer hat Deutschland?",
+    "choices": [
+      "16",
+      "14",
+      "18",
+      "12"
+    ],
+    "answerIndex": 0,
+    "fact": "Davon sind 3 Stadtstaaten: Berlin, Hamburg und Bremen.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygo00062mgxk1pk6n0a",
+    "prompt": "Wo steht das Brandenburger Tor?",
+    "choices": [
+      "Berlin",
+      "Potsdam",
+      "Leipzig"
+    ],
+    "answerIndex": 0,
+    "fact": "Es steht am Pariser Platz im Zentrum Berlins.",
+    "tags": [
+      "Sehenswürdigkeiten",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygp00072mgxaf3qq9j4",
+    "prompt": "Wer komponierte die 9. Sinfonie mit der 'Ode an die Freude'?",
+    "choices": [
+      "Ludwig van Beethoven",
+      "Johann Sebastian Bach",
+      "Wolfgang Amadeus Mozart"
+    ],
+    "answerIndex": 0,
+    "fact": "Beethoven wurde 1770 in Bonn geboren.",
+    "tags": [
+      "Kultur",
+      "Musik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygp00082mgxluait91f",
+    "prompt": "Welches Meer liegt an der deutschen Nordküste?",
+    "choices": [
+      "Nordsee",
+      "Ostsee",
+      "Ärmelkanal"
+    ],
+    "answerIndex": 0,
+    "fact": "Deutschland hat sowohl Nord- als auch Ostseeküste.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygq00092mgx1fh4b61f",
+    "prompt": "Welche Währung wurde 2002 als Bargeld eingeführt?",
+    "choices": [
+      "Euro",
+      "D-Mark",
+      "Schilling"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Euro ist seit 1999 Buchgeld, seit 2002 Bargeld.",
+    "tags": [
+      "Zeitgeschichte",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygq000a2mgx292bmyqc",
+    "prompt": "In welcher Stadt steht der Kölner Dom?",
+    "choices": [
+      "Köln",
+      "Düsseldorf",
+      "Bonn",
+      "Aachen"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Kölner Dom ist eine der meistbesuchten Sehenswürdigkeiten Deutschlands.",
+    "tags": [
+      "Sehenswürdigkeiten",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygq000b2mgxnyqm4miw",
+    "prompt": "Welches Bundesland ist das größte nach Fläche?",
+    "choices": [
+      "Bayern",
+      "Niedersachsen",
+      "Baden-Württemberg",
+      "Nordrhein-Westfalen"
+    ],
+    "answerIndex": 0,
+    "fact": "Bayern hat eine Fläche von etwa 70.550 km².",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygr000c2mgxz9dp9q13",
+    "prompt": "Wie heißt der höchste Berg Deutschlands?",
+    "choices": [
+      "Zugspitze",
+      "Watzmann",
+      "Feldberg",
+      "Brocken"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Zugspitze ist 2.962 Meter hoch.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygr000d2mgxmb7me1pl",
+    "prompt": "Welche Stadt wird auch 'Elbflorenz' genannt?",
+    "choices": [
+      "Dresden",
+      "Leipzig",
+      "Magdeburg",
+      "Erfurt"
+    ],
+    "answerIndex": 0,
+    "fact": "Dresden trägt diesen Beinamen wegen seiner Kunstschätze.",
+    "tags": [
+      "Kultur",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygr000e2mgx4yx9vgbi",
+    "prompt": "Wann fiel die Berliner Mauer?",
+    "choices": [
+      "9. November 1989",
+      "3. Oktober 1990",
+      "13. August 1961",
+      "1. Mai 1989"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Mauer stand 28 Jahre lang.",
+    "tags": [
+      "Geschichte",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygs000f2mgxz8r8n8oa",
+    "prompt": "Welches Tier ist das Wappentier Deutschlands?",
+    "choices": [
+      "Adler",
+      "Löwe",
+      "Bär",
+      "Hirsch"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Bundesadler ist seit 1950 das Wappentier.",
+    "tags": [
+      "Allgemeinwissen",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygs000g2mgxgmcjj5jw",
+    "prompt": "In welcher Stadt findet die Documenta statt?",
+    "choices": [
+      "Kassel",
+      "Frankfurt",
+      "München",
+      "Hamburg"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Documenta ist eine der wichtigsten Ausstellungen zeitgenössischer Kunst.",
+    "tags": [
+      "Kultur",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygs000h2mgxifgvkc1j",
+    "prompt": "Welcher Fluss fließt durch Hamburg?",
+    "choices": [
+      "Elbe",
+      "Rhein",
+      "Weser",
+      "Oder"
+    ],
+    "answerIndex": 0,
+    "fact": "Hamburg ist die größte Hafenstadt Deutschlands.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygt000i2mgxoyx54eeq",
+    "prompt": "Wie heißt der deutsche Bundespräsident? (Stand 2024)",
+    "choices": [
+      "Frank-Walter Steinmeier",
+      "Joachim Gauck",
+      "Christian Wulff",
+      "Horst Köhler"
+    ],
+    "answerIndex": 0,
+    "fact": "Steinmeier ist seit 2017 im Amt.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygt000j2mgxm0zyfsy4",
+    "prompt": "Welches Fest wird in Köln besonders groß gefeiert?",
+    "choices": [
+      "Karneval",
+      "Oktoberfest",
+      "Weihnachtsmarkt"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Kölner Karneval ist einer der größten in Deutschland.",
+    "tags": [
+      "Kultur",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygt000k2mgxzcb92wlh",
+    "prompt": "Welche Farbe hat ein deutsches Taxi traditionell?",
+    "choices": [
+      "Beige/Elfenbein",
+      "Gelb",
+      "Schwarz",
+      "Weiß"
+    ],
+    "answerIndex": 0,
+    "fact": "Seit den 1970er Jahren sind deutsche Taxis meist beige.",
+    "tags": [
+      "Allgemeinwissen",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygu000l2mgxozzp2yax",
+    "prompt": "Wie viele Nachbarländer hat Deutschland?",
+    "choices": [
+      "9",
+      "7",
+      "8",
+      "10"
+    ],
+    "answerIndex": 0,
+    "fact": "Deutschland grenzt an Dänemark, Polen, Tschechien, Österreich, Schweiz, Frankreich, Luxemburg, Belgien und die Niederlande.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygu000m2mgx06uuwpep",
+    "prompt": "Welches Märchen stammt NICHT von den Brüdern Grimm?",
+    "choices": [
+      "Die kleine Meerjungfrau",
+      "Rotkäppchen",
+      "Hänsel und Gretel",
+      "Schneewittchen"
+    ],
+    "answerIndex": 0,
+    "fact": "Die kleine Meerjungfrau ist von Hans Christian Andersen.",
+    "tags": [
+      "Kultur",
+      "Literatur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygu000n2mgxu70n2b4y",
+    "prompt": "In welcher Stadt befindet sich die Frauenkirche mit der berühmten Kuppel?",
+    "choices": [
+      "Dresden",
+      "München",
+      "Nürnberg",
+      "Würzburg"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Dresdner Frauenkirche wurde nach der Zerstörung im 2. Weltkrieg wieder aufgebaut.",
+    "tags": [
+      "Sehenswürdigkeiten",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygu000o2mgxpipl2243",
+    "prompt": "Welches Getränk wird traditionell auf dem Oktoberfest ausgeschenkt?",
+    "choices": [
+      "Bier",
+      "Wein",
+      "Apfelwein",
+      "Schnaps"
+    ],
+    "answerIndex": 0,
+    "fact": "Nur Münchner Brauereien dürfen auf dem Oktoberfest ausschenken.",
+    "tags": [
+      "Kultur",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygv000p2mgxkocz2uxu",
+    "prompt": "Wie heißt der berühmte Schwarzwald-Kuchen?",
+    "choices": [
+      "Schwarzwälder Kirschtorte",
+      "Baumkuchen",
+      "Apfelstrudel",
+      "Käsekuchen"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Schwarzwälder Kirschtorte enthält Kirschwasser.",
+    "tags": [
+      "Kultur",
+      "Kulinarik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygv000q2mgxl4objd16",
+    "prompt": "Welche Stadt ist bekannt für ihre Automobilindustrie und Mercedes-Benz?",
+    "choices": [
+      "Stuttgart",
+      "München",
+      "Wolfsburg",
+      "Ingolstadt"
+    ],
+    "answerIndex": 0,
+    "fact": "Stuttgart ist die Hauptstadt von Baden-Württemberg.",
+    "tags": [
+      "Wirtschaft",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygv000r2mgxyn2njcjr",
+    "prompt": "Wie heißt das deutsche Grundgesetz auf Englisch?",
+    "choices": [
+      "Basic Law",
+      "Constitution",
+      "Federal Law",
+      "Main Law"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Grundgesetz trat 1949 in Kraft.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "HARD"
+  },
+  {
+    "id": "cmgo7pygw000s2mgx5u0qefmk",
+    "prompt": "Welcher deutsche Dichter schrieb 'Faust'?",
+    "choices": [
+      "Johann Wolfgang von Goethe",
+      "Friedrich Schiller",
+      "Heinrich Heine",
+      "Bertolt Brecht"
+    ],
+    "answerIndex": 0,
+    "fact": "Goethe lebte von 1749 bis 1832.",
+    "tags": [
+      "Kultur",
+      "Literatur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygw000t2mgxc1no4bz5",
+    "prompt": "Welches Bundesland hat die meisten Einwohner?",
+    "choices": [
+      "Nordrhein-Westfalen",
+      "Bayern",
+      "Baden-Württemberg",
+      "Niedersachsen"
+    ],
+    "answerIndex": 0,
+    "fact": "NRW hat etwa 18 Millionen Einwohner.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygw000u2mgxk3o6a5xq",
+    "prompt": "Welche Stadt ist die Hauptstadt von Bayern?",
+    "choices": [
+      "München",
+      "Nürnberg",
+      "Augsburg",
+      "Regensburg"
+    ],
+    "answerIndex": 0,
+    "fact": "München ist mit über 1,5 Millionen Einwohnern die drittgrößte Stadt Deutschlands.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygx000v2mgxtu9vmyj4",
+    "prompt": "Wie heißt der längste Fluss Deutschlands?",
+    "choices": [
+      "Rhein",
+      "Donau",
+      "Elbe",
+      "Weser"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Rhein ist 1.233 km lang, davon 865 km in Deutschland.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygx000w2mgxsgrv29o2",
+    "prompt": "In welchem Jahr wurde die Bundesrepublik Deutschland gegründet?",
+    "choices": [
+      "1949",
+      "1945",
+      "1950",
+      "1948"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Grundgesetz trat am 23. Mai 1949 in Kraft.",
+    "tags": [
+      "Geschichte",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygx000x2mgxlfp96us1",
+    "prompt": "Welches Bundesland ist ein Stadtstaat?",
+    "choices": [
+      "Hamburg",
+      "München",
+      "Köln",
+      "Frankfurt"
+    ],
+    "answerIndex": 0,
+    "fact": "Die drei Stadtstaaten sind Berlin, Hamburg und Bremen.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygx000y2mgx9dr7hl4s",
+    "prompt": "Wie viele Sterne hat die Europaflagge?",
+    "choices": [
+      "12",
+      "15",
+      "27",
+      "28"
+    ],
+    "answerIndex": 0,
+    "fact": "Die 12 Sterne stehen für Einheit, Solidarität und Harmonie.",
+    "tags": [
+      "Europa",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygy000z2mgx7hez90aq",
+    "prompt": "Welcher deutsche Erfinder entwickelte das Auto?",
+    "choices": [
+      "Carl Benz",
+      "Rudolf Diesel",
+      "Gottlieb Daimler",
+      "Ferdinand Porsche"
+    ],
+    "answerIndex": 0,
+    "fact": "Carl Benz baute 1885 das erste Automobil mit Verbrennungsmotor.",
+    "tags": [
+      "Geschichte",
+      "Technik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygy00102mgxt6phbsdi",
+    "prompt": "Welche Farbe hat ein Stopp-Schild in Deutschland?",
+    "choices": [
+      "Rot",
+      "Gelb",
+      "Blau",
+      "Grün"
+    ],
+    "answerIndex": 0,
+    "fact": "Das achteckige rote Stopp-Schild ist weltweit einheitlich.",
+    "tags": [
+      "Verkehr",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygy00112mgxxzgdb8xk",
+    "prompt": "Wie heißt die deutsche Nationalhymne?",
+    "choices": [
+      "Das Lied der Deutschen",
+      "Deutschland über alles",
+      "Einigkeit und Recht und Freiheit",
+      "Die Wacht am Rhein"
+    ],
+    "answerIndex": 0,
+    "fact": "Nur die dritte Strophe wird als Nationalhymne gesungen.",
+    "tags": [
+      "Kultur",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pygz00122mgxd269xbh8",
+    "prompt": "Welches Tier ist auf dem Wappen von Berlin?",
+    "choices": [
+      "Bär",
+      "Adler",
+      "Löwe",
+      "Pferd"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Berliner Bär ist seit dem 13. Jahrhundert das Wappentier.",
+    "tags": [
+      "Kultur",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygz00132mgxq37b9pwo",
+    "prompt": "Wie viele Minuten hat eine Halbzeit im Fußball?",
+    "choices": [
+      "45",
+      "40",
+      "50",
+      "60"
+    ],
+    "answerIndex": 0,
+    "fact": "Plus Nachspielzeit, die der Schiedsrichter festlegt.",
+    "tags": [
+      "Sport",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pygz00142mgx8hjaxgqa",
+    "prompt": "Welche Stadt wird 'Venedig des Nordens' genannt?",
+    "choices": [
+      "Hamburg",
+      "Amsterdam",
+      "Stockholm",
+      "Kopenhagen"
+    ],
+    "answerIndex": 0,
+    "fact": "Hamburg hat mehr Brücken als Venedig und Amsterdam zusammen.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyh000152mgxbjsgyz4n",
+    "prompt": "Wer schrieb 'Die Leiden des jungen Werther'?",
+    "choices": [
+      "Johann Wolfgang von Goethe",
+      "Friedrich Schiller",
+      "Heinrich Heine",
+      "Thomas Mann"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Buch erschien 1774 und machte Goethe berühmt.",
+    "tags": [
+      "Literatur",
+      "Kultur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyh000162mgxylbyat17",
+    "prompt": "Welches Fest wird am 6. Dezember gefeiert?",
+    "choices": [
+      "Nikolaus",
+      "Weihnachten",
+      "Advent",
+      "Heiligabend"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Nikolaustag erinnert an den Bischof Nikolaus von Myra.",
+    "tags": [
+      "Kultur",
+      "Tradition"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh000172mgx6tk7tco8",
+    "prompt": "Wie viele Tasten hat ein Klavier normalerweise?",
+    "choices": [
+      "88",
+      "76",
+      "100",
+      "64"
+    ],
+    "answerIndex": 0,
+    "fact": "52 weiße und 36 schwarze Tasten.",
+    "tags": [
+      "Musik",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyh000182mgxzt2ltuvs",
+    "prompt": "Welcher Planet ist der Sonne am nächsten?",
+    "choices": [
+      "Merkur",
+      "Venus",
+      "Erde",
+      "Mars"
+    ],
+    "answerIndex": 0,
+    "fact": "Merkur ist nur etwa 58 Millionen km von der Sonne entfernt.",
+    "tags": [
+      "Wissenschaft",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh100192mgxy7suadt5",
+    "prompt": "Wie heißt der höchste Berg der Alpen?",
+    "choices": [
+      "Mont Blanc",
+      "Matterhorn",
+      "Zugspitze",
+      "Großglockner"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Mont Blanc ist 4.810 Meter hoch.",
+    "tags": [
+      "Geografie",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyh1001a2mgx03xtdik1",
+    "prompt": "Welches Organ pumpt das Blut durch den Körper?",
+    "choices": [
+      "Herz",
+      "Lunge",
+      "Leber",
+      "Niere"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Herz schlägt etwa 100.000 Mal pro Tag.",
+    "tags": [
+      "Gesundheit",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh1001b2mgxr6derk8l",
+    "prompt": "Wie viele Bundesländer grenzen an die Nordsee?",
+    "choices": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "answerIndex": 0,
+    "fact": "Niedersachsen, Hamburg und Schleswig-Holstein.",
+    "tags": [
+      "Geografie",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyh1001c2mgxhuhwpxil",
+    "prompt": "Welche Farbe entsteht, wenn man Gelb und Blau mischt?",
+    "choices": [
+      "Grün",
+      "Orange",
+      "Lila",
+      "Braun"
+    ],
+    "answerIndex": 0,
+    "fact": "Grün ist eine Sekundärfarbe.",
+    "tags": [
+      "Kunst",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh2001d2mgxu8b86n4s",
+    "prompt": "In welcher Stadt steht das Schloss Neuschwanstein?",
+    "choices": [
+      "Füssen",
+      "München",
+      "Nürnberg",
+      "Augsburg"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Schloss diente als Vorlage für das Disney-Schloss.",
+    "tags": [
+      "Sehenswürdigkeiten",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyh2001e2mgx83d91lkf",
+    "prompt": "Wie viele Spieler hat eine Fußballmannschaft auf dem Feld?",
+    "choices": [
+      "11",
+      "10",
+      "12",
+      "9"
+    ],
+    "answerIndex": 0,
+    "fact": "Plus Auswechselspieler auf der Bank.",
+    "tags": [
+      "Sport",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh2001f2mgx0tiz7qrm",
+    "prompt": "Welcher Monat hat immer 28 Tage?",
+    "choices": [
+      "Alle",
+      "Februar",
+      "Januar",
+      "Dezember"
+    ],
+    "answerIndex": 0,
+    "fact": "Jeder Monat hat mindestens 28 Tage!",
+    "tags": [
+      "Allgemeinwissen",
+      "Rätsel"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh3001g2mgxf67fdj7r",
+    "prompt": "Wie heißt die Hauptstadt von Frankreich?",
+    "choices": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nizza"
+    ],
+    "answerIndex": 0,
+    "fact": "Paris wird auch 'Stadt der Liebe' genannt.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh3001h2mgx7fdbvk5w",
+    "prompt": "Welches Tier legt Eier und kann fliegen?",
+    "choices": [
+      "Vogel",
+      "Fledermaus",
+      "Schmetterling",
+      "Biene"
+    ],
+    "answerIndex": 0,
+    "fact": "Fast alle Vögel können fliegen, außer z.B. Pinguine und Strauße.",
+    "tags": [
+      "Natur",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh3001i2mgxjbnylddc",
+    "prompt": "Wie viele Kontinente gibt es auf der Erde?",
+    "choices": [
+      "7",
+      "5",
+      "6",
+      "8"
+    ],
+    "answerIndex": 0,
+    "fact": "Afrika, Antarktika, Asien, Australien, Europa, Nordamerika, Südamerika.",
+    "tags": [
+      "Geografie",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh4001j2mgxe5jakmz7",
+    "prompt": "Welche Jahreszeit kommt nach dem Sommer?",
+    "choices": [
+      "Herbst",
+      "Winter",
+      "Frühling",
+      "Spätsommer"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Herbst beginnt am 22. oder 23. September.",
+    "tags": [
+      "Natur",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh4001k2mgxh9bf84oq",
+    "prompt": "Wie viele Beine hat eine Spinne?",
+    "choices": [
+      "8",
+      "6",
+      "10",
+      "12"
+    ],
+    "answerIndex": 0,
+    "fact": "Spinnen gehören zu den Spinnentieren, nicht zu den Insekten.",
+    "tags": [
+      "Natur",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh4001l2mgxttv8ih6h",
+    "prompt": "Welches Getränk wird aus Kaffeebohnen gemacht?",
+    "choices": [
+      "Kaffee",
+      "Tee",
+      "Kakao",
+      "Cola"
+    ],
+    "answerIndex": 0,
+    "fact": "Kaffee ist nach Wasser das meistgetrunkene Getränk weltweit.",
+    "tags": [
+      "Kulinarik",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh5001m2mgxmfu7aul7",
+    "prompt": "Wie heißt der größte Ozean der Welt?",
+    "choices": [
+      "Pazifik",
+      "Atlantik",
+      "Indischer Ozean",
+      "Arktischer Ozean"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Pazifik bedeckt etwa ein Drittel der Erdoberfläche.",
+    "tags": [
+      "Geografie",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh5001n2mgx3wlri9s1",
+    "prompt": "Welches Fest feiern wir am 24. Dezember?",
+    "choices": [
+      "Heiligabend",
+      "Weihnachten",
+      "Silvester",
+      "Neujahr"
+    ],
+    "answerIndex": 0,
+    "fact": "In Deutschland werden die Geschenke traditionell am 24. Dezember ausgepackt.",
+    "tags": [
+      "Kultur",
+      "Tradition"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh5001o2mgxp6kfth2d",
+    "prompt": "Wie viele Zähne hat ein erwachsener Mensch normalerweise?",
+    "choices": [
+      "32",
+      "28",
+      "30",
+      "36"
+    ],
+    "answerIndex": 0,
+    "fact": "Inklusive der vier Weisheitszähne.",
+    "tags": [
+      "Gesundheit",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyh5001p2mgxuckvdx01",
+    "prompt": "Welches Tier ist das schnellste Landtier?",
+    "choices": [
+      "Gepard",
+      "Löwe",
+      "Pferd",
+      "Antilope"
+    ],
+    "answerIndex": 0,
+    "fact": "Ein Gepard kann bis zu 120 km/h schnell laufen.",
+    "tags": [
+      "Natur",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh6001q2mgx95l99j7j",
+    "prompt": "In welcher Stadt steht der Eiffelturm?",
+    "choices": [
+      "Paris",
+      "London",
+      "Rom",
+      "Berlin"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Eiffelturm ist 330 Meter hoch.",
+    "tags": [
+      "Geografie",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh6001r2mgx45b5thec",
+    "prompt": "Wie heißt die Hauptstadt von Italien?",
+    "choices": [
+      "Rom",
+      "Mailand",
+      "Venedig",
+      "Florenz"
+    ],
+    "answerIndex": 0,
+    "fact": "Rom wird auch 'Die Ewige Stadt' genannt.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh6001s2mgx0q1mnfpw",
+    "prompt": "Welches Instrument hat 88 Tasten?",
+    "choices": [
+      "Klavier",
+      "Orgel",
+      "Keyboard",
+      "Akkordeon"
+    ],
+    "answerIndex": 0,
+    "fact": "Ein Konzertflügel ist die größte Form des Klaviers.",
+    "tags": [
+      "Musik",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh7001t2mgxbtd952op",
+    "prompt": "Wie viele Stunden hat ein Tag?",
+    "choices": [
+      "24",
+      "12",
+      "48",
+      "36"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Erde dreht sich in 24 Stunden einmal um ihre Achse.",
+    "tags": [
+      "Zeit",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh7001u2mgxqelp79zr",
+    "prompt": "Welche Farbe hat eine Zitrone?",
+    "choices": [
+      "Gelb",
+      "Grün",
+      "Orange",
+      "Rot"
+    ],
+    "answerIndex": 0,
+    "fact": "Zitronen sind reich an Vitamin C.",
+    "tags": [
+      "Natur",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh8001v2mgxptli9u3c",
+    "prompt": "Wie nennt man den Arzt für Zähne?",
+    "choices": [
+      "Zahnarzt",
+      "Augenarzt",
+      "Hautarzt",
+      "Kinderarzt"
+    ],
+    "answerIndex": 0,
+    "fact": "Regelmäßige Zahnarztbesuche sind wichtig für die Zahngesundheit.",
+    "tags": [
+      "Gesundheit",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh8001w2mgxteski6xg",
+    "prompt": "Welches Tier gibt uns Milch?",
+    "choices": [
+      "Kuh",
+      "Pferd",
+      "Schwein",
+      "Huhn"
+    ],
+    "answerIndex": 0,
+    "fact": "Eine Kuh gibt durchschnittlich 20-25 Liter Milch pro Tag.",
+    "tags": [
+      "Natur",
+      "Landwirtschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh8001x2mgx52x221ap",
+    "prompt": "Wie viele Ecken hat ein Dreieck?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answerIndex": 0,
+    "fact": "Ein Dreieck ist die einfachste geometrische Form.",
+    "tags": [
+      "Mathematik",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh8001y2mgxq8rdgo7i",
+    "prompt": "Welcher Wochentag kommt nach Montag?",
+    "choices": [
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Sonntag"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Woche hat sieben Tage.",
+    "tags": [
+      "Zeit",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh9001z2mgx5ke9as4f",
+    "prompt": "Welches Tier bellt?",
+    "choices": [
+      "Hund",
+      "Katze",
+      "Vogel",
+      "Pferd"
+    ],
+    "answerIndex": 0,
+    "fact": "Hunde bellen zur Kommunikation.",
+    "tags": [
+      "Tiere",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh900202mgxdwcdf7cu",
+    "prompt": "Wie viele Finger hat eine Hand?",
+    "choices": [
+      "5",
+      "4",
+      "6",
+      "10"
+    ],
+    "answerIndex": 0,
+    "fact": "Inklusive des Daumens.",
+    "tags": [
+      "Körper",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh900212mgx08istms1",
+    "prompt": "Welche Farbe hat der Himmel an einem klaren Tag?",
+    "choices": [
+      "Blau",
+      "Grün",
+      "Rot",
+      "Gelb"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Blau entsteht durch die Streuung des Sonnenlichts.",
+    "tags": [
+      "Natur",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyh900222mgx9la24ig3",
+    "prompt": "Wie heißt die Hauptstadt von Spanien?",
+    "choices": [
+      "Madrid",
+      "Barcelona",
+      "Sevilla",
+      "Valencia"
+    ],
+    "answerIndex": 0,
+    "fact": "Madrid liegt im Zentrum Spaniens.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyha00232mgxutijtu63",
+    "prompt": "Welches Tier gibt uns Wolle?",
+    "choices": [
+      "Schaf",
+      "Ziege",
+      "Kuh",
+      "Pferd"
+    ],
+    "answerIndex": 0,
+    "fact": "Schafwolle wird für Kleidung verwendet.",
+    "tags": [
+      "Tiere",
+      "Landwirtschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyha00242mgxl8vm83i7",
+    "prompt": "Wie viele Räder hat ein Fahrrad?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "answerIndex": 0,
+    "fact": "Ein Dreirad hat 3 Räder.",
+    "tags": [
+      "Verkehr",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyha00252mgxkdagltqy",
+    "prompt": "Welche Jahreszeit kommt nach dem Winter?",
+    "choices": [
+      "Frühling",
+      "Sommer",
+      "Herbst",
+      "Winter"
+    ],
+    "answerIndex": 0,
+    "fact": "Im Frühling beginnen die Pflanzen zu blühen.",
+    "tags": [
+      "Natur",
+      "Jahreszeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyha00262mgxvclhqnwj",
+    "prompt": "Wie heißt die Hauptstadt von Österreich?",
+    "choices": [
+      "Wien",
+      "Salzburg",
+      "Innsbruck",
+      "Graz"
+    ],
+    "answerIndex": 0,
+    "fact": "Wien ist bekannt für klassische Musik.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhb00272mgxv4ip9ljn",
+    "prompt": "Welches Tier miaut?",
+    "choices": [
+      "Katze",
+      "Hund",
+      "Vogel",
+      "Maus"
+    ],
+    "answerIndex": 0,
+    "fact": "Katzen miauen zur Kommunikation mit Menschen.",
+    "tags": [
+      "Tiere",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhb00282mgx1m7enk6b",
+    "prompt": "Wie viele Monate hat ein Jahr?",
+    "choices": [
+      "12",
+      "10",
+      "11",
+      "13"
+    ],
+    "answerIndex": 0,
+    "fact": "Jeder Monat hat einen eigenen Namen.",
+    "tags": [
+      "Zeit",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhb00292mgxkta7q489",
+    "prompt": "Welche Farbe hat eine Tomate?",
+    "choices": [
+      "Rot",
+      "Grün",
+      "Gelb",
+      "Blau"
+    ],
+    "answerIndex": 0,
+    "fact": "Unreife Tomaten sind grün.",
+    "tags": [
+      "Natur",
+      "Lebensmittel"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhb002a2mgxb7rdvqpw",
+    "prompt": "Wie heißt der größte Kontinent?",
+    "choices": [
+      "Asien",
+      "Afrika",
+      "Europa",
+      "Amerika"
+    ],
+    "answerIndex": 0,
+    "fact": "Asien hat über 4,5 Milliarden Einwohner.",
+    "tags": [
+      "Geografie",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhc002b2mgx7w1ympq4",
+    "prompt": "Welches Tier legt die größten Eier?",
+    "choices": [
+      "Strauß",
+      "Huhn",
+      "Ente",
+      "Gans"
+    ],
+    "answerIndex": 0,
+    "fact": "Ein Straußenei wiegt etwa 1,5 kg.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhc002c2mgxdeunonrx",
+    "prompt": "Wie viele Bundesländer hat Österreich?",
+    "choices": [
+      "9",
+      "7",
+      "10",
+      "8"
+    ],
+    "answerIndex": 0,
+    "fact": "Wien ist sowohl Stadt als auch Bundesland.",
+    "tags": [
+      "Geografie",
+      "Österreich"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhc002d2mgxw2y0z690",
+    "prompt": "Welcher Baum verliert im Herbst seine Blätter?",
+    "choices": [
+      "Laubbaum",
+      "Nadelbaum",
+      "Palme",
+      "Kaktus"
+    ],
+    "answerIndex": 0,
+    "fact": "Nadelbäume behalten ihre Nadeln das ganze Jahr.",
+    "tags": [
+      "Natur",
+      "Pflanzen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhd002e2mgx6z15qjq8",
+    "prompt": "Wie heißt die Hauptstadt der Schweiz?",
+    "choices": [
+      "Bern",
+      "Zürich",
+      "Genf",
+      "Basel"
+    ],
+    "answerIndex": 0,
+    "fact": "Bern ist seit 1848 Bundesstadt.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhd002f2mgxe09n0tsr",
+    "prompt": "Welches Tier kann fliegen und ist nachtaktiv?",
+    "choices": [
+      "Fledermaus",
+      "Eule",
+      "Schmetterling",
+      "Biene"
+    ],
+    "answerIndex": 0,
+    "fact": "Fledermäuse sind die einzigen Säugetiere, die fliegen können.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhd002g2mgx6jx9utlb",
+    "prompt": "Wie viele Saiten hat eine Gitarre normalerweise?",
+    "choices": [
+      "6",
+      "4",
+      "8",
+      "12"
+    ],
+    "answerIndex": 0,
+    "fact": "Es gibt auch 12-saitige Gitarren.",
+    "tags": [
+      "Musik",
+      "Instrumente"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhd002h2mgxr9ftrmmr",
+    "prompt": "Welcher Monat ist der erste im Jahr?",
+    "choices": [
+      "Januar",
+      "Februar",
+      "Dezember",
+      "März"
+    ],
+    "answerIndex": 0,
+    "fact": "Januar ist nach dem römischen Gott Janus benannt.",
+    "tags": [
+      "Zeit",
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhe002i2mgxwgx6tu9s",
+    "prompt": "Welches Tier hat einen Rüssel?",
+    "choices": [
+      "Elefant",
+      "Giraffe",
+      "Löwe",
+      "Zebra"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Rüssel eines Elefanten hat über 40.000 Muskeln.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhe002j2mgxkcijyyz6",
+    "prompt": "Wie heißt die Hauptstadt von England?",
+    "choices": [
+      "London",
+      "Manchester",
+      "Liverpool",
+      "Birmingham"
+    ],
+    "answerIndex": 0,
+    "fact": "London ist eine der größten Städte Europas.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhe002k2mgx48hofwq0",
+    "prompt": "Welche Farbe entsteht, wenn man Rot und Weiß mischt?",
+    "choices": [
+      "Rosa",
+      "Orange",
+      "Lila",
+      "Braun"
+    ],
+    "answerIndex": 0,
+    "fact": "Rosa ist eine helle Variante von Rot.",
+    "tags": [
+      "Kunst",
+      "Farben"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhe002l2mgxl9s3rvxc",
+    "prompt": "Wie viele Seiten hat ein Würfel?",
+    "choices": [
+      "6",
+      "4",
+      "8",
+      "12"
+    ],
+    "answerIndex": 0,
+    "fact": "Jede Seite eines Würfels ist ein Quadrat.",
+    "tags": [
+      "Mathematik",
+      "Geometrie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhf002m2mgx0ttlxlx1",
+    "prompt": "Welches Tier hat Streifen?",
+    "choices": [
+      "Zebra",
+      "Löwe",
+      "Elefant",
+      "Giraffe"
+    ],
+    "answerIndex": 0,
+    "fact": "Jedes Zebra hat ein einzigartiges Streifenmuster.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhf002n2mgxo6thm9pu",
+    "prompt": "Wie heißt der längste Fluss Europas?",
+    "choices": [
+      "Wolga",
+      "Donau",
+      "Rhein",
+      "Elbe"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Wolga ist 3.530 km lang.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "HARD"
+  },
+  {
+    "id": "cmgo7pyhf002o2mgx199lm56p",
+    "prompt": "Welches Tier hat einen langen Hals?",
+    "choices": [
+      "Giraffe",
+      "Elefant",
+      "Löwe",
+      "Zebra"
+    ],
+    "answerIndex": 0,
+    "fact": "Giraffen sind die größten Landtiere.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhf002p2mgxtm8ffzej",
+    "prompt": "Wie viele Ecken hat ein Quadrat?",
+    "choices": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "answerIndex": 0,
+    "fact": "Alle Seiten eines Quadrats sind gleich lang.",
+    "tags": [
+      "Mathematik",
+      "Geometrie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhg002q2mgxl9fez43w",
+    "prompt": "Welche Farbe hat eine Banane?",
+    "choices": [
+      "Gelb",
+      "Grün",
+      "Rot",
+      "Blau"
+    ],
+    "answerIndex": 0,
+    "fact": "Unreife Bananen sind grün.",
+    "tags": [
+      "Natur",
+      "Lebensmittel"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhg002r2mgx3o1uib41",
+    "prompt": "Wie heißt die Hauptstadt von Griechenland?",
+    "choices": [
+      "Athen",
+      "Sparta",
+      "Thessaloniki",
+      "Kreta"
+    ],
+    "answerIndex": 0,
+    "fact": "Athen ist eine der ältesten Städte der Welt.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhg002s2mgxecfqzhp8",
+    "prompt": "Welches Tier kann im Wasser und an Land leben?",
+    "choices": [
+      "Frosch",
+      "Fisch",
+      "Vogel",
+      "Hund"
+    ],
+    "answerIndex": 0,
+    "fact": "Frösche sind Amphibien.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhg002t2mgxolr3bik5",
+    "prompt": "Wie viele Jahreszeiten gibt es?",
+    "choices": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "answerIndex": 0,
+    "fact": "Frühling, Sommer, Herbst und Winter.",
+    "tags": [
+      "Natur",
+      "Jahreszeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhh002u2mgxecvoiyta",
+    "prompt": "Welche Farbe hat Schnee?",
+    "choices": [
+      "Weiß",
+      "Blau",
+      "Grau",
+      "Gelb"
+    ],
+    "answerIndex": 0,
+    "fact": "Schnee besteht aus gefrorenen Wasserkristallen.",
+    "tags": [
+      "Natur",
+      "Wetter"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhh002v2mgx3feg71nj",
+    "prompt": "Wie heißt die Hauptstadt von Portugal?",
+    "choices": [
+      "Lissabon",
+      "Porto",
+      "Madrid",
+      "Barcelona"
+    ],
+    "answerIndex": 0,
+    "fact": "Lissabon liegt am Atlantik.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhh002w2mgxtfisgvk9",
+    "prompt": "Welches Tier gibt uns Honig?",
+    "choices": [
+      "Biene",
+      "Wespe",
+      "Hummel",
+      "Schmetterling"
+    ],
+    "answerIndex": 0,
+    "fact": "Bienen sammeln Nektar und machen daraus Honig.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhh002x2mgxtsqg6966",
+    "prompt": "Wie viele Tage hat der Februar in einem Schaltjahr?",
+    "choices": [
+      "29",
+      "28",
+      "30",
+      "31"
+    ],
+    "answerIndex": 0,
+    "fact": "Schaltjahre gibt es alle 4 Jahre.",
+    "tags": [
+      "Zeit",
+      "Kalender"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhh002y2mgxuc7l9alu",
+    "prompt": "Welches Tier hat einen Panzer?",
+    "choices": [
+      "Schildkröte",
+      "Frosch",
+      "Fisch",
+      "Vogel"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Panzer schützt die Schildkröte.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhi002z2mgxk7w0sr03",
+    "prompt": "Wie heißt die Hauptstadt von Dänemark?",
+    "choices": [
+      "Kopenhagen",
+      "Oslo",
+      "Stockholm",
+      "Helsinki"
+    ],
+    "answerIndex": 0,
+    "fact": "Kopenhagen ist bekannt für die kleine Meerjungfrau.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhi00302mgxw6ldxw4b",
+    "prompt": "Welche Farbe hat eine Orange?",
+    "choices": [
+      "Orange",
+      "Gelb",
+      "Rot",
+      "Grün"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Frucht und die Farbe haben den gleichen Namen.",
+    "tags": [
+      "Natur",
+      "Lebensmittel"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhi00312mgxqot434pg",
+    "prompt": "Wie viele Wochen hat ein Jahr ungefähr?",
+    "choices": [
+      "52",
+      "48",
+      "50",
+      "54"
+    ],
+    "answerIndex": 0,
+    "fact": "Genau sind es 52 Wochen und 1 Tag.",
+    "tags": [
+      "Zeit",
+      "Kalender"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhj00322mgxhihdfzxv",
+    "prompt": "Welches Tier kann sehr gut klettern?",
+    "choices": [
+      "Affe",
+      "Hund",
+      "Kuh",
+      "Pferd"
+    ],
+    "answerIndex": 0,
+    "fact": "Affen leben oft in Bäumen.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhj00332mgx49f9eqpp",
+    "prompt": "Wie heißt die Hauptstadt von Schweden?",
+    "choices": [
+      "Stockholm",
+      "Kopenhagen",
+      "Oslo",
+      "Helsinki"
+    ],
+    "answerIndex": 0,
+    "fact": "Stockholm liegt auf 14 Inseln.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhj00342mgxeqtq0j5w",
+    "prompt": "Welche Farbe hat eine Karotte?",
+    "choices": [
+      "Orange",
+      "Rot",
+      "Gelb",
+      "Grün"
+    ],
+    "answerIndex": 0,
+    "fact": "Karotten sind gut für die Augen.",
+    "tags": [
+      "Natur",
+      "Lebensmittel"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhj00352mgx008xb1en",
+    "prompt": "Wie viele Minuten hat eine Stunde?",
+    "choices": [
+      "60",
+      "50",
+      "100",
+      "30"
+    ],
+    "answerIndex": 0,
+    "fact": "Eine Stunde hat 60 Minuten und 3600 Sekunden.",
+    "tags": [
+      "Zeit",
+      "Mathematik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhk00362mgx0g65gjpb",
+    "prompt": "Welches Tier kann sehr schnell rennen?",
+    "choices": [
+      "Pferd",
+      "Schildkröte",
+      "Schnecke",
+      "Igel"
+    ],
+    "answerIndex": 0,
+    "fact": "Pferde können bis zu 70 km/h schnell laufen.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhk00372mgxmvan87iw",
+    "prompt": "Wie heißt die Hauptstadt von Norwegen?",
+    "choices": [
+      "Oslo",
+      "Stockholm",
+      "Kopenhagen",
+      "Helsinki"
+    ],
+    "answerIndex": 0,
+    "fact": "Oslo liegt am Oslofjord.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhk00382mgxob58ypwy",
+    "prompt": "Welche Farbe hat Gras?",
+    "choices": [
+      "Grün",
+      "Gelb",
+      "Braun",
+      "Blau"
+    ],
+    "answerIndex": 0,
+    "fact": "Gras ist grün wegen des Chlorophylls.",
+    "tags": [
+      "Natur",
+      "Pflanzen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhk00392mgx8x3lyjxe",
+    "prompt": "Wie viele Sekunden hat eine Minute?",
+    "choices": [
+      "60",
+      "50",
+      "100",
+      "30"
+    ],
+    "answerIndex": 0,
+    "fact": "60 Sekunden = 1 Minute.",
+    "tags": [
+      "Zeit",
+      "Mathematik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhl003a2mgx4ootoq60",
+    "prompt": "Welches Tier kann fliegen und summen?",
+    "choices": [
+      "Biene",
+      "Hund",
+      "Katze",
+      "Fisch"
+    ],
+    "answerIndex": 0,
+    "fact": "Bienen können bis zu 30 km/h schnell fliegen.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo7pyhl003b2mgx3d7k1hz7",
+    "prompt": "Wie heißt die Hauptstadt von Finnland?",
+    "choices": [
+      "Helsinki",
+      "Oslo",
+      "Stockholm",
+      "Kopenhagen"
+    ],
+    "answerIndex": 0,
+    "fact": "Helsinki ist die nördlichste Hauptstadt der EU.",
+    "tags": [
+      "Geografie",
+      "Europa"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo7pyhl003c2mgxebkontop",
+    "prompt": "Welche Farbe hat Feuer?",
+    "choices": [
+      "Rot/Orange",
+      "Blau",
+      "Grün",
+      "Schwarz"
+    ],
+    "answerIndex": 0,
+    "fact": "Sehr heißes Feuer kann auch blau sein.",
+    "tags": [
+      "Natur",
+      "Physik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gr0000nhiv0eh063sn",
+    "prompt": "An welches Meer grenzt Deutschland im Norden?",
+    "choices": [
+      "Nordsee und Ostsee",
+      "Mittelmeer",
+      "Schwarzes Meer",
+      "Ärmelkanal"
+    ],
+    "answerIndex": 0,
+    "fact": "Deutschland hat zwei Küsten: Nord- und Ostsee.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gs0001nhivt9zbcl45",
+    "prompt": "Wie heißt das berühmte Tor in Berlin?",
+    "choices": [
+      "Brandenburger Tor",
+      "Holstentor",
+      "Isartor",
+      "Karlstor"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gt0002nhivgqp8795j",
+    "prompt": "Welcher Fluss fließt durch Dresden?",
+    "choices": [
+      "Elbe",
+      "Oder",
+      "Isar",
+      "Lech"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gu0003nhivw0tf5yew",
+    "prompt": "Wo findet traditionell das Oktoberfest statt?",
+    "choices": [
+      "München",
+      "Nürnberg",
+      "Stuttgart",
+      "Augsburg"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gu0004nhivp8zvyd2s",
+    "prompt": "Wie heißt die größte Insel Deutschlands?",
+    "choices": [
+      "Rügen",
+      "Usedom",
+      "Sylt",
+      "Fehmarn"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gv0005nhiv30x4sa2l",
+    "prompt": "Welche Stadt ist für ihren Dom mit zwei Türmen berühmt?",
+    "choices": [
+      "Köln",
+      "Speyer",
+      "Regensburg",
+      "Magdeburg"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gv0006nhiv2inog28w",
+    "prompt": "Wie heißt der bekannte Märchenwald in Südwestdeutschland?",
+    "choices": [
+      "Schwarzwald",
+      "Bayerischer Wald",
+      "Harz",
+      "Thüringer Wald"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gv0007nhivgvwhfteq",
+    "prompt": "Welche Stadt ist für ihre Schwebebahn bekannt?",
+    "choices": [
+      "Wuppertal",
+      "Dortmund",
+      "Essen",
+      "Bochum"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gw0008nhivd37aufhy",
+    "prompt": "Welcher See liegt zwischen Deutschland, Österreich und der Schweiz?",
+    "choices": [
+      "Bodensee",
+      "Chiemsee",
+      "Müritz",
+      "Starnberger See"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gw0009nhivf7yadjkd",
+    "prompt": "Wie heißt die größte deutsche Automobilmesse (traditionell)?",
+    "choices": [
+      "IAA",
+      "CeBIT",
+      "Gamescom",
+      "ITB"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Messe"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8gx000anhivfvpvxidx",
+    "prompt": "Welche Stadt ist Sitz des VW‑Konzerns?",
+    "choices": [
+      "Wolfsburg",
+      "Ingolstadt",
+      "Stuttgart",
+      "München"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Wirtschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8gx000bnhivmw3kgu54",
+    "prompt": "Welche Stadt war von 1949 bis 1990 Hauptstadt der BRD?",
+    "choices": [
+      "Bonn",
+      "Frankfurt am Main",
+      "Kassel",
+      "Hannover"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gx000cnhivlm8c6hqs",
+    "prompt": "Welche drei Länder grenzen westlich an Deutschland?",
+    "choices": [
+      "Niederlande, Belgien, Luxemburg",
+      "Frankreich, Spanien, Portugal",
+      "Dänemark, Norwegen, Schweden",
+      "Polen, Tschechien, Slowakei"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8gy000dnhivcdlpe4hh",
+    "prompt": "Wie heißt der längste Fluss, der Deutschland durchfließt?",
+    "choices": [
+      "Rhein",
+      "Donau",
+      "Elbe",
+      "Weser"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Donau ist insgesamt länger, durchfließt Deutschland aber nur im Süden.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8gy000enhivxa5hflbr",
+    "prompt": "Wie heißt der höchste Berg im Harz?",
+    "choices": [
+      "Brocken",
+      "Wurmberg",
+      "Kahler Asten",
+      "Fichtelberg"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Natur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8gy000fnhivrgvrt05y",
+    "prompt": "Welche Stadt ist berühmt für das Schloss Neuschwanstein?",
+    "choices": [
+      "Schwangau bei Füssen",
+      "Garmisch-Partenkirchen",
+      "Berchtesgaden",
+      "Rosenheim"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8gz000gnhivpjv1pq4s",
+    "prompt": "Welche Stadt liegt an der Isar?",
+    "choices": [
+      "München",
+      "Stuttgart",
+      "Bremen",
+      "Düsseldorf"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gz000hnhivtccbibb8",
+    "prompt": "Wie heißt die Landeshauptstadt von Nordrhein‑Westfalen?",
+    "choices": [
+      "Düsseldorf",
+      "Köln",
+      "Dortmund",
+      "Bonn"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Politik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gz000inhiv22df0h7x",
+    "prompt": "Wie heißt die Landeshauptstadt von Bayern?",
+    "choices": [
+      "München",
+      "Nürnberg",
+      "Augsburg",
+      "Regensburg"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Politik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8gz000jnhivw2u531nj",
+    "prompt": "Welche Stadt ist für ihren Weihnachtsmarkt auf dem Nürnberger Hauptmarkt bekannt?",
+    "choices": [
+      "Nürnberg",
+      "Dresden",
+      "Erfurt",
+      "Leipzig"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h0000knhivjtfjnfzv",
+    "prompt": "Welche deutsche Stadt hat den Spitznamen „Elbphilharmonie‑Stadt“?",
+    "choices": [
+      "Hamburg",
+      "Dresden",
+      "Magdeburg",
+      "Dessau"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h0000lnhivaazl94ms",
+    "prompt": "Wie heißt die größte Binneninsel Deutschlands (komplett inländisch)?",
+    "choices": [
+      "Müritz‑Inseln (Müritz)",
+      "Rügen",
+      "Chiemsee‑Herreninsel",
+      "Steinhuder Meer‑Insel"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Müritz ist der größte ganz in Deutschland liegende See.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h0000mnhivw32bna12",
+    "prompt": "Wie heißt Deutschlands größter Flughafen nach Passagieren traditionell?",
+    "choices": [
+      "Frankfurt am Main",
+      "München",
+      "Berlin",
+      "Düsseldorf"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Verkehr"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h0000nnhiv1xewfkpg",
+    "prompt": "Wer erfand den Buchdruck mit beweglichen Lettern in Europa?",
+    "choices": [
+      "Johannes Gutenberg",
+      "Albrecht Dürer",
+      "Martin Luther",
+      "Gottfried Wilhelm Leibniz"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h1000onhiv0raq1y6b",
+    "prompt": "Welcher Komponist stammt aus Bonn?",
+    "choices": [
+      "Ludwig van Beethoven",
+      "Johann Sebastian Bach",
+      "Johannes Brahms",
+      "Richard Wagner"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h1000pnhivxdbkh3sa",
+    "prompt": "Welche Brüder sammelten berühmte Märchen?",
+    "choices": [
+      "Brüder Grimm",
+      "Gebrüder Wright",
+      "Brüder Mann",
+      "Gebrüder Humboldt"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h1000qnhivlcin7hma",
+    "prompt": "Wer schrieb „Faust“?",
+    "choices": [
+      "Johann Wolfgang von Goethe",
+      "Friedrich Schiller",
+      "Thomas Mann",
+      "Heinrich Heine"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Literatur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h2000rnhiv8jnlgv88",
+    "prompt": "Aus welcher Stadt stammt die Schwarzwälder Kirschtorte?",
+    "choices": [
+      "Region Schwarzwald",
+      "München",
+      "Hamburg",
+      "Leipzig"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h2000snhivq8u0soh6",
+    "prompt": "Was bedeutet „Reinheitsgebot“ beim Bier?",
+    "choices": [
+      "Bier nur aus Wasser, Malz, Hopfen, Hefe",
+      "Bier muss gefiltert sein",
+      "Bier nur aus Deutschland",
+      "Bier ohne Kohlensäure"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h2000tnhivpbdsc4u7",
+    "prompt": "Welcher Physiker wurde in Ulm geboren?",
+    "choices": [
+      "Albert Einstein",
+      "Max Planck",
+      "Werner Heisenberg",
+      "Otto Hahn"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h2000unhivu34x5va7",
+    "prompt": "Wer entdeckte die Röntgenstrahlen?",
+    "choices": [
+      "Wilhelm Conrad Röntgen",
+      "Robert Koch",
+      "Hermann von Helmholtz",
+      "Carl Bosch"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Wissenschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h3000vnhivtmt9cjt6",
+    "prompt": "Welche Firma brachte „Aspirin“ auf den Markt?",
+    "choices": [
+      "Bayer",
+      "Merck",
+      "BASF",
+      "Hoechst"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Wirtschaft",
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h3000wnhivpda6h09x",
+    "prompt": "Welche Musikrichtung ist mit Bayreuth verbunden?",
+    "choices": [
+      "Wagner‑Festspiele",
+      "Jazz",
+      "Techno",
+      "Pop"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h3000xnhiva8zh7j59",
+    "prompt": "Welche Stadt ist für Currywurst besonders bekannt?",
+    "choices": [
+      "Berlin",
+      "München",
+      "Frankfurt",
+      "Stuttgart"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h4000ynhivqn5cehhm",
+    "prompt": "Wie heißt das berühmte ZDF‑Nachrichtenformat um 19 Uhr?",
+    "choices": [
+      "heute",
+      "Tagesschau",
+      "heute journal",
+      "RTL Aktuell"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Medien"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h4000znhiv2pjnlrob",
+    "prompt": "Welcher deutsche Autor schrieb „Die Buddenbrooks“?",
+    "choices": [
+      "Thomas Mann",
+      "Hermann Hesse",
+      "Günter Grass",
+      "Theodor Fontane"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Literatur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h40010nhivkw6or66p",
+    "prompt": "Welche deutsche Erfindung prägte die digitale Musik?",
+    "choices": [
+      "MP3",
+      "CD‑Player",
+      "Walkman",
+      "UKW‑Radio"
+    ],
+    "answerIndex": 0,
+    "fact": "Entwickelt am Fraunhofer‑Institut in Erlangen.",
+    "tags": [
+      "Deutschland",
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h40011nhivjs04ofpd",
+    "prompt": "Welcher Wissenschaftler machte die Keimtheorie in Deutschland groß?",
+    "choices": [
+      "Robert Koch",
+      "Alexander von Humboldt",
+      "Fritz Haber",
+      "Max Born"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h50012nhivl8y07yrd",
+    "prompt": "Wie heißt der deutsche ICE?",
+    "choices": [
+      "InterCityExpress",
+      "InterCityEuro",
+      "InterCityElectric",
+      "InternationalCityExpress"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Verkehr"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h50013nhiv483d9due",
+    "prompt": "Welche Sportart ist in Deutschland am populärsten?",
+    "choices": [
+      "Fußball",
+      "Handball",
+      "Basketball",
+      "Eishockey"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h50014nhivh67raahr",
+    "prompt": "Welche Farben hat Borussia Dortmund traditionell?",
+    "choices": [
+      "Schwarz‑Gelb",
+      "Blau‑Weiß",
+      "Rot‑Weiß",
+      "Grün‑Weiß"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h50015nhivi6i9jozs",
+    "prompt": "Wie heißt die höchste deutsche Fußballliga?",
+    "choices": [
+      "Bundesliga",
+      "Regionalliga",
+      "Oberliga",
+      "2. Liga"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h60016nhivuwqgjpcs",
+    "prompt": "Wie viele Kontinente werden üblicherweise gezählt?",
+    "choices": [
+      "7",
+      "6",
+      "5",
+      "8"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h60017nhivfw3u2qof",
+    "prompt": "Wie viele Tage hat ein Schaltjahr?",
+    "choices": [
+      "366",
+      "365",
+      "364",
+      "360"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Zeit"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h60018nhiv05sh0agy",
+    "prompt": "Welches ist das größte Land der Erde nach Fläche?",
+    "choices": [
+      "Russland",
+      "Kanada",
+      "China",
+      "USA"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h60019nhiv1mkpzpn9",
+    "prompt": "Aus wie vielen Farben besteht ein Regenbogen meist sichtbar?",
+    "choices": [
+      "7",
+      "6",
+      "5",
+      "8"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h7001anhivmby64bwk",
+    "prompt": "Bei wie viel Grad Celsius kocht Wasser auf Meereshöhe?",
+    "choices": [
+      "100°C",
+      "90°C",
+      "80°C",
+      "70°C"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Naturwissenschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h7001bnhivivfc59cz",
+    "prompt": "Welche Blutgruppe ist als Universalspender bekannt?",
+    "choices": [
+      "0 negativ",
+      "A positiv",
+      "B negativ",
+      "AB positiv"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Gesundheit"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h7001cnhivbmyisc18",
+    "prompt": "Wie viele Bundesstaaten haben die USA?",
+    "choices": [
+      "50",
+      "48",
+      "52",
+      "51"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h7001dnhivn3g3l54l",
+    "prompt": "Welches Meer trennt Afrika von Europa bei Gibraltar?",
+    "choices": [
+      "Mittelmeer",
+      "Atlantik",
+      "Schwarzes Meer",
+      "Rotes Meer"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h8001enhiv9vh78ubr",
+    "prompt": "Wie heißt der längste Fluss der Welt (nach gängiger Lehrmeinung)?",
+    "choices": [
+      "Nil",
+      "Amazonas",
+      "Jangtse",
+      "Mississippi"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h8001fnhivhdlqdepl",
+    "prompt": "Wie viele Planeten hat unser Sonnensystem (ohne Zwergplaneten)?",
+    "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Astronomie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h8001gnhivmd2bxcdr",
+    "prompt": "Welches chemische Symbol hat Wasser?",
+    "choices": [
+      "H₂O",
+      "HO₂",
+      "OH₂",
+      "H₂"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Chemie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h8001hnhivsiab6okr",
+    "prompt": "Welche Einheit misst elektrische Stromstärke?",
+    "choices": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Physik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h9001inhivz5ytu4bx",
+    "prompt": "Welche Nuss ist botanisch keine Nuss?",
+    "choices": [
+      "Erdnuss",
+      "Haselnuss",
+      "Walnuss",
+      "Paranuss"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Erdnuss ist eine Hülsenfrucht.",
+    "tags": [
+      "Allgemeinwissen",
+      "Ernährung"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8h9001jnhiv1mts26vb",
+    "prompt": "Welcher Ozean ist der größte?",
+    "choices": [
+      "Pazifik",
+      "Atlantik",
+      "Indischer Ozean",
+      "Arktischer Ozean"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Pazifik ist größer als alle Landmassen zusammen!",
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h9001knhivp2jygai3",
+    "prompt": "Welches Tier gilt als „König der Tiere“?",
+    "choices": [
+      "Löwe",
+      "Elefant",
+      "Tiger",
+      "Gorilla"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Tiere"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8h9001lnhivycgmx7n7",
+    "prompt": "Welches Element atmen wir hauptsächlich ein?",
+    "choices": [
+      "Stickstoff",
+      "Sauerstoff",
+      "Kohlenstoffdioxid",
+      "Argon"
+    ],
+    "answerIndex": 0,
+    "fact": "Luft besteht zu ca. 78% aus Stickstoff.",
+    "tags": [
+      "Allgemeinwissen",
+      "Naturwissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8ha001mnhiv7n9qfzg5",
+    "prompt": "Wie viele Tage hat der Februar in einem normalen Jahr?",
+    "choices": [
+      "28",
+      "29",
+      "30",
+      "27"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Zeit"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8ha001nnhivy29us7l9",
+    "prompt": "Welcher Kontinent ist flächenmäßig der kleinste?",
+    "choices": [
+      "Australien",
+      "Europa",
+      "Antarktika",
+      "Südamerika"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8ha001onhiv01579bke",
+    "prompt": "Welche Farbe erhält man aus Blau und Gelb?",
+    "choices": [
+      "Grün",
+      "Orange",
+      "Lila",
+      "Braun"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Kunst"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hb001pnhiv99y6hffl",
+    "prompt": "Welches Organ pumpt Blut durch den Körper?",
+    "choices": [
+      "Herz",
+      "Leber",
+      "Lunge",
+      "Niere"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Biologie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hb001qnhivkvlb2ikm",
+    "prompt": "Wie viele Kontinente grenzen an den Atlantik?",
+    "choices": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hb001rnhivc2dvebbq",
+    "prompt": "Wie nennt man junge Katzen?",
+    "choices": [
+      "Kätzchen",
+      "Katerchen",
+      "Welpen",
+      "Fohlen"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Allgemeinwissen",
+      "Tiere"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hb001snhivqx2te7y1",
+    "prompt": "Welche Form hat ein Verkehrsschild „Vorfahrt gewähren“ in Deutschland?",
+    "choices": [
+      "Umgedrehtes Dreieck",
+      "Kreis",
+      "Rechteck",
+      "Achteck"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Verkehr"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hc001tnhivlp2muj8o",
+    "prompt": "Wie viele Bundesländer sind Stadtstaaten?",
+    "choices": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "answerIndex": 0,
+    "fact": "Berlin, Hamburg, Bremen.",
+    "tags": [
+      "Deutschland",
+      "Politik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hc001unhiv40i1ixa9",
+    "prompt": "Welche Stadt liegt NICHT an der Donau?",
+    "choices": [
+      "Frankfurt am Main",
+      "Regensburg",
+      "Ulm",
+      "Passau"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hc001vnhiv6q1xr970",
+    "prompt": "Welcher deutsche Dichter schrieb „Loreley“?",
+    "choices": [
+      "Heinrich Heine",
+      "Eduard Mörike",
+      "Rainer Maria Rilke",
+      "Theodor Fontane"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Literatur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hc001wnhivwcyu3q2e",
+    "prompt": "Welche deutsche Stadt ist für ihren Zwinger berühmt?",
+    "choices": [
+      "Dresden",
+      "Weimar",
+      "Potsdam",
+      "Kassel"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hd001xnhivdbnpsr27",
+    "prompt": "Welche Stadt trägt den Beinamen „Hauptstadt der Romantik“ (Novalis, Schiller)?",
+    "choices": [
+      "Jena/Weimar (Weimarer Klassik)",
+      "Bamberg",
+      "Heidelberg",
+      "Marburg"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hd001ynhivt4hp1plt",
+    "prompt": "Welche Insel liegt in der Ostsee?",
+    "choices": [
+      "Usedom",
+      "Borkum",
+      "Norderney",
+      "Wangerooge"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hd001znhiv9ig1ypmi",
+    "prompt": "Wie heißt die längste Autobahn Deutschlands?",
+    "choices": [
+      "A7",
+      "A3",
+      "A1",
+      "A9"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Verkehr"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8he0020nhivmppxk1cc",
+    "prompt": "Welche deutsche Stadt ist für das Schloss Sanssouci bekannt?",
+    "choices": [
+      "Potsdam",
+      "Berlin",
+      "Dresden",
+      "Hannover"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8he0021nhivi6ueuvvz",
+    "prompt": "Wo befindet sich das UNESCO‑Welterbe Kölner Dom?",
+    "choices": [
+      "Köln",
+      "Trier",
+      "Aachen",
+      "Speyer"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "UNESCO"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8he0022nhivuo1own6c",
+    "prompt": "Welche Stadt ist NICHT Landeshauptstadt?",
+    "choices": [
+      "Koblenz",
+      "Mainz",
+      "Erfurt",
+      "Magdeburg"
+    ],
+    "answerIndex": 0,
+    "fact": "Koblenz liegt in Rheinland‑Pfalz, Hauptstadt ist Mainz.",
+    "tags": [
+      "Deutschland",
+      "Politik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8he0023nhivcnhiqu6p",
+    "prompt": "Welcher deutsche See ist auch als „Bayerisches Meer“ bekannt?",
+    "choices": [
+      "Chiemsee",
+      "Starnberger See",
+      "Ammersee",
+      "Walchensee"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hf0024nhivrir430k4",
+    "prompt": "Welche Stadt ist für die Frauenkirche berühmt?",
+    "choices": [
+      "Dresden",
+      "München",
+      "Nürnberg",
+      "Augsburg"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hf0025nhiv662fz0wk",
+    "prompt": "Welche drei Farben hat die Ampel in Deutschland?",
+    "choices": [
+      "Rot, Gelb, Grün",
+      "Rot, Blau, Grün",
+      "Rot, Gelb, Blau",
+      "Gelb, Grün, Weiß"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Alltag"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hf0026nhiv5yxbdj2z",
+    "prompt": "Welche Stadt ist für die ‚Alte Oper‘ bekannt?",
+    "choices": [
+      "Frankfurt am Main",
+      "Leipzig",
+      "Hannover",
+      "Bremen"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hf0027nhiv0e7ze4xe",
+    "prompt": "Wer schrieb „Wilhelm Tell“?",
+    "choices": [
+      "Friedrich Schiller",
+      "Gotthold Ephraim Lessing",
+      "Bertolt Brecht",
+      "Thomas Mann"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Literatur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hg0028nhiv39gsgknf",
+    "prompt": "Welche Stadt ist für den Spezi‑Mix (Cola‑Orangenlimonade) bekannt?",
+    "choices": [
+      "Augsburg",
+      "München",
+      "Ulm",
+      "Regensburg"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hg0029nhivjvxti0l8",
+    "prompt": "In welcher Stadt steht das Holstentor?",
+    "choices": [
+      "Lübeck",
+      "Rostock",
+      "Kiel",
+      "Stralsund"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hg002anhivwfut84ca",
+    "prompt": "Welche deutsche Stadt ist berühmt für die Documenta?",
+    "choices": [
+      "Kassel",
+      "Weimar",
+      "Essen",
+      "Bochum"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kunst"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hg002bnhivw1xbyugs",
+    "prompt": "Welche Stadt liegt an der Spree?",
+    "choices": [
+      "Berlin",
+      "Leipzig",
+      "Halle",
+      "Dresden"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hh002cnhivm2y4vpbf",
+    "prompt": "Welcher Fluss bildet teilweise die Grenze zwischen Deutschland und Polen?",
+    "choices": [
+      "Oder",
+      "Neiße",
+      "Weichsel",
+      "Drau"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hh002dnhivzc9n6j73",
+    "prompt": "Welche Region ist für Spätzle bekannt?",
+    "choices": [
+      "Schwaben",
+      "Franken",
+      "Sachsen",
+      "Nordsee"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hh002enhivfm9atf3y",
+    "prompt": "Welche Stadt ist für den ‚Zwiebelmarkt‘ bekannt?",
+    "choices": [
+      "Weimar",
+      "Erfurt",
+      "Jena",
+      "Gotha"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo8w8hh002fnhivk3vmy12g",
+    "prompt": "Wo steht das Heidelberger Schloss?",
+    "choices": [
+      "Heidelberg",
+      "Mannheim",
+      "Karlsruhe",
+      "Freiburg"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo8w8hi002gnhivtkeb0x5r",
+    "prompt": "Welche Stadt liegt NICHT im Ruhrgebiet?",
+    "choices": [
+      "Bielefeld",
+      "Duisburg",
+      "Gelsenkirchen",
+      "Herne"
+    ],
+    "answerIndex": 0,
+    "fact": "",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzyw0000nh4iev5m0t6z",
+    "prompt": "Welcher ist der längste Fluss der Welt?",
+    "choices": [
+      "Nil",
+      "Amazonas",
+      "Rhein",
+      "Donau"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Nil ist etwa 6.650 km lang.",
+    "tags": [
+      "Geografie",
+      "Natur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzyw0001nh4ibc9z5off",
+    "prompt": "Wie viele Kontinente gibt es?",
+    "choices": [
+      "7",
+      "5",
+      "6",
+      "8"
+    ],
+    "answerIndex": 0,
+    "fact": "Afrika, Antarktika, Asien, Australien, Europa, Nordamerika, Südamerika.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzyx0002nh4injrmhz0w",
+    "prompt": "Welches ist das größte Land der Erde?",
+    "choices": [
+      "Russland",
+      "Kanada",
+      "China",
+      "USA"
+    ],
+    "answerIndex": 0,
+    "fact": "Russland hat über 17 Millionen km².",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzyy0003nh4idufp14nl",
+    "prompt": "In welchem Land steht der Eiffelturm?",
+    "choices": [
+      "Frankreich",
+      "Italien",
+      "Spanien",
+      "Belgien"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Eiffelturm steht in Paris.",
+    "tags": [
+      "Geografie",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzyz0004nh4itxrgnz1r",
+    "prompt": "Welches ist das kleinste Land der Welt?",
+    "choices": [
+      "Vatikanstadt",
+      "Monaco",
+      "San Marino",
+      "Liechtenstein"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Vatikan hat nur 0,44 km².",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzyz0005nh4iy0klgqcf",
+    "prompt": "Wann endete der Zweite Weltkrieg?",
+    "choices": [
+      "1945",
+      "1944",
+      "1946",
+      "1943"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Krieg endete am 8. Mai 1945 in Europa.",
+    "tags": [
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz00006nh4i5ve1ndem",
+    "prompt": "Wer war der erste Bundeskanzler Deutschlands?",
+    "choices": [
+      "Konrad Adenauer",
+      "Willy Brandt",
+      "Helmut Kohl",
+      "Ludwig Erhard"
+    ],
+    "answerIndex": 0,
+    "fact": "Adenauer war von 1949 bis 1963 im Amt.",
+    "tags": [
+      "Geschichte",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzz00007nh4i4oezh3w1",
+    "prompt": "In welchem Jahr fiel die Berliner Mauer?",
+    "choices": [
+      "1989",
+      "1990",
+      "1988",
+      "1991"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Mauer fiel am 9. November 1989.",
+    "tags": [
+      "Geschichte",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz00008nh4ilmtit3ly",
+    "prompt": "Wer entdeckte Amerika?",
+    "choices": [
+      "Christoph Kolumbus",
+      "Amerigo Vespucci",
+      "Ferdinand Magellan",
+      "Marco Polo"
+    ],
+    "answerIndex": 0,
+    "fact": "Kolumbus landete 1492 in der Karibik.",
+    "tags": [
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz10009nh4isjl3fg2s",
+    "prompt": "Wann begann der Erste Weltkrieg?",
+    "choices": [
+      "1914",
+      "1913",
+      "1915",
+      "1916"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Krieg begann am 28. Juli 1914.",
+    "tags": [
+      "Geschichte"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzz1000anh4iubz9h9bm",
+    "prompt": "Welches ist das größte Tier der Welt?",
+    "choices": [
+      "Blauwal",
+      "Elefant",
+      "Giraffe",
+      "Hai"
+    ],
+    "answerIndex": 0,
+    "fact": "Blauwale können bis zu 30 Meter lang werden.",
+    "tags": [
+      "Natur",
+      "Tiere"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz1000bnh4ix3wxk676",
+    "prompt": "Wie nennt man ein junges Pferd?",
+    "choices": [
+      "Fohlen",
+      "Kalb",
+      "Lamm",
+      "Ferkel"
+    ],
+    "answerIndex": 0,
+    "fact": "Fohlen können schon nach wenigen Stunden stehen.",
+    "tags": [
+      "Tiere"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz2000cnh4i5a3wiirx",
+    "prompt": "Welches Tier legt Eier und säugt seine Jungen?",
+    "choices": [
+      "Schnabeltier",
+      "Känguru",
+      "Wal",
+      "Delfin"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Schnabeltier ist ein Kloakentier.",
+    "tags": [
+      "Natur",
+      "Tiere"
+    ],
+    "difficulty": "HARD"
+  },
+  {
+    "id": "cmgo9zzz2000dnh4ib4uuw19x",
+    "prompt": "Wie viele Planeten hat unser Sonnensystem?",
+    "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+    ],
+    "answerIndex": 0,
+    "fact": "Pluto gilt seit 2006 nicht mehr als Planet.",
+    "tags": [
+      "Wissenschaft",
+      "Astronomie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz3000enh4if3gkgufz",
+    "prompt": "Was ist H2O?",
+    "choices": [
+      "Wasser",
+      "Sauerstoff",
+      "Wasserstoff",
+      "Salz"
+    ],
+    "answerIndex": 0,
+    "fact": "H2O besteht aus 2 Wasserstoff- und 1 Sauerstoffatom.",
+    "tags": [
+      "Wissenschaft",
+      "Chemie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz3000fnh4i0ks3dcy1",
+    "prompt": "Wie heißt der größte Planet unseres Sonnensystems?",
+    "choices": [
+      "Jupiter",
+      "Saturn",
+      "Neptun",
+      "Uranus"
+    ],
+    "answerIndex": 0,
+    "fact": "Jupiter ist 11-mal größer als die Erde.",
+    "tags": [
+      "Wissenschaft",
+      "Astronomie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz3000gnh4ixvr0ocm5",
+    "prompt": "Bei welcher Temperatur gefriert Wasser?",
+    "choices": [
+      "0°C",
+      "10°C",
+      "-10°C",
+      "5°C"
+    ],
+    "answerIndex": 0,
+    "fact": "Bei 0 Grad Celsius wird Wasser zu Eis.",
+    "tags": [
+      "Wissenschaft",
+      "Physik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz3000hnh4irul2kcu9",
+    "prompt": "Wie viele Knochen hat ein erwachsener Mensch?",
+    "choices": [
+      "206",
+      "180",
+      "220",
+      "250"
+    ],
+    "answerIndex": 0,
+    "fact": "Babys haben noch mehr Knochen, die später verwachsen.",
+    "tags": [
+      "Wissenschaft",
+      "Biologie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzz4000inh4io8qb1xnc",
+    "prompt": "Wer malte die Mona Lisa?",
+    "choices": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Picasso",
+      "Van Gogh"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Gemälde hängt im Louvre in Paris.",
+    "tags": [
+      "Kultur",
+      "Kunst"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz4000jnh4i1lxd5i87",
+    "prompt": "Wer schrieb 'Faust'?",
+    "choices": [
+      "Goethe",
+      "Schiller",
+      "Heine",
+      "Kafka"
+    ],
+    "answerIndex": 0,
+    "fact": "Johann Wolfgang von Goethe lebte von 1749 bis 1832.",
+    "tags": [
+      "Kultur",
+      "Literatur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzz4000knh4icbds5c0l",
+    "prompt": "Wie viele Tasten hat ein Klavier?",
+    "choices": [
+      "88",
+      "76",
+      "100",
+      "64"
+    ],
+    "answerIndex": 0,
+    "fact": "52 weiße und 36 schwarze Tasten.",
+    "tags": [
+      "Kultur",
+      "Musik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzz5000lnh4ib2jdyeoa",
+    "prompt": "Wer komponierte die 'Kleine Nachtmusik'?",
+    "choices": [
+      "Mozart",
+      "Beethoven",
+      "Bach",
+      "Haydn"
+    ],
+    "answerIndex": 0,
+    "fact": "Wolfgang Amadeus Mozart komponierte sie 1787.",
+    "tags": [
+      "Kultur",
+      "Musik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzz5000mnh4ijoiatfx4",
+    "prompt": "Alle wie viele Jahre finden Olympische Spiele statt?",
+    "choices": [
+      "4",
+      "2",
+      "5",
+      "3"
+    ],
+    "answerIndex": 0,
+    "fact": "Sommer- und Winterspiele wechseln sich ab.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz5000nnh4i37t6o2rq",
+    "prompt": "Wie lang ist ein Marathon?",
+    "choices": [
+      "42,195 km",
+      "40 km",
+      "45 km",
+      "50 km"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Distanz wurde 1921 standardisiert.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzz6000onh4ie34wos4a",
+    "prompt": "Welche Farbe hat das Trikot des Führenden bei der Tour de France?",
+    "choices": [
+      "Gelb",
+      "Grün",
+      "Rot",
+      "Blau"
+    ],
+    "answerIndex": 0,
+    "fact": "Das gelbe Trikot heißt 'Maillot Jaune'.",
+    "tags": [
+      "Sport",
+      "Radsport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz6000pnh4is6o1bk0c",
+    "prompt": "Wie viele Ringe hat das olympische Symbol?",
+    "choices": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ],
+    "answerIndex": 0,
+    "fact": "Sie stehen für die fünf Kontinente.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz6000qnh4iu8vd5kzs",
+    "prompt": "Aus welchem Land kommt Pizza ursprünglich?",
+    "choices": [
+      "Italien",
+      "Frankreich",
+      "Griechenland",
+      "Spanien"
+    ],
+    "answerIndex": 0,
+    "fact": "Pizza Margherita wurde in Neapel erfunden.",
+    "tags": [
+      "Essen",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz6000rnh4ikhntjz1t",
+    "prompt": "Was ist Sushi?",
+    "choices": [
+      "Japanisches Gericht",
+      "Chinesisches Gericht",
+      "Koreanisches Gericht",
+      "Thailändisches Gericht"
+    ],
+    "answerIndex": 0,
+    "fact": "Sushi besteht aus Reis und rohem Fisch.",
+    "tags": [
+      "Essen",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz7000snh4imjkyljat",
+    "prompt": "Welche Frucht ist eine Beere?",
+    "choices": [
+      "Banane",
+      "Erdbeere",
+      "Himbeere",
+      "Kirsche"
+    ],
+    "answerIndex": 0,
+    "fact": "Botanisch gesehen ist die Banane eine Beere.",
+    "tags": [
+      "Essen",
+      "Natur"
+    ],
+    "difficulty": "HARD"
+  },
+  {
+    "id": "cmgo9zzz7000tnh4ip8avkz0x",
+    "prompt": "Aus welcher Pflanze wird Schokolade hergestellt?",
+    "choices": [
+      "Kakao",
+      "Kaffee",
+      "Vanille",
+      "Zimt"
+    ],
+    "answerIndex": 0,
+    "fact": "Kakaobohnen wachsen am Kakaobaum.",
+    "tags": [
+      "Essen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz8000unh4i85o1h73w",
+    "prompt": "Welches Gewürz ist das teuerste der Welt?",
+    "choices": [
+      "Safran",
+      "Vanille",
+      "Kardamom",
+      "Zimt"
+    ],
+    "answerIndex": 0,
+    "fact": "Safran wird aus Krokusblüten gewonnen.",
+    "tags": [
+      "Essen"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzz8000vnh4iueobaibu",
+    "prompt": "Wie viele Tage hat ein Jahr?",
+    "choices": [
+      "365",
+      "360",
+      "366",
+      "364"
+    ],
+    "answerIndex": 0,
+    "fact": "Schaltjahre haben 366 Tage.",
+    "tags": [
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz8000wnh4ivh2dfm4d",
+    "prompt": "Welche Farbe entsteht wenn man Gelb und Blau mischt?",
+    "choices": [
+      "Grün",
+      "Orange",
+      "Lila",
+      "Braun"
+    ],
+    "answerIndex": 0,
+    "fact": "Gelb + Blau = Grün (Farbenlehre).",
+    "tags": [
+      "Allgemeinwissen",
+      "Kunst"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz9000xnh4iei34p1mw",
+    "prompt": "Welches ist die Hauptstadt von Frankreich?",
+    "choices": [
+      "Paris",
+      "Lyon",
+      "Marseille",
+      "Nizza"
+    ],
+    "answerIndex": 0,
+    "fact": "Paris hat etwa 2,2 Millionen Einwohner.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz9000ynh4ipo7t45zs",
+    "prompt": "Welches ist die Hauptstadt von Italien?",
+    "choices": [
+      "Rom",
+      "Mailand",
+      "Venedig",
+      "Florenz"
+    ],
+    "answerIndex": 0,
+    "fact": "Rom wird auch 'Die ewige Stadt' genannt.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz9000znh4ik1mcamwu",
+    "prompt": "Welches ist die Hauptstadt von Spanien?",
+    "choices": [
+      "Madrid",
+      "Barcelona",
+      "Sevilla",
+      "Valencia"
+    ],
+    "answerIndex": 0,
+    "fact": "Madrid liegt im Zentrum Spaniens.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzz90010nh4idqyotc2g",
+    "prompt": "Auf welchem Kontinent liegt Ägypten?",
+    "choices": [
+      "Afrika",
+      "Asien",
+      "Europa",
+      "Australien"
+    ],
+    "answerIndex": 0,
+    "fact": "Ägypten liegt im Nordosten Afrikas.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzza0011nh4iesgf7e26",
+    "prompt": "Welche Farbe haben Smaragde?",
+    "choices": [
+      "Grün",
+      "Rot",
+      "Blau",
+      "Gelb"
+    ],
+    "answerIndex": 0,
+    "fact": "Smaragde sind wertvolle Edelsteine.",
+    "tags": [
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzza0012nh4ikju0v05k",
+    "prompt": "Wie heißt der höchste Berg der Welt?",
+    "choices": [
+      "Mount Everest",
+      "K2",
+      "Kilimandscharo",
+      "Mont Blanc"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Mount Everest ist 8.849 Meter hoch.",
+    "tags": [
+      "Geografie",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzza0013nh4izap1i1nw",
+    "prompt": "Welches Gas atmen wir ein?",
+    "choices": [
+      "Sauerstoff",
+      "Kohlendioxid",
+      "Stickstoff",
+      "Helium"
+    ],
+    "answerIndex": 0,
+    "fact": "Wir atmen Sauerstoff ein und CO2 aus.",
+    "tags": [
+      "Wissenschaft",
+      "Biologie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzb0014nh4iwwsn1lmd",
+    "prompt": "Wer war der erste Mensch auf dem Mond?",
+    "choices": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Juri Gagarin",
+      "John Glenn"
+    ],
+    "answerIndex": 0,
+    "fact": "Armstrong betrat am 21. Juli 1969 den Mond.",
+    "tags": [
+      "Geschichte",
+      "Wissenschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzb0015nh4iotamyf8j",
+    "prompt": "In welchem Jahr wurde die Titanic versenkt?",
+    "choices": [
+      "1912",
+      "1910",
+      "1914",
+      "1920"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Titanic sank am 15. April 1912.",
+    "tags": [
+      "Geschichte"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzb0016nh4imj8eiqlt",
+    "prompt": "Wer erfand das Telefon?",
+    "choices": [
+      "Alexander Graham Bell",
+      "Thomas Edison",
+      "Nikola Tesla",
+      "Guglielmo Marconi"
+    ],
+    "answerIndex": 0,
+    "fact": "Bell erhielt 1876 das Patent.",
+    "tags": [
+      "Geschichte",
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzc0017nh4iaq1nxhi5",
+    "prompt": "Wie hieß der erste deutsche Kaiser?",
+    "choices": [
+      "Wilhelm I.",
+      "Friedrich I.",
+      "Otto I.",
+      "Karl der Große"
+    ],
+    "answerIndex": 0,
+    "fact": "Wilhelm I. wurde 1871 Kaiser.",
+    "tags": [
+      "Geschichte",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzc0018nh4ii27gsiy6",
+    "prompt": "Wann wurde die Bundesrepublik Deutschland gegründet?",
+    "choices": [
+      "1949",
+      "1945",
+      "1950",
+      "1948"
+    ],
+    "answerIndex": 0,
+    "fact": "Am 23. Mai 1949 trat das Grundgesetz in Kraft.",
+    "tags": [
+      "Geschichte",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzc0019nh4i4m5lbovp",
+    "prompt": "Welches Tier kann nicht rückwärts laufen?",
+    "choices": [
+      "Känguru",
+      "Pferd",
+      "Hund",
+      "Katze"
+    ],
+    "answerIndex": 0,
+    "fact": "Kängurus können nur vorwärts hüpfen.",
+    "tags": [
+      "Tiere"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzd001anh4ih212pndu",
+    "prompt": "Wie nennt man eine Gruppe von Löwen?",
+    "choices": [
+      "Rudel",
+      "Herde",
+      "Schwarm",
+      "Meute"
+    ],
+    "answerIndex": 0,
+    "fact": "Ein Löwenrudel besteht meist aus verwandten Weibchen.",
+    "tags": [
+      "Tiere"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzd001bnh4iobno37g0",
+    "prompt": "Welches Tier schläft im Stehen?",
+    "choices": [
+      "Pferd",
+      "Kuh",
+      "Schaf",
+      "Ziege"
+    ],
+    "answerIndex": 0,
+    "fact": "Pferde können im Stehen dösen.",
+    "tags": [
+      "Tiere"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzd001cnh4i6q1zy5yi",
+    "prompt": "Wie viele Herzen hat ein Oktopus?",
+    "choices": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ],
+    "answerIndex": 0,
+    "fact": "Ein Hauptherz und zwei Kiemenherzen.",
+    "tags": [
+      "Tiere",
+      "Natur"
+    ],
+    "difficulty": "HARD"
+  },
+  {
+    "id": "cmgo9zzze001dnh4iz9mwkrm5",
+    "prompt": "Welches Tier hat den längsten Hals?",
+    "choices": [
+      "Giraffe",
+      "Kamel",
+      "Strauß",
+      "Schwan"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Hals einer Giraffe kann bis zu 2,5 Meter lang sein.",
+    "tags": [
+      "Tiere"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzze001enh4i17h9jy2k",
+    "prompt": "Wie heißt der rote Planet?",
+    "choices": [
+      "Mars",
+      "Venus",
+      "Jupiter",
+      "Saturn"
+    ],
+    "answerIndex": 0,
+    "fact": "Mars erscheint rötlich wegen Eisenoxid.",
+    "tags": [
+      "Wissenschaft",
+      "Astronomie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzze001fnh4i6a8g0src",
+    "prompt": "Was ist die Hauptzutat von Glas?",
+    "choices": [
+      "Sand",
+      "Ton",
+      "Kalk",
+      "Salz"
+    ],
+    "answerIndex": 0,
+    "fact": "Quarzsand wird bei hohen Temperaturen geschmolzen.",
+    "tags": [
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzze001gnh4ihg6r2g8c",
+    "prompt": "Wie schnell ist Licht?",
+    "choices": [
+      "300.000 km/s",
+      "150.000 km/s",
+      "500.000 km/s",
+      "100.000 km/s"
+    ],
+    "answerIndex": 0,
+    "fact": "Licht braucht etwa 8 Minuten von der Sonne zur Erde.",
+    "tags": [
+      "Wissenschaft",
+      "Physik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzf001hnh4izajnzt5j",
+    "prompt": "Welches Element hat das Symbol 'Au'?",
+    "choices": [
+      "Gold",
+      "Silber",
+      "Kupfer",
+      "Eisen"
+    ],
+    "answerIndex": 0,
+    "fact": "Au kommt vom lateinischen 'Aurum'.",
+    "tags": [
+      "Wissenschaft",
+      "Chemie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzf001inh4i5f5xvprd",
+    "prompt": "Wie viele Zähne hat ein erwachsener Mensch?",
+    "choices": [
+      "32",
+      "28",
+      "30",
+      "36"
+    ],
+    "answerIndex": 0,
+    "fact": "Inklusive der Weisheitszähne.",
+    "tags": [
+      "Wissenschaft",
+      "Biologie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzf001jnh4izo3oehkq",
+    "prompt": "Wer schrieb 'Romeo und Julia'?",
+    "choices": [
+      "Shakespeare",
+      "Goethe",
+      "Schiller",
+      "Dante"
+    ],
+    "answerIndex": 0,
+    "fact": "William Shakespeare lebte von 1564 bis 1616.",
+    "tags": [
+      "Kultur",
+      "Literatur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzg001knh4iqbw0v9kg",
+    "prompt": "Wie viele Noten gibt es in der Musik?",
+    "choices": [
+      "7",
+      "5",
+      "8",
+      "12"
+    ],
+    "answerIndex": 0,
+    "fact": "C, D, E, F, G, A, H (bzw. B).",
+    "tags": [
+      "Kultur",
+      "Musik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzg001lnh4iwj1cbeg3",
+    "prompt": "Wer malte 'Die Sternennacht'?",
+    "choices": [
+      "Van Gogh",
+      "Monet",
+      "Picasso",
+      "Rembrandt"
+    ],
+    "answerIndex": 0,
+    "fact": "Vincent van Gogh malte es 1889.",
+    "tags": [
+      "Kultur",
+      "Kunst"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzg001mnh4i5716xauq",
+    "prompt": "In welcher Stadt steht die Freiheitsstatue?",
+    "choices": [
+      "New York",
+      "Washington",
+      "Boston",
+      "Philadelphia"
+    ],
+    "answerIndex": 0,
+    "fact": "Sie war ein Geschenk Frankreichs.",
+    "tags": [
+      "Kultur",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzh001nnh4i40xt72b4",
+    "prompt": "Wie heißt das berühmteste Werk von Beethoven?",
+    "choices": [
+      "9. Sinfonie",
+      "Mondscheinsonate",
+      "Für Elise",
+      "Eroica"
+    ],
+    "answerIndex": 0,
+    "fact": "Die 9. Sinfonie enthält die 'Ode an die Freude'.",
+    "tags": [
+      "Kultur",
+      "Musik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzh001onh4ifbfti3s3",
+    "prompt": "Wie viele Spieler hat eine Handballmannschaft auf dem Feld?",
+    "choices": [
+      "7",
+      "6",
+      "8",
+      "5"
+    ],
+    "answerIndex": 0,
+    "fact": "6 Feldspieler und 1 Torwart.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzh001pnh4ixa9feea9",
+    "prompt": "Wie viele Löcher hat ein Golfplatz normalerweise?",
+    "choices": [
+      "18",
+      "9",
+      "27",
+      "36"
+    ],
+    "answerIndex": 0,
+    "fact": "Eine Runde Golf umfasst 18 Löcher.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzh001qnh4ipjxf0gp8",
+    "prompt": "Welche Sportart wird auf Eis gespielt?",
+    "choices": [
+      "Eishockey",
+      "Handball",
+      "Basketball",
+      "Volleyball"
+    ],
+    "answerIndex": 0,
+    "fact": "Eishockey ist besonders in Kanada beliebt.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzi001rnh4ihcbfkilr",
+    "prompt": "Wie viele Punkte gibt es für einen Touchdown im American Football?",
+    "choices": [
+      "6",
+      "7",
+      "3",
+      "5"
+    ],
+    "answerIndex": 0,
+    "fact": "Plus 1 oder 2 Punkte für den Extra Point.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgo9zzzi001snh4ikgby8jga",
+    "prompt": "Welche Farbe hat der Ball beim Tennis?",
+    "choices": [
+      "Gelb",
+      "Weiß",
+      "Grün",
+      "Orange"
+    ],
+    "answerIndex": 0,
+    "fact": "Früher waren Tennisbälle weiß.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzi001tnh4ioijgmdlc",
+    "prompt": "Aus welchem Land kommt Sauerkraut?",
+    "choices": [
+      "Deutschland",
+      "Frankreich",
+      "Polen",
+      "Russland"
+    ],
+    "answerIndex": 0,
+    "fact": "Sauerkraut ist fermentierter Weißkohl.",
+    "tags": [
+      "Essen",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzj001unh4i4mqdb1xq",
+    "prompt": "Was ist Tofu?",
+    "choices": [
+      "Sojaprodukt",
+      "Käse",
+      "Fleisch",
+      "Gemüse"
+    ],
+    "answerIndex": 0,
+    "fact": "Tofu wird aus Sojabohnen hergestellt.",
+    "tags": [
+      "Essen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzo001vnh4in1uv5i4b",
+    "prompt": "Welche Farbe hat eine reife Banane?",
+    "choices": [
+      "Gelb",
+      "Grün",
+      "Braun",
+      "Rot"
+    ],
+    "answerIndex": 0,
+    "fact": "Unreife Bananen sind grün.",
+    "tags": [
+      "Essen",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzp001wnh4ifmks2lma",
+    "prompt": "Was ist Pasta?",
+    "choices": [
+      "Nudeln",
+      "Reis",
+      "Brot",
+      "Kartoffeln"
+    ],
+    "answerIndex": 0,
+    "fact": "Pasta ist das italienische Wort für Nudeln.",
+    "tags": [
+      "Essen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzp001xnh4i1fpr598c",
+    "prompt": "Aus welcher Frucht wird Wein gemacht?",
+    "choices": [
+      "Trauben",
+      "Äpfel",
+      "Birnen",
+      "Kirschen"
+    ],
+    "answerIndex": 0,
+    "fact": "Weintrauben werden zu Most gepresst und vergoren.",
+    "tags": [
+      "Essen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzp001ynh4i0yjbd0dc",
+    "prompt": "Welche Farbe hat ein Stoppschild?",
+    "choices": [
+      "Rot",
+      "Gelb",
+      "Blau",
+      "Grün"
+    ],
+    "answerIndex": 0,
+    "fact": "Rot signalisiert Gefahr und Stopp.",
+    "tags": [
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzq001znh4i7363oig8",
+    "prompt": "Welche Farbe entsteht wenn man Rot und Gelb mischt?",
+    "choices": [
+      "Orange",
+      "Grün",
+      "Lila",
+      "Braun"
+    ],
+    "answerIndex": 0,
+    "fact": "Rot + Gelb = Orange.",
+    "tags": [
+      "Allgemeinwissen",
+      "Kunst"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzq0020nh4i2mby297z",
+    "prompt": "Wie viele Wochen hat ein Jahr?",
+    "choices": [
+      "52",
+      "50",
+      "48",
+      "54"
+    ],
+    "answerIndex": 0,
+    "fact": "Genau genommen 52 Wochen und 1 Tag.",
+    "tags": [
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzr0021nh4ibqstf8rz",
+    "prompt": "Was bedeutet WWW?",
+    "choices": [
+      "World Wide Web",
+      "World Wide World",
+      "Web Wide World",
+      "World Web Wide"
+    ],
+    "answerIndex": 0,
+    "fact": "Das WWW wurde 1989 von Tim Berners-Lee erfunden.",
+    "tags": [
+      "Technologie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzs0022nh4izea2c9n9",
+    "prompt": "Wer gründete Microsoft?",
+    "choices": [
+      "Bill Gates",
+      "Steve Jobs",
+      "Mark Zuckerberg",
+      "Elon Musk"
+    ],
+    "answerIndex": 0,
+    "fact": "Bill Gates gründete Microsoft 1975 mit Paul Allen.",
+    "tags": [
+      "Technologie",
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgo9zzzu0023nh4iw9ebmvrt",
+    "prompt": "Was ist ein Byte?",
+    "choices": [
+      "8 Bit",
+      "4 Bit",
+      "16 Bit",
+      "2 Bit"
+    ],
+    "answerIndex": 0,
+    "fact": "Ein Byte kann 256 verschiedene Werte darstellen.",
+    "tags": [
+      "Technologie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoa00020024nh4iamuokmt6",
+    "prompt": "Welches Unternehmen stellt das iPhone her?",
+    "choices": [
+      "Apple",
+      "Samsung",
+      "Nokia",
+      "Sony"
+    ],
+    "answerIndex": 0,
+    "fact": "Das erste iPhone kam 2007 auf den Markt.",
+    "tags": [
+      "Technologie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoa00030025nh4ispxptrmn",
+    "prompt": "Was ist ein Virus im Computer?",
+    "choices": [
+      "Schadsoftware",
+      "Hardware",
+      "Browser",
+      "Betriebssystem"
+    ],
+    "answerIndex": 0,
+    "fact": "Computerviren können Daten beschädigen oder stehlen.",
+    "tags": [
+      "Technologie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoa00030026nh4i56fpvy6n",
+    "prompt": "Welches ist das bevölkerungsreichste Land der Welt?",
+    "choices": [
+      "Indien",
+      "China",
+      "USA",
+      "Indonesien"
+    ],
+    "answerIndex": 0,
+    "fact": "Indien hat seit 2023 mehr Einwohner als China.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoa00040027nh4iap9jyh43",
+    "prompt": "Welcher Fluss fließt durch Paris?",
+    "choices": [
+      "Seine",
+      "Rhein",
+      "Donau",
+      "Loire"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Seine ist 777 km lang.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoa00040028nh4i6g1cqher",
+    "prompt": "Welches ist die Hauptstadt von England?",
+    "choices": [
+      "London",
+      "Manchester",
+      "Liverpool",
+      "Birmingham"
+    ],
+    "answerIndex": 0,
+    "fact": "London hat über 9 Millionen Einwohner.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoa00040029nh4ivn1lzyqj",
+    "prompt": "Auf welchem Kontinent liegt Brasilien?",
+    "choices": [
+      "Südamerika",
+      "Afrika",
+      "Asien",
+      "Europa"
+    ],
+    "answerIndex": 0,
+    "fact": "Brasilien ist das größte Land Südamerikas.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoa0004002anh4ih5urej4z",
+    "prompt": "Welches Land hat die Form eines Stiefels?",
+    "choices": [
+      "Italien",
+      "Griechenland",
+      "Spanien",
+      "Portugal"
+    ],
+    "answerIndex": 0,
+    "fact": "Italien ragt ins Mittelmeer hinein.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcv800002m6u2vdzc6es",
+    "prompt": "Wer komponierte die deutsche Nationalhymne?",
+    "choices": [
+      "Joseph Haydn",
+      "Ludwig van Beethoven",
+      "Johann Sebastian Bach",
+      "Wolfgang Amadeus Mozart"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Melodie stammt aus Haydns Kaiserquartett von 1797.",
+    "tags": [
+      "Deutschland",
+      "Musik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcv800012m6uq855ggfk",
+    "prompt": "In welchem Jahr wurde die Deutsche Mark eingeführt?",
+    "choices": [
+      "1948",
+      "1945",
+      "1950",
+      "1949"
+    ],
+    "answerIndex": 0,
+    "fact": "Die D-Mark löste die Reichsmark ab und beendete die Inflation.",
+    "tags": [
+      "Deutschland",
+      "Geschichte"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcv900022m6uwa8of0fc",
+    "prompt": "Welcher deutsche Dichter schrieb 'Die Leiden des jungen Werther'?",
+    "choices": [
+      "Goethe",
+      "Schiller",
+      "Heine",
+      "Lessing"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Buch löste 1774 einen regelrechten Hype aus - das 'Werther-Fieber'.",
+    "tags": [
+      "Deutschland",
+      "Literatur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcva00032m6uir1zyjpw",
+    "prompt": "Wie heißt das größte Volksfest der Welt?",
+    "choices": [
+      "Oktoberfest",
+      "Karneval",
+      "Weihnachtsmarkt",
+      "Schützenfest"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Oktoberfest in München zieht jährlich über 6 Millionen Besucher an.",
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvb00042m6uua88tnjz",
+    "prompt": "Welche Stadt wird 'Elbflorenz' genannt?",
+    "choices": [
+      "Dresden",
+      "Hamburg",
+      "Leipzig",
+      "Magdeburg"
+    ],
+    "answerIndex": 0,
+    "fact": "Dresden erhielt den Beinamen wegen seiner Kunstschätze und barocken Architektur.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvb00052m6uy9z79njh",
+    "prompt": "Wie viele Beine hat ein Insekt?",
+    "choices": [
+      "6",
+      "8",
+      "4",
+      "10"
+    ],
+    "answerIndex": 0,
+    "fact": "Alle Insekten haben genau 6 Beine - das unterscheidet sie von Spinnen (8 Beine).",
+    "tags": [
+      "Natur",
+      "Tiere"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvc00062m6u1rux0916",
+    "prompt": "Welcher Baum wird am ältesten?",
+    "choices": [
+      "Mammutbaum",
+      "Eiche",
+      "Tanne",
+      "Buche"
+    ],
+    "answerIndex": 0,
+    "fact": "Manche Mammutbäume sind über 3.000 Jahre alt!",
+    "tags": [
+      "Natur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvc00072m6u7gq6de1a",
+    "prompt": "Wie heißt der größte Regenwald der Erde?",
+    "choices": [
+      "Amazonas",
+      "Kongo",
+      "Borneo",
+      "Sumatra"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Amazonas-Regenwald produziert 20% des weltweiten Sauerstoffs.",
+    "tags": [
+      "Natur",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvc00082m6uprn5m80i",
+    "prompt": "Welches Tier kann am schnellsten schwimmen?",
+    "choices": [
+      "Schwertfisch",
+      "Delfin",
+      "Hai",
+      "Thunfisch"
+    ],
+    "answerIndex": 0,
+    "fact": "Schwertfische erreichen Geschwindigkeiten bis zu 100 km/h!",
+    "tags": [
+      "Natur",
+      "Tiere"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvd00092m6u0vlbgyip",
+    "prompt": "Wie viele Flügel hat eine Biene?",
+    "choices": [
+      "4",
+      "2",
+      "6",
+      "8"
+    ],
+    "answerIndex": 0,
+    "fact": "Bienen haben 2 Flügelpaare, die sie beim Fliegen zusammenkoppeln.",
+    "tags": [
+      "Natur",
+      "Tiere"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvd000a2m6uz0llx0e0",
+    "prompt": "Wer war der erste Präsident der USA?",
+    "choices": [
+      "George Washington",
+      "Thomas Jefferson",
+      "Abraham Lincoln",
+      "John Adams"
+    ],
+    "answerIndex": 0,
+    "fact": "Washington war von 1789 bis 1797 Präsident.",
+    "tags": [
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcve000b2m6u4exbmvrx",
+    "prompt": "In welchem Jahr landete der erste Mensch auf dem Mond?",
+    "choices": [
+      "1969",
+      "1968",
+      "1970",
+      "1971"
+    ],
+    "answerIndex": 0,
+    "fact": "Neil Armstrong betrat am 21. Juli 1969 als erster Mensch den Mond.",
+    "tags": [
+      "Geschichte",
+      "Wissenschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcve000c2m6uaqreeq86",
+    "prompt": "Wie lange dauerte der Hundertjährige Krieg?",
+    "choices": [
+      "116 Jahre",
+      "100 Jahre",
+      "99 Jahre",
+      "120 Jahre"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Krieg zwischen England und Frankreich dauerte von 1337 bis 1453.",
+    "tags": [
+      "Geschichte"
+    ],
+    "difficulty": "HARD"
+  },
+  {
+    "id": "cmgoalcve000d2m6u005ddlem",
+    "prompt": "Wer erfand den Buchdruck?",
+    "choices": [
+      "Johannes Gutenberg",
+      "Leonardo da Vinci",
+      "Martin Luther",
+      "Albrecht Dürer"
+    ],
+    "answerIndex": 0,
+    "fact": "Gutenberg erfand um 1450 den Buchdruck mit beweglichen Lettern.",
+    "tags": [
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvf000e2m6urp3pz54j",
+    "prompt": "In welchem Jahr begann die Französische Revolution?",
+    "choices": [
+      "1789",
+      "1776",
+      "1792",
+      "1799"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Sturm auf die Bastille am 14. Juli 1789 gilt als Beginn.",
+    "tags": [
+      "Geschichte"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvf000f2m6ubhg4rsxc",
+    "prompt": "Welches ist der höchste Berg Afrikas?",
+    "choices": [
+      "Kilimandscharo",
+      "Mount Kenya",
+      "Atlas",
+      "Ruwenzori"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Kilimandscharo in Tansania ist 5.895 Meter hoch.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvf000g2m6ugsfqybhy",
+    "prompt": "Wie viele Länder grenzen an Deutschland?",
+    "choices": [
+      "9",
+      "7",
+      "8",
+      "10"
+    ],
+    "answerIndex": 0,
+    "fact": "Dänemark, Polen, Tschechien, Österreich, Schweiz, Frankreich, Luxemburg, Belgien, Niederlande.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvg000h2m6u8hx5w8kj",
+    "prompt": "Welches ist die Hauptstadt von Australien?",
+    "choices": [
+      "Canberra",
+      "Sydney",
+      "Melbourne",
+      "Brisbane"
+    ],
+    "answerIndex": 0,
+    "fact": "Viele denken es sei Sydney, aber Canberra ist die Hauptstadt seit 1908.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "HARD"
+  },
+  {
+    "id": "cmgoalcvg000i2m6u5spmdxqu",
+    "prompt": "Welcher Fluss ist der längste in Europa?",
+    "choices": [
+      "Wolga",
+      "Donau",
+      "Rhein",
+      "Elbe"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Wolga ist 3.530 km lang und fließt durch Russland.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvg000j2m6uvapbccp6",
+    "prompt": "Auf welchem Kontinent liegt die Sahara?",
+    "choices": [
+      "Afrika",
+      "Asien",
+      "Australien",
+      "Südamerika"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Sahara ist mit 9 Millionen km² die größte Trockenwüste der Welt.",
+    "tags": [
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvh000k2m6ua6nwl2un",
+    "prompt": "Wer entwickelte die Relativitätstheorie?",
+    "choices": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Stephen Hawking",
+      "Niels Bohr"
+    ],
+    "answerIndex": 0,
+    "fact": "Einstein veröffentlichte die spezielle Relativitätstheorie 1905.",
+    "tags": [
+      "Wissenschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvh000l2m6udjhdjdum",
+    "prompt": "Wie viele Elemente gibt es im Periodensystem?",
+    "choices": [
+      "118",
+      "92",
+      "100",
+      "150"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Periodensystem wird ständig erweitert - neue Elemente werden künstlich erzeugt.",
+    "tags": [
+      "Wissenschaft",
+      "Chemie"
+    ],
+    "difficulty": "HARD"
+  },
+  {
+    "id": "cmgoalcvh000m2m6un0ukb32a",
+    "prompt": "Was ist der härteste natürliche Stoff?",
+    "choices": [
+      "Diamant",
+      "Stahl",
+      "Granit",
+      "Titan"
+    ],
+    "answerIndex": 0,
+    "fact": "Diamanten bestehen aus reinem Kohlenstoff in Kristallform.",
+    "tags": [
+      "Wissenschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvh000n2m6uenp7685m",
+    "prompt": "Wie heißt die Wissenschaft von den Sternen?",
+    "choices": [
+      "Astronomie",
+      "Astrologie",
+      "Kosmologie",
+      "Astrophysik"
+    ],
+    "answerIndex": 0,
+    "fact": "Astronomie ist eine der ältesten Wissenschaften der Menschheit.",
+    "tags": [
+      "Wissenschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvi000o2m6ur5qp0yen",
+    "prompt": "Welches Organ produziert Insulin?",
+    "choices": [
+      "Bauchspeicheldrüse",
+      "Leber",
+      "Niere",
+      "Milz"
+    ],
+    "answerIndex": 0,
+    "fact": "Insulin reguliert den Blutzuckerspiegel im Körper.",
+    "tags": [
+      "Wissenschaft",
+      "Biologie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvi000p2m6upm3w02kb",
+    "prompt": "Wer malte 'Das letzte Abendmahl'?",
+    "choices": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Raffael",
+      "Caravaggio"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Wandgemälde befindet sich in Mailand und wurde 1498 fertiggestellt.",
+    "tags": [
+      "Kunst"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvi000q2m6udwi8b4cb",
+    "prompt": "Wie viele Symphonien komponierte Beethoven?",
+    "choices": [
+      "9",
+      "10",
+      "8",
+      "12"
+    ],
+    "answerIndex": 0,
+    "fact": "Die 9. Symphonie mit der 'Ode an die Freude' ist die berühmteste.",
+    "tags": [
+      "Musik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvj000r2m6u00sd4ou5",
+    "prompt": "Wer schrieb 'Der Herr der Ringe'?",
+    "choices": [
+      "J.R.R. Tolkien",
+      "C.S. Lewis",
+      "George R.R. Martin",
+      "J.K. Rowling"
+    ],
+    "answerIndex": 0,
+    "fact": "Tolkien arbeitete über 12 Jahre an der Trilogie.",
+    "tags": [
+      "Literatur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvj000s2m6u0d6s3jwh",
+    "prompt": "In welcher Stadt steht der Louvre?",
+    "choices": [
+      "Paris",
+      "London",
+      "Rom",
+      "Madrid"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Louvre ist das meistbesuchte Museum der Welt mit über 10 Millionen Besuchern jährlich.",
+    "tags": [
+      "Kultur",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvj000t2m6u9qybm0ai",
+    "prompt": "Wer komponierte 'Die vier Jahreszeiten'?",
+    "choices": [
+      "Antonio Vivaldi",
+      "Johann Sebastian Bach",
+      "Georg Friedrich Händel",
+      "Wolfgang Amadeus Mozart"
+    ],
+    "answerIndex": 0,
+    "fact": "Vivaldi komponierte das Werk 1725 - es gehört zu den bekanntesten Barockstücken.",
+    "tags": [
+      "Musik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvj000u2m6u8djfy6d3",
+    "prompt": "Wie viele Spieler sind in einem Basketballteam auf dem Feld?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "4"
+    ],
+    "answerIndex": 0,
+    "fact": "Basketball wurde 1891 von James Naismith erfunden.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvk000v2m6ukwkmwgg8",
+    "prompt": "Welches Land gewann die erste Fußball-Weltmeisterschaft?",
+    "choices": [
+      "Uruguay",
+      "Brasilien",
+      "Deutschland",
+      "Italien"
+    ],
+    "answerIndex": 0,
+    "fact": "Uruguay gewann 1930 die erste WM im eigenen Land.",
+    "tags": [
+      "Sport",
+      "Fußball"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvk000w2m6u62914ntc",
+    "prompt": "Wie viele Runden hat ein Boxkampf normalerweise?",
+    "choices": [
+      "12",
+      "10",
+      "15",
+      "8"
+    ],
+    "answerIndex": 0,
+    "fact": "Früher gab es 15 Runden, seit 1988 sind es maximal 12.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvk000x2m6u0gxxhavf",
+    "prompt": "Welche Sportart wird mit einem Federball gespielt?",
+    "choices": [
+      "Badminton",
+      "Tennis",
+      "Squash",
+      "Tischtennis"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Federball kann Geschwindigkeiten über 400 km/h erreichen!",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvk000y2m6upkgk94ob",
+    "prompt": "Wie viele Punkte gibt es für einen Korb beim Basketball?",
+    "choices": [
+      "2 oder 3",
+      "1 oder 2",
+      "3 oder 4",
+      "Immer 2"
+    ],
+    "answerIndex": 0,
+    "fact": "2 Punkte innerhalb der 3-Punkte-Linie, 3 Punkte außerhalb.",
+    "tags": [
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvl000z2m6u7kmityrg",
+    "prompt": "Aus welchem Land kommt Sushi?",
+    "choices": [
+      "Japan",
+      "China",
+      "Korea",
+      "Thailand"
+    ],
+    "answerIndex": 0,
+    "fact": "Sushi bedeutet wörtlich 'saurer Reis'.",
+    "tags": [
+      "Essen",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvl00102m6uusbbvg4x",
+    "prompt": "Welches Gemüse macht den größten Teil von Sauerkraut aus?",
+    "choices": [
+      "Weißkohl",
+      "Rotkohl",
+      "Wirsing",
+      "Chinakohl"
+    ],
+    "answerIndex": 0,
+    "fact": "Sauerkraut entsteht durch Milchsäuregärung und ist sehr gesund.",
+    "tags": [
+      "Essen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvl00112m6u5buxx0lo",
+    "prompt": "Aus welcher Frucht wird Rosinen gemacht?",
+    "choices": [
+      "Trauben",
+      "Pflaumen",
+      "Aprikosen",
+      "Datteln"
+    ],
+    "answerIndex": 0,
+    "fact": "Rosinen sind getrocknete Weintrauben und sehr zuckerhaltig.",
+    "tags": [
+      "Essen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvm00122m6uukfzaqbq",
+    "prompt": "Welches Land ist berühmt für Paella?",
+    "choices": [
+      "Spanien",
+      "Italien",
+      "Frankreich",
+      "Portugal"
+    ],
+    "answerIndex": 0,
+    "fact": "Paella kommt ursprünglich aus Valencia und wird in einer großen Pfanne zubereitet.",
+    "tags": [
+      "Essen",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvm00132m6uzstj1z30",
+    "prompt": "Was ist der Hauptbestandteil von Guacamole?",
+    "choices": [
+      "Avocado",
+      "Tomate",
+      "Paprika",
+      "Gurke"
+    ],
+    "answerIndex": 0,
+    "fact": "Guacamole ist eine mexikanische Spezialität aus zerdrückten Avocados.",
+    "tags": [
+      "Essen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvm00142m6usl1i9h2j",
+    "prompt": "Wie nennt man ein weibliches Reh?",
+    "choices": [
+      "Ricke",
+      "Hirschkuh",
+      "Reh",
+      "Geiß"
+    ],
+    "answerIndex": 0,
+    "fact": "Männliche Rehe heißen Bock, junge Rehe heißen Kitz.",
+    "tags": [
+      "Tiere"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvm00152m6uvvqd6aij",
+    "prompt": "Welches Tier kann am längsten ohne Wasser überleben?",
+    "choices": [
+      "Kamel",
+      "Elefant",
+      "Känguru",
+      "Wüstenfuchs"
+    ],
+    "answerIndex": 0,
+    "fact": "Kamele können bis zu 2 Wochen ohne Wasser auskommen.",
+    "tags": [
+      "Tiere"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvn00162m6u937uf473",
+    "prompt": "Wie viele Zehen hat eine Katze an den Vorderpfoten?",
+    "choices": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "answerIndex": 0,
+    "fact": "An den Hinterpfoten haben Katzen nur 4 Zehen.",
+    "tags": [
+      "Tiere"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "cmgoalcvn00172m6uno638qja",
+    "prompt": "Welche Farbe hat ein Smaragd?",
+    "choices": [
+      "Grün",
+      "Rot",
+      "Blau",
+      "Gelb"
+    ],
+    "answerIndex": 0,
+    "fact": "Smaragde gehören zu den wertvollsten Edelsteinen der Welt.",
+    "tags": [
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvn00182m6ug3oiuiry",
+    "prompt": "Welcher Wochentag kommt nach Mittwoch?",
+    "choices": [
+      "Donnerstag",
+      "Dienstag",
+      "Freitag",
+      "Montag"
+    ],
+    "answerIndex": 0,
+    "fact": "Donnerstag ist nach dem germanischen Gott Donar (Thor) benannt.",
+    "tags": [
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "cmgoalcvo00192m6ui5fph635",
+    "prompt": "Wie viele Cent sind ein Euro?",
+    "choices": [
+      "100",
+      "50",
+      "10",
+      "1000"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Euro wurde 2002 als Bargeld in 12 EU-Ländern eingeführt.",
+    "tags": [
+      "Allgemeinwissen"
+    ],
+    "difficulty": "EASY"
+  }
+]
