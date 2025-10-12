@@ -25,7 +25,7 @@ export function Choices({
 
     if (isCorrect && isRevealed) {
       return {
-        container: 'bg-gradient-correct border-quiz-correct shadow-glow-green',
+        container: 'bg-gradient-correct border-quiz-correct shadow-glow-green animate-wiggle',
         text: 'text-white',
         icon: '✓',
       };
@@ -64,10 +64,9 @@ export function Choices({
             disabled={disabled}
             className={`
               group relative min-h-[100px] p-6 rounded-3xl border-3
-              transition-all duration-300 transform
+              transition-all duration-500 transform
               ${disabled ? 'cursor-not-allowed' : 'hover:scale-105 cursor-pointer active:scale-95'}
               ${style.container}
-              ${isRevealed && correctIndex === index ? 'animate-pulse' : ''}
             `}
           >
             {/* Animated background on hover */}

@@ -1,69 +1,91 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 export function useSounds() {
   const successSound = useRef<HTMLAudioElement | null>(null);
   const failureSound = useRef<HTMLAudioElement | null>(null);
   const introSound = useRef<HTMLAudioElement | null>(null);
-  const [initialized, setInitialized] = useState(false);
+  const initializedRef = useRef(false);
 
   useEffect(() => {
-    // Initialize audio elements
-    successSound.current = new Audio('/sounds/success.wav');
-    failureSound.current = new Audio('/sounds/failure.mp3');
-    introSound.current = new Audio('/sounds/intro.wav');
+    // Initialize audio elements only once
+    if (!successSound.current) {
+      successSound.current = new Audio('/sounds/success.wav');
+      successSound.current.volume = 0.8;
+      successSound.current.load();
+    }
 
-    // Set volume
-    if (successSound.current) successSound.current.volume = 0.7;
-    if (failureSound.current) failureSound.current.volume = 0.7;
-    if (introSound.current) introSound.current.volume = 0.5;
+    if (!failureSound.current) {
+      failureSound.current = new Audio('/sounds/failure.mp3');
+      failureSound.current.volume = 0.8;
+      failureSound.current.load();
+    }
 
-    // Preload
-    successSound.current.load();
-    failureSound.current.load();
-    introSound.current.load();
+    if (!introSound.current) {
+      introSound.current = new Audio('/sounds/intro.wav');
+      introSound.current.volume = 0.6;
+      introSound.current.load();
+    }
 
     // Enable audio on first user interaction
     const enableAudio = () => {
-      if (!initialized) {
-        successSound.current?.play().then(() => successSound.current?.pause()).catch(() => {});
-        failureSound.current?.play().then(() => failureSound.current?.pause()).catch(() => {});
-        introSound.current?.play().then(() => introSound.current?.pause()).catch(() => {});
-        setInitialized(true);
+      if (!initializedRef.current) {
+        console.log('🔊 Enabling audio...');
+        // Unlock audio by playing and pausing
+        const unlockPromises = [
+          successSound.current?.play().then(() => successSound.current?.pause()),
+          failureSound.current?.play().then(() => failureSound.current?.pause()),
+          introSound.current?.play().then(() => introSound.current?.pause()),
+        ];
+
+        Promise.all(unlockPromises)
+          .then(() => {
+            console.log('✅ Audio unlocked!');
+            initializedRef.current = true;
+          })
+          .catch(err => console.log('Audio unlock failed:', err));
       }
     };
 
     // Listen for any user interaction
-    document.addEventListener('click', enableAudio, { once: true });
-    document.addEventListener('keydown', enableAudio, { once: true });
+    window.addEventListener('click', enableAudio, { once: true });
+    window.addEventListener('keydown', enableAudio, { once: true });
+    window.addEventListener('touchstart', enableAudio, { once: true });
 
     return () => {
       // Cleanup
-      successSound.current?.pause();
-      failureSound.current?.pause();
-      introSound.current?.pause();
-      document.removeEventListener('click', enableAudio);
-      document.removeEventListener('keydown', enableAudio);
+      window.removeEventListener('click', enableAudio);
+      window.removeEventListener('keydown', enableAudio);
+      window.removeEventListener('touchstart', enableAudio);
     };
-  }, [initialized]);
+  }, []);
 
   const playSuccess = () => {
+    console.log('🎵 Playing success sound...');
     if (successSound.current) {
       successSound.current.currentTime = 0;
-      successSound.current.play().catch(err => console.log('Success sound play failed:', err));
+      successSound.current.play()
+        .then(() => console.log('✅ Success sound played'))
+        .catch(err => console.error('❌ Success sound failed:', err));
     }
   };
 
   const playFailure = () => {
+    console.log('🎵 Playing failure sound...');
     if (failureSound.current) {
       failureSound.current.currentTime = 0;
-      failureSound.current.play().catch(err => console.log('Failure sound play failed:', err));
+      failureSound.current.play()
+        .then(() => console.log('✅ Failure sound played'))
+        .catch(err => console.error('❌ Failure sound failed:', err));
     }
   };
 
   const playIntro = () => {
+    console.log('🎵 Playing intro sound...');
     if (introSound.current) {
       introSound.current.currentTime = 0;
-      introSound.current.play().catch(err => console.log('Intro sound play failed:', err));
+      introSound.current.play()
+        .then(() => console.log('✅ Intro sound played'))
+        .catch(err => console.error('❌ Intro sound failed:', err));
     }
   };
 

@@ -49,26 +49,26 @@ export default function PresenterQuizPage() {
     duration: timerDuration,
     onComplete: () => {
       // Auto-reveal on timeout
-      if (correctIndex === null) {
+      if (correctIndex === null && !isWaitingAfterReveal) {
         handleReveal();
 
-        // If autopilot is enabled, wait 5 seconds then go to next question
+        // If autopilot is enabled, wait 7 seconds then go to next question
         if (autopilotEnabled) {
           setIsWaitingAfterReveal(true);
           setTimeout(() => {
             setIsWaitingAfterReveal(false);
             handleNextQuestion();
-          }, 5000);
+          }, 7000);
         }
       }
     },
   });
 
-  // Load questions and play intro
+  // Load questions
   useEffect(() => {
     async function loadQuestions() {
       try {
-        const response = await fetch('/api/quiz?limit=121');
+        const response = await fetch('/api/quiz?limit=200');
         const data = await response.json();
         if (data.success) {
           // Shuffle questions randomly
@@ -79,16 +79,7 @@ export default function PresenterQuizPage() {
           const savedAutomode = localStorage.getItem('automodeEnabled');
           if (savedAutomode === 'true') {
             setAutopilotEnabled(true);
-            // Auto-start timer if automode is enabled
-            setTimeout(() => {
-              timer.start();
-            }, 1000);
           }
-
-          // Play intro sound when questions are loaded
-          setTimeout(() => {
-            playIntro();
-          }, 500);
         }
       } catch (error) {
         console.error('Failed to load questions:', error);
@@ -97,7 +88,26 @@ export default function PresenterQuizPage() {
       }
     }
     loadQuestions();
-  }, [playIntro]);
+  }, []);
+
+  // Play intro sound after first interaction
+  useEffect(() => {
+    if (!loading && questions.length > 0) {
+      const playIntroOnce = () => {
+        playIntro();
+        document.removeEventListener('click', playIntroOnce);
+        document.removeEventListener('keydown', playIntroOnce);
+      };
+
+      document.addEventListener('click', playIntroOnce, { once: true });
+      document.addEventListener('keydown', playIntroOnce, { once: true });
+
+      return () => {
+        document.removeEventListener('click', playIntroOnce);
+        document.removeEventListener('keydown', playIntroOnce);
+      };
+    }
+  }, [loading, questions.length, playIntro]);
 
   // Broadcast state to screen view
   useEffect(() => {
@@ -144,30 +154,24 @@ export default function PresenterQuizPage() {
   }, [correctIndex, handleReveal]);
 
   const handleNextQuestion = useCallback(() => {
-    if (currentQuestionIndex < questions.length - 1) {
+    if (currentQuestionIndex < questions.length - 1 && !isWaitingAfterReveal) {
       setCurrentQuestionIndex(prev => prev + 1);
       setSelectedIndex(null);
       setCorrectIndex(null);
       setIsWaitingAfterReveal(false);
       timer.reset();
-
-      // Auto-start timer if autopilot is enabled
-      if (autopilotEnabled) {
-        setTimeout(() => {
-          timer.start();
-        }, 300);
-      }
     }
-  }, [currentQuestionIndex, questions.length, timer, autopilotEnabled]);
+  }, [currentQuestionIndex, questions.length, timer, isWaitingAfterReveal]);
 
-  // Auto-start timer when autopilot is enabled
+  // Auto-start timer when autopilot is enabled (only once per question)
   useEffect(() => {
-    if (autopilotEnabled && timer.state === 'idle' && !loading) {
-      setTimeout(() => {
+    if (autopilotEnabled && timer.state === 'idle' && !loading && !isWaitingAfterReveal && correctIndex === null) {
+      const timeoutId = setTimeout(() => {
         timer.start();
-      }, 500);
+      }, 800);
+      return () => clearTimeout(timeoutId);
     }
-  }, [autopilotEnabled, timer.state, loading]);
+  }, [autopilotEnabled, timer.state, loading, currentQuestionIndex, isWaitingAfterReveal, correctIndex]);
 
   const handlePrevQuestion = useCallback(() => {
     if (currentQuestionIndex > 0) {
@@ -392,12 +396,12 @@ export default function PresenterQuizPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-3 h-3" />
-                    Auto-Weiter nach 5s
+                    Auto-Weiter nach 7s
                   </div>
                   {isWaitingAfterReveal && (
                     <div className="mt-3 text-yellow-400 animate-pulse flex items-center gap-2">
                       <Clock className="w-4 h-4" />
-                      Warte 5s...
+                      Warte 7s...
                     </div>
                   )}
                 </>

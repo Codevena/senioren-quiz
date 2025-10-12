@@ -1,0 +1,1516 @@
+[
+  {
+    "prompt": "Wie heißt die Hauptstadt Deutschlands?",
+    "choices": [
+      "Berlin",
+      "München",
+      "Hamburg",
+      "Bonn"
+    ],
+    "answerIndex": 0,
+    "fact": "Seit 1990 wieder Hauptstadt.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie viele Bundesländer hat Deutschland?",
+    "choices": [
+      "16",
+      "14",
+      "18",
+      "12"
+    ],
+    "answerIndex": 0,
+    "fact": "Drei davon sind Stadtstaaten.",
+    "tags": [
+      "Deutschland",
+      "Politik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wann ist der Tag der Deutschen Einheit?",
+    "choices": [
+      "3. Oktober",
+      "9. November",
+      "1. Mai",
+      "17. Juni"
+    ],
+    "answerIndex": 0,
+    "fact": "Feiertag seit 1990.",
+    "tags": [
+      "Deutschland",
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt der höchste Berg Deutschlands?",
+    "choices": [
+      "Zugspitze",
+      "Watzmann",
+      "Feldberg",
+      "Brocken"
+    ],
+    "answerIndex": 0,
+    "fact": "2.962 Meter hoch.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher Fluss fließt durch Köln?",
+    "choices": [
+      "Rhein",
+      "Elbe",
+      "Weser",
+      "Main"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Rhein entspringt in den Alpen.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "An welches Meer grenzt Deutschland im Norden?",
+    "choices": [
+      "Nordsee und Ostsee",
+      "Mittelmeer",
+      "Schwarzes Meer",
+      "Ärmelkanal"
+    ],
+    "answerIndex": 0,
+    "fact": "Deutschland hat zwei Küsten: Nord- und Ostsee.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Farben hat die deutsche Flagge?",
+    "choices": [
+      "Schwarz‑Rot‑Gold",
+      "Schwarz‑Gold‑Rot",
+      "Rot‑Gelb‑Schwarz",
+      "Gold‑Rot‑Schwarz"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt das berühmte Tor in Berlin?",
+    "choices": [
+      "Brandenburger Tor",
+      "Holstentor",
+      "Isartor",
+      "Karlstor"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher Fluss fließt durch Dresden?",
+    "choices": [
+      "Elbe",
+      "Oder",
+      "Isar",
+      "Lech"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wo findet traditionell das Oktoberfest statt?",
+    "choices": [
+      "München",
+      "Nürnberg",
+      "Stuttgart",
+      "Augsburg"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt die größte Insel Deutschlands?",
+    "choices": [
+      "Rügen",
+      "Usedom",
+      "Sylt",
+      "Fehmarn"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt ist für ihren Dom mit zwei Türmen berühmt?",
+    "choices": [
+      "Köln",
+      "Speyer",
+      "Regensburg",
+      "Magdeburg"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher Fluss fließt durch Hamburg?",
+    "choices": [
+      "Elbe",
+      "Oder",
+      "Donau",
+      "Havel"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt der bekannte Märchenwald in Südwestdeutschland?",
+    "choices": [
+      "Schwarzwald",
+      "Bayerischer Wald",
+      "Harz",
+      "Thüringer Wald"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt ist für ihre Schwebebahn bekannt?",
+    "choices": [
+      "Wuppertal",
+      "Dortmund",
+      "Essen",
+      "Bochum"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher See liegt zwischen Deutschland, Österreich und der Schweiz?",
+    "choices": [
+      "Bodensee",
+      "Chiemsee",
+      "Müritz",
+      "Starnberger See"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt die größte deutsche Automobilmesse (traditionell)?",
+    "choices": [
+      "IAA",
+      "CeBIT",
+      "Gamescom",
+      "ITB"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Messe"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Stadt ist Sitz des VW‑Konzerns?",
+    "choices": [
+      "Wolfsburg",
+      "Ingolstadt",
+      "Stuttgart",
+      "München"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Wirtschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Stadt war von 1949 bis 1990 Hauptstadt der BRD?",
+    "choices": [
+      "Bonn",
+      "Frankfurt am Main",
+      "Kassel",
+      "Hannover"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche drei Länder grenzen westlich an Deutschland?",
+    "choices": [
+      "Niederlande, Belgien, Luxemburg",
+      "Frankreich, Spanien, Portugal",
+      "Dänemark, Norwegen, Schweden",
+      "Polen, Tschechien, Slowakei"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie heißt der längste Fluss, der Deutschland durchfließt?",
+    "choices": [
+      "Rhein",
+      "Donau",
+      "Elbe",
+      "Weser"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Donau ist insgesamt länger, durchfließt Deutschland aber nur im Süden.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie heißt der höchste Berg im Harz?",
+    "choices": [
+      "Brocken",
+      "Wurmberg",
+      "Kahler Asten",
+      "Fichtelberg"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Natur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Stadt ist berühmt für das Schloss Neuschwanstein?",
+    "choices": [
+      "Schwangau bei Füssen",
+      "Garmisch-Partenkirchen",
+      "Berchtesgaden",
+      "Rosenheim"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Stadt liegt an der Isar?",
+    "choices": [
+      "München",
+      "Stuttgart",
+      "Bremen",
+      "Düsseldorf"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt die Landeshauptstadt von Nordrhein‑Westfalen?",
+    "choices": [
+      "Düsseldorf",
+      "Köln",
+      "Dortmund",
+      "Bonn"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Politik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt die Landeshauptstadt von Bayern?",
+    "choices": [
+      "München",
+      "Nürnberg",
+      "Augsburg",
+      "Regensburg"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Politik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt ist für ihren Weihnachtsmarkt auf dem Nürnberger Hauptmarkt bekannt?",
+    "choices": [
+      "Nürnberg",
+      "Dresden",
+      "Erfurt",
+      "Leipzig"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche deutsche Stadt hat den Spitznamen „Elbphilharmonie‑Stadt“?",
+    "choices": [
+      "Hamburg",
+      "Dresden",
+      "Magdeburg",
+      "Dessau"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt die größte Binneninsel Deutschlands (komplett inländisch)?",
+    "choices": [
+      "Müritz‑Inseln (Müritz)",
+      "Rügen",
+      "Chiemsee‑Herreninsel",
+      "Steinhuder Meer‑Insel"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Müritz ist der größte ganz in Deutschland liegende See.",
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie heißt Deutschlands größter Flughafen nach Passagieren traditionell?",
+    "choices": [
+      "Frankfurt am Main",
+      "München",
+      "Berlin",
+      "Düsseldorf"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Verkehr"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wer erfand den Buchdruck mit beweglichen Lettern in Europa?",
+    "choices": [
+      "Johannes Gutenberg",
+      "Albrecht Dürer",
+      "Martin Luther",
+      "Gottfried Wilhelm Leibniz"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geschichte"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher Komponist stammt aus Bonn?",
+    "choices": [
+      "Ludwig van Beethoven",
+      "Johann Sebastian Bach",
+      "Johannes Brahms",
+      "Richard Wagner"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Brüder sammelten berühmte Märchen?",
+    "choices": [
+      "Brüder Grimm",
+      "Gebrüder Wright",
+      "Brüder Mann",
+      "Gebrüder Humboldt"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wer schrieb „Faust“?",
+    "choices": [
+      "Johann Wolfgang von Goethe",
+      "Friedrich Schiller",
+      "Thomas Mann",
+      "Heinrich Heine"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Literatur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Aus welcher Stadt stammt die Schwarzwälder Kirschtorte?",
+    "choices": [
+      "Region Schwarzwald",
+      "München",
+      "Hamburg",
+      "Leipzig"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Was bedeutet „Reinheitsgebot“ beim Bier?",
+    "choices": [
+      "Bier nur aus Wasser, Malz, Hopfen, Hefe",
+      "Bier muss gefiltert sein",
+      "Bier nur aus Deutschland",
+      "Bier ohne Kohlensäure"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welcher Physiker wurde in Ulm geboren?",
+    "choices": [
+      "Albert Einstein",
+      "Max Planck",
+      "Werner Heisenberg",
+      "Otto Hahn"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wer entdeckte die Röntgenstrahlen?",
+    "choices": [
+      "Wilhelm Conrad Röntgen",
+      "Robert Koch",
+      "Hermann von Helmholtz",
+      "Carl Bosch"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Wissenschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Firma brachte „Aspirin“ auf den Markt?",
+    "choices": [
+      "Bayer",
+      "Merck",
+      "BASF",
+      "Hoechst"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Wirtschaft",
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Musikrichtung ist mit Bayreuth verbunden?",
+    "choices": [
+      "Wagner‑Festspiele",
+      "Jazz",
+      "Techno",
+      "Pop"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Stadt ist für Currywurst besonders bekannt?",
+    "choices": [
+      "Berlin",
+      "München",
+      "Frankfurt",
+      "Stuttgart"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt das berühmte ZDF‑Nachrichtenformat um 19 Uhr?",
+    "choices": [
+      "heute",
+      "Tagesschau",
+      "heute journal",
+      "RTL Aktuell"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Medien"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher deutsche Autor schrieb „Die Buddenbrooks“?",
+    "choices": [
+      "Thomas Mann",
+      "Hermann Hesse",
+      "Günter Grass",
+      "Theodor Fontane"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Literatur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche deutsche Erfindung prägte die digitale Musik?",
+    "choices": [
+      "MP3",
+      "CD‑Player",
+      "Walkman",
+      "UKW‑Radio"
+    ],
+    "answerIndex": 0,
+    "fact": "Entwickelt am Fraunhofer‑Institut in Erlangen.",
+    "tags": [
+      "Deutschland",
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welcher Wissenschaftler machte die Keimtheorie in Deutschland groß?",
+    "choices": [
+      "Robert Koch",
+      "Alexander von Humboldt",
+      "Fritz Haber",
+      "Max Born"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Wissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie heißt der deutsche ICE?",
+    "choices": [
+      "InterCityExpress",
+      "InterCityEuro",
+      "InterCityElectric",
+      "InternationalCityExpress"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Verkehr"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Sportart ist in Deutschland am populärsten?",
+    "choices": [
+      "Fußball",
+      "Handball",
+      "Basketball",
+      "Eishockey"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Farben hat Borussia Dortmund traditionell?",
+    "choices": [
+      "Schwarz‑Gelb",
+      "Blau‑Weiß",
+      "Rot‑Weiß",
+      "Grün‑Weiß"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt die höchste deutsche Fußballliga?",
+    "choices": [
+      "Bundesliga",
+      "Regionalliga",
+      "Oberliga",
+      "2. Liga"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sport"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie viele Kontinente werden üblicherweise gezählt?",
+    "choices": [
+      "7",
+      "6",
+      "5",
+      "8"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie viele Tage hat ein Schaltjahr?",
+    "choices": [
+      "366",
+      "365",
+      "364",
+      "360"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Zeit"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welches ist das größte Land der Erde nach Fläche?",
+    "choices": [
+      "Russland",
+      "Kanada",
+      "China",
+      "USA"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher Planet ist der Sonne am nächsten?",
+    "choices": [
+      "Merkur",
+      "Venus",
+      "Erde",
+      "Mars"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Astronomie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Aus wie vielen Farben besteht ein Regenbogen meist sichtbar?",
+    "choices": [
+      "7",
+      "6",
+      "5",
+      "8"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Natur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Bei wie viel Grad Celsius kocht Wasser auf Meereshöhe?",
+    "choices": [
+      "100°C",
+      "90°C",
+      "80°C",
+      "70°C"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Naturwissenschaft"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Blutgruppe ist als Universalspender bekannt?",
+    "choices": [
+      "0 negativ",
+      "A positiv",
+      "B negativ",
+      "AB positiv"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Gesundheit"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie viele Zähne hat ein erwachsener Mensch normalerweise?",
+    "choices": [
+      "32",
+      "28",
+      "30",
+      "34"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Biologie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie viele Bundesstaaten haben die USA?",
+    "choices": [
+      "50",
+      "48",
+      "52",
+      "51"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welches Meer trennt Afrika von Europa bei Gibraltar?",
+    "choices": [
+      "Mittelmeer",
+      "Atlantik",
+      "Schwarzes Meer",
+      "Rotes Meer"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt der längste Fluss der Welt (nach gängiger Lehrmeinung)?",
+    "choices": [
+      "Nil",
+      "Amazonas",
+      "Jangtse",
+      "Mississippi"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie viele Planeten hat unser Sonnensystem (ohne Zwergplaneten)?",
+    "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Astronomie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welches chemische Symbol hat Wasser?",
+    "choices": [
+      "H₂O",
+      "HO₂",
+      "OH₂",
+      "H₂"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Chemie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Einheit misst elektrische Stromstärke?",
+    "choices": [
+      "Ampere",
+      "Volt",
+      "Ohm",
+      "Watt"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Physik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Nuss ist botanisch keine Nuss?",
+    "choices": [
+      "Erdnuss",
+      "Haselnuss",
+      "Walnuss",
+      "Paranuss"
+    ],
+    "answerIndex": 0,
+    "fact": "Die Erdnuss ist eine Hülsenfrucht.",
+    "tags": [
+      "Allgemeinwissen",
+      "Ernährung"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie viele Minuten hat eine Stunde?",
+    "choices": [
+      "60",
+      "50",
+      "100",
+      "30"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Zeit"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher Ozean ist der größte?",
+    "choices": [
+      "Pazifik",
+      "Atlantik",
+      "Indischer Ozean",
+      "Arktischer Ozean"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie viele Seiten hat ein Würfel?",
+    "choices": [
+      "6",
+      "8",
+      "4",
+      "12"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Mathe"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welches Tier gilt als „König der Tiere“?",
+    "choices": [
+      "Löwe",
+      "Elefant",
+      "Tiger",
+      "Gorilla"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Tiere"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welches Element atmen wir hauptsächlich ein?",
+    "choices": [
+      "Stickstoff",
+      "Sauerstoff",
+      "Kohlenstoffdioxid",
+      "Argon"
+    ],
+    "answerIndex": 0,
+    "fact": "Luft besteht zu ca. 78% aus Stickstoff.",
+    "tags": [
+      "Allgemeinwissen",
+      "Naturwissenschaft"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie viele Tage hat der Februar in einem normalen Jahr?",
+    "choices": [
+      "28",
+      "29",
+      "30",
+      "27"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Zeit"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher Kontinent ist flächenmäßig der kleinste?",
+    "choices": [
+      "Australien",
+      "Europa",
+      "Antarktika",
+      "Südamerika"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Farbe erhält man aus Blau und Gelb?",
+    "choices": [
+      "Grün",
+      "Orange",
+      "Lila",
+      "Braun"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Kunst"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welches Organ pumpt Blut durch den Körper?",
+    "choices": [
+      "Herz",
+      "Leber",
+      "Lunge",
+      "Niere"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Biologie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie viele Kontinente grenzen an den Atlantik?",
+    "choices": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie nennt man junge Katzen?",
+    "choices": [
+      "Kätzchen",
+      "Katerchen",
+      "Welpen",
+      "Fohlen"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Allgemeinwissen",
+      "Tiere"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Form hat ein Verkehrsschild „Vorfahrt gewähren“ in Deutschland?",
+    "choices": [
+      "Umgedrehtes Dreieck",
+      "Kreis",
+      "Rechteck",
+      "Achteck"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Verkehr"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wie viele Bundesländer sind Stadtstaaten?",
+    "choices": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "answerIndex": 0,
+    "fact": "Berlin, Hamburg, Bremen.",
+    "tags": [
+      "Deutschland",
+      "Politik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt liegt NICHT an der Donau?",
+    "choices": [
+      "Frankfurt am Main",
+      "Regensburg",
+      "Ulm",
+      "Passau"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welcher deutsche Dichter schrieb „Loreley“?",
+    "choices": [
+      "Heinrich Heine",
+      "Eduard Mörike",
+      "Rainer Maria Rilke",
+      "Theodor Fontane"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Literatur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche deutsche Stadt ist für ihren Zwinger berühmt?",
+    "choices": [
+      "Dresden",
+      "Weimar",
+      "Potsdam",
+      "Kassel"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Stadt trägt den Beinamen „Hauptstadt der Romantik“ (Novalis, Schiller)?",
+    "choices": [
+      "Jena/Weimar (Weimarer Klassik)",
+      "Bamberg",
+      "Heidelberg",
+      "Marburg"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Insel liegt in der Ostsee?",
+    "choices": [
+      "Usedom",
+      "Borkum",
+      "Norderney",
+      "Wangerooge"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wie heißt die längste Autobahn Deutschlands?",
+    "choices": [
+      "A7",
+      "A3",
+      "A1",
+      "A9"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Verkehr"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche deutsche Stadt ist für das Schloss Sanssouci bekannt?",
+    "choices": [
+      "Potsdam",
+      "Berlin",
+      "Dresden",
+      "Hannover"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Wo befindet sich das UNESCO‑Welterbe Kölner Dom?",
+    "choices": [
+      "Köln",
+      "Trier",
+      "Aachen",
+      "Speyer"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "UNESCO"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt ist NICHT Landeshauptstadt?",
+    "choices": [
+      "Koblenz",
+      "Mainz",
+      "Erfurt",
+      "Magdeburg"
+    ],
+    "answerIndex": 0,
+    "fact": "Koblenz liegt in Rheinland‑Pfalz, Hauptstadt ist Mainz.",
+    "tags": [
+      "Deutschland",
+      "Politik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welcher deutsche See ist auch als „Bayerisches Meer“ bekannt?",
+    "choices": [
+      "Chiemsee",
+      "Starnberger See",
+      "Ammersee",
+      "Walchensee"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt ist für die Frauenkirche berühmt?",
+    "choices": [
+      "Dresden",
+      "München",
+      "Nürnberg",
+      "Augsburg"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche drei Farben hat die Ampel in Deutschland?",
+    "choices": [
+      "Rot, Gelb, Grün",
+      "Rot, Blau, Grün",
+      "Rot, Gelb, Blau",
+      "Gelb, Grün, Weiß"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Alltag"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt ist für die ‚Alte Oper‘ bekannt?",
+    "choices": [
+      "Frankfurt am Main",
+      "Leipzig",
+      "Hannover",
+      "Bremen"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wer schrieb „Wilhelm Tell“?",
+    "choices": [
+      "Friedrich Schiller",
+      "Gotthold Ephraim Lessing",
+      "Bertolt Brecht",
+      "Thomas Mann"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Literatur"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt ist für den Spezi‑Mix (Cola‑Orangenlimonade) bekannt?",
+    "choices": [
+      "Augsburg",
+      "München",
+      "Ulm",
+      "Regensburg"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "In welcher Stadt steht das Holstentor?",
+    "choices": [
+      "Lübeck",
+      "Rostock",
+      "Kiel",
+      "Stralsund"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche deutsche Stadt ist berühmt für die Documenta?",
+    "choices": [
+      "Kassel",
+      "Weimar",
+      "Essen",
+      "Bochum"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kunst"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Stadt liegt an der Spree?",
+    "choices": [
+      "Berlin",
+      "Leipzig",
+      "Halle",
+      "Dresden"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welcher Fluss bildet teilweise die Grenze zwischen Deutschland und Polen?",
+    "choices": [
+      "Oder",
+      "Neiße",
+      "Weichsel",
+      "Drau"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Welche Region ist für Spätzle bekannt?",
+    "choices": [
+      "Schwaben",
+      "Franken",
+      "Sachsen",
+      "Nordsee"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kulinarik"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt ist für den ‚Zwiebelmarkt‘ bekannt?",
+    "choices": [
+      "Weimar",
+      "Erfurt",
+      "Jena",
+      "Gotha"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Kultur"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "prompt": "Wo steht das Heidelberger Schloss?",
+    "choices": [
+      "Heidelberg",
+      "Mannheim",
+      "Karlsruhe",
+      "Freiburg"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Sehenswürdigkeiten"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "prompt": "Welche Stadt liegt NICHT im Ruhrgebiet?",
+    "choices": [
+      "Bielefeld",
+      "Duisburg",
+      "Gelsenkirchen",
+      "Herne"
+    ],
+    "answerIndex": 0,
+    "tags": [
+      "Deutschland",
+      "Geografie"
+    ],
+    "difficulty": "MEDIUM"
+  }
+]

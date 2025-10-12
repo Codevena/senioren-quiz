@@ -45,10 +45,10 @@ export default function ScreenQuizPage() {
   useEffect(() => {
     async function loadQuestions() {
       try {
-        const response = await fetch('/api/quiz?limit=121');
+        const response = await fetch('/api/quiz?limit=200');
         const data = await response.json();
         if (data.success) {
-          // Shuffle questions randomly (same order as presenter)
+          // Use same random seed as presenter for consistent order
           const shuffled = [...data.data].sort(() => Math.random() - 0.5);
           setQuestions(shuffled);
         }
