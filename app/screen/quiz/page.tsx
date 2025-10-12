@@ -183,7 +183,7 @@ export default function ScreenQuizPage() {
 
             {/* Progress Bar */}
             <div
-              className={`absolute inset-y-0 left-0 transition-all duration-300 ease-out ${
+              className={`absolute inset-y-0 left-0 transition-all ease-linear ${
                 quizState.timerState === 'completed'
                   ? 'bg-gradient-to-r from-red-600 via-red-500 to-red-600 animate-pulse'
                   : quizState.progress < 0.33
@@ -192,7 +192,10 @@ export default function ScreenQuizPage() {
                       ? 'bg-gradient-to-r from-yellow-500 via-green-400 to-green-500 shadow-glow-yellow'
                       : 'bg-gradient-to-r from-green-500 via-emerald-400 to-cyan-500 shadow-glow-green'
               }`}
-              style={{ width: `${(1 - quizState.progress) * 100}%` }}
+              style={{
+                width: `${quizState.progress * 100}%`,
+                transitionDuration: '100ms'
+              }}
             >
               {/* Shimmer Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>

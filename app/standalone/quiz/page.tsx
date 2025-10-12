@@ -86,7 +86,7 @@ export default function StandaloneQuizPage() {
       }, 800);
       return () => clearTimeout(timeoutId);
     }
-  }, [loading, questions.length, timer.state, currentQuestionIndex, isWaitingAfterReveal, correctIndex]);
+  }, [loading, questions.length, timer, currentQuestionIndex, isWaitingAfterReveal, correctIndex]);
 
   const handleReveal = useCallback(() => {
     const current = questions[currentQuestionIndex];
@@ -194,7 +194,7 @@ export default function StandaloneQuizPage() {
 
           {/* Progress Bar */}
           <div
-            className={`absolute inset-y-0 left-0 transition-all duration-300 ease-out ${
+            className={`absolute inset-y-0 left-0 transition-all ease-linear ${
               timer.state === 'completed'
                 ? 'bg-gradient-to-r from-red-600 via-red-500 to-red-600 animate-pulse'
                 : timer.progress < 0.33
@@ -203,7 +203,10 @@ export default function StandaloneQuizPage() {
                     ? 'bg-gradient-to-r from-yellow-500 via-green-400 to-green-500 shadow-glow-yellow'
                     : 'bg-gradient-to-r from-green-500 via-emerald-400 to-cyan-500 shadow-glow-green'
             }`}
-            style={{ width: `${(1 - timer.progress) * 100}%` }}
+            style={{
+              width: `${timer.progress * 100}%`,
+              transitionDuration: '100ms'
+            }}
           >
             {/* Shimmer Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>

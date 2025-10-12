@@ -1,9 +1,9 @@
 {
-  "/api/quiz/route": "app/api/quiz/route.js",
   "/_not-found/page": "app/_not-found/page.js",
+  "/api/quiz/route": "app/api/quiz/route.js",
   "/api/session/route": "app/api/session/route.js",
-  "/standalone/quiz/page": "app/standalone/quiz/page.js",
-  "/presenter/quiz/page": "app/presenter/quiz/page.js",
   "/page": "app/page.js",
-  "/screen/quiz/page": "app/screen/quiz/page.js"
+  "/presenter/quiz/page": "app/presenter/quiz/page.js",
+  "/screen/quiz/page": "app/screen/quiz/page.js",
+  "/standalone/quiz/page": "app/standalone/quiz/page.js"
 }
