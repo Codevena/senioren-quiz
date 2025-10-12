@@ -3,5 +3,6 @@
   "/api/quiz/route": "app/api/quiz/route.js",
   "/page": "app/page.js",
   "/presenter/quiz/page": "app/presenter/quiz/page.js",
-  "/screen/quiz/page": "app/screen/quiz/page.js"
+  "/screen/quiz/page": "app/screen/quiz/page.js",
+  "/standalone/quiz/page": "app/standalone/quiz/page.js"
 }

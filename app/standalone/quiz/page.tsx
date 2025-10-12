@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { QuestionCard } from '@/components/QuestionCard';
 import { Choices } from '@/components/Choices';
 import { ResultReveal } from '@/components/ResultReveal';
-import { useTimer } from '@/hooks/useTimer';
+import { useTimer } from '@/lib/useTimer';
 import { useSounds } from '@/lib/useSounds';
 
 interface Question {
