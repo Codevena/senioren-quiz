@@ -9,6 +9,9 @@ interface ResultRevealProps {
 export function ResultReveal({ fact, isCorrect, autoMode = false }: ResultRevealProps) {
   if (isCorrect === null) return null;
 
+  // Im Autopilot-Modus nur anzeigen wenn Fun-Fact existiert
+  if (autoMode && !fact) return null;
+
   return (
     <div className="w-full max-w-6xl mx-auto mt-8 animate-slide-up">
       <div className="relative group">
@@ -47,7 +50,7 @@ export function ResultReveal({ fact, isCorrect, autoMode = false }: ResultReveal
           )}
 
           {fact && (
-            <div className="glass rounded-2xl p-6 mt-6">
+            <div className={`glass rounded-2xl p-6 ${!autoMode ? 'mt-6' : ''}`}>
               <div className="flex items-start gap-4">
                 <div className="text-4xl flex-shrink-0">💡</div>
                 <div className="text-3xl text-white leading-relaxed">

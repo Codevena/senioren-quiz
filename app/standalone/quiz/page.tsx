@@ -153,7 +153,7 @@ export default function StandaloneQuizPage() {
           choices={currentQuestion.choices}
           selectedIndex={selectedIndex}
           correctIndex={correctIndex}
-          onSelect={null}
+          onSelect={undefined}
           disabled={true}
         />
 
@@ -166,10 +166,20 @@ export default function StandaloneQuizPage() {
         )}
 
         {isWaitingAfterReveal && (
-          <div className="text-center">
-            <div className="glass rounded-full px-8 py-4 inline-block">
-              <div className="text-3xl text-yellow-400 animate-pulse">
-                ⏳ Nächste Frage in 7s...
+          <div className="w-full max-w-4xl mx-auto mt-8 animate-slide-up">
+            <div className="relative group">
+              {/* Glow effect */}
+              <div className="absolute -inset-1 rounded-3xl blur-xl opacity-75 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-pulse"></div>
+
+              {/* Card */}
+              <div className="relative glass-strong rounded-3xl p-8 border-2 border-blue-500 shadow-glow-blue">
+                <div className="flex items-center justify-center gap-4">
+                  <div className="text-5xl animate-bounce-slow">⏳</div>
+                  <div className="text-4xl font-black text-white">
+                    Nächste Frage in <span className="text-blue-400 animate-pulse">7s</span>
+                  </div>
+                  <div className="text-5xl animate-bounce-slow">⏳</div>
+                </div>
               </div>
             </div>
           </div>

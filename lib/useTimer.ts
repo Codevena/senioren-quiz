@@ -34,7 +34,7 @@ export function useTimer({
   const animationFrameRef = useRef<number | null>(null);
   const hasCompletedRef = useRef(false);
 
-  const progress = ((duration - timeRemaining) / duration) * 100;
+  const progress = timeRemaining / duration; // 0 to 1
 
   const updateTimer = useCallback(() => {
     if (!startTimeRef.current) return;
