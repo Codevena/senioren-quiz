@@ -475,11 +475,29 @@ function ScreenQuizPage() {
                     const response = await fetch('/api/quiz?limit=200');
                     const data = await response.json();
                     if (data.success) {
-                        // Use same random seed as presenter for consistent order
+                        // Use same session-based seed as presenter for consistent shuffle
+                        let seed = sessionStorage.getItem('quizSeed');
+                        if (!seed) {
+                            seed = Date.now().toString();
+                            sessionStorage.setItem('quizSeed', seed);
+                        }
+                        // Seeded shuffle (same algorithm as presenter)
                         const shuffled = [
                             ...data.data
                         ].sort({
-                            "ScreenQuizPage.useEffect.loadQuestions.shuffled": ()=>Math.random() - 0.5
+                            "ScreenQuizPage.useEffect.loadQuestions.shuffled": (a, b)=>{
+                                const hash = {
+                                    "ScreenQuizPage.useEffect.loadQuestions.shuffled.hash": (str)=>{
+                                        let h = 0;
+                                        for(let i = 0; i < str.length; i++){
+                                            h = (h << 5) - h + str.charCodeAt(i);
+                                            h = h & h;
+                                        }
+                                        return h;
+                                    }
+                                }["ScreenQuizPage.useEffect.loadQuestions.shuffled.hash"];
+                                return hash(seed + a.id) - hash(seed + b.id);
+                            }
                         }["ScreenQuizPage.useEffect.loadQuestions.shuffled"]);
                         setQuestions(shuffled);
                     }
@@ -516,12 +534,12 @@ function ScreenQuizPage() {
                 children: "Lädt Quiz..."
             }, void 0, false, {
                 fileName: "[project]/app/screen/quiz/page.tsx",
-                lineNumber: 80,
+                lineNumber: 98,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/screen/quiz/page.tsx",
-            lineNumber: 79,
+            lineNumber: 97,
             columnNumber: 7
         }, this);
     }
@@ -536,7 +554,7 @@ function ScreenQuizPage() {
                         children: "Keine Fragen gefunden"
                     }, void 0, false, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 91,
+                        lineNumber: 109,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -548,25 +566,25 @@ function ScreenQuizPage() {
                                 children: "npm run db:seed"
                             }, void 0, false, {
                                 fileName: "[project]/app/screen/quiz/page.tsx",
-                                lineNumber: 95,
+                                lineNumber: 113,
                                 columnNumber: 30
                             }, this),
                             " aus"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 94,
+                        lineNumber: 112,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/screen/quiz/page.tsx",
-                lineNumber: 90,
+                lineNumber: 108,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/screen/quiz/page.tsx",
-            lineNumber: 89,
+            lineNumber: 107,
             columnNumber: 7
         }, this);
     }
@@ -583,7 +601,7 @@ function ScreenQuizPage() {
                         className: "absolute top-20 left-20 w-96 h-96 bg-quiz-purple/10 rounded-full blur-3xl animate-pulse-slow"
                     }, void 0, false, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 113,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -593,7 +611,7 @@ function ScreenQuizPage() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 114,
+                        lineNumber: 132,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -603,13 +621,13 @@ function ScreenQuizPage() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 115,
+                        lineNumber: 133,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/screen/quiz/page.tsx",
-                lineNumber: 112,
+                lineNumber: 130,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -624,12 +642,12 @@ function ScreenQuizPage() {
                             teamBScore: quizState.teamBScore
                         }, void 0, false, {
                             fileName: "[project]/app/screen/quiz/page.tsx",
-                            lineNumber: 122,
+                            lineNumber: 140,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 121,
+                        lineNumber: 139,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -640,12 +658,12 @@ function ScreenQuizPage() {
                             totalQuestions: questions.length
                         }, void 0, false, {
                             fileName: "[project]/app/screen/quiz/page.tsx",
-                            lineNumber: 135,
+                            lineNumber: 153,
                             columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 134,
+                        lineNumber: 152,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -657,12 +675,12 @@ function ScreenQuizPage() {
                             disabled: true
                         }, void 0, false, {
                             fileName: "[project]/app/screen/quiz/page.tsx",
-                            lineNumber: 144,
+                            lineNumber: 162,
                             columnNumber: 9
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 143,
+                        lineNumber: 161,
                         columnNumber: 7
                     }, this),
                     quizState.correctIndex !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ResultReveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ResultReveal"], {
@@ -670,7 +688,7 @@ function ScreenQuizPage() {
                         isCorrect: isCorrect
                     }, void 0, false, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 154,
+                        lineNumber: 172,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -687,12 +705,12 @@ function ScreenQuizPage() {
                                         className: "absolute inset-0 bg-white/20 animate-pulse"
                                     }, void 0, false, {
                                         fileName: "[project]/app/screen/quiz/page.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 189,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/screen/quiz/page.tsx",
-                                    lineNumber: 163,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -705,35 +723,35 @@ function ScreenQuizPage() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/screen/quiz/page.tsx",
-                                        lineNumber: 174,
+                                        lineNumber: 192,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/screen/quiz/page.tsx",
-                                    lineNumber: 173,
+                                    lineNumber: 191,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/screen/quiz/page.tsx",
-                            lineNumber: 162,
+                            lineNumber: 180,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/screen/quiz/page.tsx",
-                        lineNumber: 161,
+                        lineNumber: 179,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/screen/quiz/page.tsx",
-                lineNumber: 118,
+                lineNumber: 136,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/screen/quiz/page.tsx",
-        lineNumber: 110,
+        lineNumber: 128,
         columnNumber: 5
     }, this);
 }

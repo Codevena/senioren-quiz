@@ -38,6 +38,7 @@ export default function PresenterQuizPage() {
   const [timerDuration, setTimerDuration] = useState(30);
   const [teamAScore, setTeamAScore] = useState(0);
   const [teamBScore, setTeamBScore] = useState(0);
+  const [showTeamScoring, setShowTeamScoring] = useState(false);
   const [teamAName, setTeamAName] = useState('Team A');
   const [teamBName, setTeamBName] = useState('Team B');
   const [autopilotEnabled, setAutopilotEnabled] = useState(false);
@@ -71,8 +72,26 @@ export default function PresenterQuizPage() {
         const response = await fetch('/api/quiz?limit=200');
         const data = await response.json();
         if (data.success) {
-          // Shuffle questions randomly
-          const shuffled = [...data.data].sort(() => Math.random() - 0.5);
+          // Use session-based seed for consistent shuffle across presenter and TV
+          let seed = sessionStorage.getItem('quizSeed');
+          if (!seed) {
+            seed = Date.now().toString();
+            sessionStorage.setItem('quizSeed', seed);
+          }
+
+          // Seeded shuffle
+          const shuffled = [...data.data].sort((a, b) => {
+            const hash = (str: string) => {
+              let h = 0;
+              for (let i = 0; i < str.length; i++) {
+                h = ((h << 5) - h) + str.charCodeAt(i);
+                h = h & h;
+              }
+              return h;
+            };
+            return hash(seed + a.id) - hash(seed + b.id);
+          });
+
           setQuestions(shuffled);
 
           // Load automode setting from localStorage
@@ -90,39 +109,7 @@ export default function PresenterQuizPage() {
     loadQuestions();
   }, []);
 
-  // Play intro sound after first interaction
-  useEffect(() => {
-    if (!loading && questions.length > 0) {
-      let played = false;
 
-      const playIntroOnce = () => {
-        if (!played) {
-          console.log('🎵 Attempting to play intro...');
-          setTimeout(() => {
-            playIntro();
-          }, 300);
-          played = true;
-        }
-      };
-
-      // Try multiple events
-      window.addEventListener('click', playIntroOnce, { once: true });
-      window.addEventListener('keydown', playIntroOnce, { once: true });
-      window.addEventListener('touchstart', playIntroOnce, { once: true });
-
-      // Also try to play after a short delay (might work if user already interacted)
-      const timeoutId = setTimeout(() => {
-        playIntroOnce();
-      }, 1000);
-
-      return () => {
-        clearTimeout(timeoutId);
-        window.removeEventListener('click', playIntroOnce);
-        window.removeEventListener('keydown', playIntroOnce);
-        window.removeEventListener('touchstart', playIntroOnce);
-      };
-    }
-  }, [loading, questions.length, playIntro]);
 
   // Broadcast state to screen view
   useEffect(() => {
@@ -300,9 +287,9 @@ export default function PresenterQuizPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-        {/* Main Content */}
-        <div className="lg:col-span-3 space-y-3">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        {/* Main Content - Left Side */}
+        <div className="lg:col-span-2 space-y-3">
           {/* Question Preview - Compact */}
           <div className="bg-gray-800 rounded-lg p-4 shadow-lg">
             <div className="text-lg font-bold text-white mb-2">
@@ -359,6 +346,76 @@ export default function PresenterQuizPage() {
               <div className="text-sm text-white">{currentQuestion.fact}</div>
             </div>
           )}
+
+          {/* Quick Controls under Question */}
+          <div className="grid grid-cols-3 gap-2">
+            {/* Navigation */}
+            <button
+              onClick={handlePrevQuestion}
+              disabled={currentQuestionIndex === 0}
+              className="py-2 bg-gray-700 hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-lg text-xs font-semibold flex items-center justify-center gap-1"
+            >
+              <ArrowLeft className="w-3 h-3" />
+              Zurück
+            </button>
+
+            <button
+              onClick={handleReveal}
+              disabled={correctIndex !== null}
+              className="py-2 bg-yellow-500 hover:bg-yellow-600 disabled:opacity-50 disabled:cursor-not-allowed text-gray-900 rounded-lg text-xs font-semibold flex items-center justify-center gap-1"
+            >
+              <Lightbulb className="w-3 h-3" />
+              Lösung
+            </button>
+
+            <button
+              onClick={handleNextQuestion}
+              disabled={currentQuestionIndex === questions.length - 1}
+              className="py-2 bg-green-500 hover:bg-green-600 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-lg text-xs font-semibold flex items-center justify-center gap-1"
+            >
+              Weiter
+              <ArrowRight className="w-3 h-3" />
+            </button>
+          </div>
+
+          {/* Team Scoring Toggle & Display */}
+          <div className="bg-gray-800 rounded-lg p-3 shadow-lg">
+            <div className="flex items-center justify-between mb-2">
+              <div className="text-xs text-white/50">Team-Modus</div>
+              <button
+                onClick={() => setShowTeamScoring(!showTeamScoring)}
+                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all ${
+                  showTeamScoring
+                    ? 'bg-blue-500 hover:bg-blue-600 text-white'
+                    : 'bg-gray-700 hover:bg-gray-600 text-white'
+                }`}
+              >
+                {showTeamScoring ? 'AN' : 'AUS'}
+              </button>
+            </div>
+
+            {showTeamScoring && (
+              <TeamScoring
+                onScoreUpdate={(scoreA, scoreB) => {
+                  setTeamAScore(scoreA);
+                  setTeamBScore(scoreB);
+                }}
+              />
+            )}
+          </div>
+
+          {/* Keyboard Shortcuts */}
+          <div className="bg-gray-800 rounded-lg p-3 shadow-lg">
+            <div className="text-xs text-white/50 mb-2">Tastenkürzel</div>
+            <div className="grid grid-cols-3 gap-1 text-xs text-white/70">
+              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">A-D</kbd> Antwort</div>
+              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">Space</kbd> Timer</div>
+              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">Enter</kbd> Weiter</div>
+              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">←</kbd> Zurück</div>
+              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">R</kbd> Reset</div>
+              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">S</kbd> Lösung</div>
+            </div>
+          </div>
         </div>
 
         {/* Sidebar Controls - Compact */}
@@ -463,58 +520,7 @@ export default function PresenterQuizPage() {
             </div>
           </div>
 
-          {/* Navigation - Compact */}
-          <div className="bg-gray-800 rounded-lg p-3 shadow-lg">
-            <div className="space-y-1">
-              <div className="grid grid-cols-2 gap-1">
-                <button
-                  onClick={handlePrevQuestion}
-                  disabled={currentQuestionIndex === 0}
-                  className="py-2 bg-gray-700 hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-lg text-xs font-semibold flex items-center justify-center gap-1"
-                >
-                  <ArrowLeft className="w-3 h-3" />
-                  Zurück
-                </button>
-                <button
-                  onClick={handleNextQuestion}
-                  disabled={currentQuestionIndex === questions.length - 1}
-                  className="py-2 bg-green-500 hover:bg-green-600 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-lg text-xs font-semibold flex items-center justify-center gap-1"
-                >
-                  Weiter
-                  <ArrowRight className="w-3 h-3" />
-                </button>
-              </div>
-              <button
-                onClick={handleReveal}
-                disabled={correctIndex !== null}
-                className="w-full py-2 bg-yellow-500 hover:bg-yellow-600 disabled:opacity-50 disabled:cursor-not-allowed text-gray-900 rounded-lg text-sm font-semibold flex items-center justify-center gap-1"
-              >
-                <Lightbulb className="w-4 h-4" />
-                Lösung (S)
-              </button>
-            </div>
-          </div>
 
-          {/* Team Scoring */}
-          <TeamScoring
-            onScoreUpdate={(scoreA, scoreB) => {
-              setTeamAScore(scoreA);
-              setTeamBScore(scoreB);
-            }}
-          />
-
-          {/* Keyboard Shortcuts - Compact */}
-          <div className="bg-gray-800 rounded-lg p-3 shadow-lg">
-            <div className="text-xs text-white/50 mb-2">Tastenkürzel</div>
-            <div className="grid grid-cols-2 gap-1 text-xs text-white/70">
-              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">A-D</kbd> Antwort</div>
-              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">Space</kbd> Timer</div>
-              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">Enter</kbd> Weiter</div>
-              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">←</kbd> Zurück</div>
-              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">R</kbd> Reset</div>
-              <div><kbd className="bg-gray-700 px-1 py-0.5 rounded text-xs">S</kbd> Lösung</div>
-            </div>
-          </div>
         </div>
       </div>
     </main>

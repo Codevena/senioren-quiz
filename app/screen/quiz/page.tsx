@@ -48,8 +48,26 @@ export default function ScreenQuizPage() {
         const response = await fetch('/api/quiz?limit=200');
         const data = await response.json();
         if (data.success) {
-          // Use same random seed as presenter for consistent order
-          const shuffled = [...data.data].sort(() => Math.random() - 0.5);
+          // Use same session-based seed as presenter for consistent shuffle
+          let seed = sessionStorage.getItem('quizSeed');
+          if (!seed) {
+            seed = Date.now().toString();
+            sessionStorage.setItem('quizSeed', seed);
+          }
+
+          // Seeded shuffle (same algorithm as presenter)
+          const shuffled = [...data.data].sort((a, b) => {
+            const hash = (str: string) => {
+              let h = 0;
+              for (let i = 0; i < str.length; i++) {
+                h = ((h << 5) - h) + str.charCodeAt(i);
+                h = h & h;
+              }
+              return h;
+            };
+            return hash(seed + a.id) - hash(seed + b.id);
+          });
+
           setQuestions(shuffled);
         }
       } catch (error) {

@@ -60,28 +60,40 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full mb-12">
           <Link
             href="/presenter/quiz"
-            className="group relative overflow-hidden glass-strong rounded-3xl p-12 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-glow"
+            className="group relative overflow-hidden glass-strong rounded-3xl p-10 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-glow"
           >
             <div className="absolute inset-0 bg-gradient-neutral opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative z-10">
-              <Gamepad2 className="w-24 h-24 mx-auto mb-4 text-white group-hover:animate-bounce-slow" strokeWidth={2} />
-              <h2 className="text-4xl font-bold text-white mb-3">Presenter</h2>
-              <p className="text-lg text-white/80">Steuerung am Laptop</p>
+              <Gamepad2 className="w-20 h-20 mx-auto mb-3 text-white group-hover:animate-bounce-slow" strokeWidth={2} />
+              <h2 className="text-3xl font-bold text-white mb-2">Presenter</h2>
+              <p className="text-sm text-white/80">Steuerung am Laptop</p>
             </div>
           </Link>
 
           <Link
             href="/screen/quiz"
-            className="group relative overflow-hidden glass-strong rounded-3xl p-12 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-glow"
+            className="group relative overflow-hidden glass-strong rounded-3xl p-10 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-glow"
           >
             <div className="absolute inset-0 bg-gradient-quiz opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative z-10">
-              <Tv className="w-24 h-24 mx-auto mb-4 text-white group-hover:animate-bounce-slow" strokeWidth={2} />
-              <h2 className="text-4xl font-bold text-white mb-3">TV-Ansicht</h2>
-              <p className="text-lg text-white/80">Anzeige für Beamer/TV</p>
+              <Tv className="w-20 h-20 mx-auto mb-3 text-white group-hover:animate-bounce-slow" strokeWidth={2} />
+              <h2 className="text-3xl font-bold text-white mb-2">TV-Ansicht</h2>
+              <p className="text-sm text-white/80">Anzeige für Beamer/TV</p>
+            </div>
+          </Link>
+
+          <Link
+            href="/standalone/quiz"
+            className="group relative overflow-hidden glass-strong rounded-3xl p-10 text-center transform hover:scale-105 transition-all duration-300 hover:shadow-glow border-2 border-green-500/50"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-emerald-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="relative z-10">
+              <Zap className="w-20 h-20 mx-auto mb-3 text-green-400 group-hover:animate-bounce-slow" strokeWidth={2} />
+              <h2 className="text-3xl font-bold text-white mb-2">Autopilot</h2>
+              <p className="text-sm text-white/80">Läuft automatisch</p>
             </div>
           </Link>
         </div>
