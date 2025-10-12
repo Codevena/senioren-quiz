@@ -165,7 +165,7 @@ export default function StandaloneQuizPage() {
           />
         )}
 
-        {isWaitingAfterReveal && (
+        {isWaitingAfterReveal && !currentQuestion.fact && (
           <div className="w-full max-w-4xl mx-auto mt-8 animate-slide-up">
             <div className="relative group">
               {/* Glow effect */}
