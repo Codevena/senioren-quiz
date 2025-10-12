@@ -17,16 +17,12 @@ export default function Home() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center">
-        <div className="mb-8 animate-float">
-          <Target className="w-32 h-32 text-quiz-highlight" strokeWidth={2} />
-        </div>
-
         <h1 className="text-7xl md:text-8xl font-black mb-4 text-center">
           <span className="gradient-text">Senior Quiz</span>
         </h1>
 
         <p className="text-2xl text-quiz-text/80 mb-16 text-center max-w-2xl flex items-center gap-3 justify-center">
-          Barrierefreies Deutschland-Quiz mit Stil <Sparkles className="w-6 h-6 text-quiz-highlight" />
+          Deutschland-Quiz für Jung und Alt <Sparkles className="w-6 h-6 text-quiz-highlight" />
         </p>
 
         {/* Automode Toggle */}

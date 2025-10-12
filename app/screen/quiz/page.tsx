@@ -1,13 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { BigTimer } from '@/components/BigTimer';
 import { QuestionCard } from '@/components/QuestionCard';
 import { Choices } from '@/components/Choices';
 import { ResultReveal } from '@/components/ResultReveal';
-import { TTSSpeaker } from '@/components/TTSSpeaker';
 import { TeamScoreDisplay } from '@/components/TeamScoreDisplay';
-import { Tv, Keyboard } from 'lucide-react';
 
 interface QuizQuestion {
   id: string;
@@ -48,10 +45,12 @@ export default function ScreenQuizPage() {
   useEffect(() => {
     async function loadQuestions() {
       try {
-        const response = await fetch('/api/quiz?limit=30');
+        const response = await fetch('/api/quiz?limit=121');
         const data = await response.json();
         if (data.success) {
-          setQuestions(data.data);
+          // Shuffle questions randomly (same order as presenter)
+          const shuffled = [...data.data].sort(() => Math.random() - 0.5);
+          setQuestions(shuffled);
         }
       } catch (error) {
         console.error('Failed to load questions:', error);
@@ -129,25 +128,7 @@ export default function ScreenQuizPage() {
           </div>
         )}
 
-        {/* Header with Timer */}
-        <div className="flex justify-between items-start mb-12">
-          <div className="flex items-center gap-6">
-            <div className="glass rounded-full px-8 py-4">
-              <div className="text-4xl font-bold text-white flex items-center gap-3">
-                <Tv className="w-10 h-10" />
-                TV-Ansicht
-              </div>
-            </div>
-            <TTSSpeaker
-              text={`${currentQuestion.prompt}. ${currentQuestion.choices.map((c, i) => `${String.fromCharCode(65 + i)}: ${c}`).join('. ')}`}
-            />
-          </div>
-          <BigTimer
-            timeRemaining={quizState.timeRemaining}
-            progress={quizState.progress}
-            state={quizState.timerState}
-          />
-        </div>
+        {/* Content */}
 
       {/* Question */}
       <div className="mb-12">
@@ -176,12 +157,23 @@ export default function ScreenQuizPage() {
         />
       )}
 
-        {/* Footer Hint */}
-        <div className="mt-auto text-center">
-          <div className="glass rounded-full px-8 py-3 inline-block">
-            <div className="text-2xl text-white/70 flex items-center gap-3">
-              <Keyboard className="w-6 h-6" />
-              Steuerung über Presenter-Ansicht
+        {/* Timer Bar at Bottom */}
+        <div className="mt-auto">
+          <div className="relative w-full h-4 bg-gray-800/50 rounded-full overflow-hidden backdrop-blur-sm">
+            <div
+              className={`absolute inset-y-0 left-0 transition-all duration-1000 ease-linear ${
+                quizState.timerState === 'completed' ? 'bg-red-500' :
+                quizState.progress < 0.33 ? 'bg-yellow-500 animate-pulse' :
+                'bg-gradient-to-r from-green-500 to-emerald-500'
+              }`}
+              style={{ width: `${quizState.progress * 100}%` }}
+            >
+              <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="text-white font-bold text-sm drop-shadow-lg">
+                {Math.ceil(quizState.timeRemaining)}s
+              </span>
             </div>
           </div>
         </div>

@@ -68,15 +68,21 @@ export default function PresenterQuizPage() {
   useEffect(() => {
     async function loadQuestions() {
       try {
-        const response = await fetch('/api/quiz?limit=30');
+        const response = await fetch('/api/quiz?limit=121');
         const data = await response.json();
         if (data.success) {
-          setQuestions(data.data);
+          // Shuffle questions randomly
+          const shuffled = [...data.data].sort(() => Math.random() - 0.5);
+          setQuestions(shuffled);
 
           // Load automode setting from localStorage
           const savedAutomode = localStorage.getItem('automodeEnabled');
           if (savedAutomode === 'true') {
             setAutopilotEnabled(true);
+            // Auto-start timer if automode is enabled
+            setTimeout(() => {
+              timer.start();
+            }, 1000);
           }
 
           // Play intro sound when questions are loaded
@@ -149,10 +155,19 @@ export default function PresenterQuizPage() {
       if (autopilotEnabled) {
         setTimeout(() => {
           timer.start();
-        }, 500);
+        }, 300);
       }
     }
   }, [currentQuestionIndex, questions.length, timer, autopilotEnabled]);
+
+  // Auto-start timer when autopilot is enabled
+  useEffect(() => {
+    if (autopilotEnabled && timer.state === 'idle' && !loading) {
+      setTimeout(() => {
+        timer.start();
+      }, 500);
+    }
+  }, [autopilotEnabled, timer.state, loading]);
 
   const handlePrevQuestion = useCallback(() => {
     if (currentQuestionIndex > 0) {
