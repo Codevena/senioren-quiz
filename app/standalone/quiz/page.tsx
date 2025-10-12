@@ -161,6 +161,7 @@ export default function StandaloneQuizPage() {
           <ResultReveal
             fact={currentQuestion.fact}
             isCorrect={selectedIndex === correctIndex}
+            autoMode={true}
           />
         )}
 
@@ -175,24 +176,60 @@ export default function StandaloneQuizPage() {
         )}
       </div>
 
-      {/* Timer Bar at Bottom */}
-      <div className="w-full max-w-7xl mt-auto">
-        <div className="relative w-full h-4 bg-gray-800/50 rounded-full overflow-hidden backdrop-blur-sm">
-          <div 
-            className={`absolute inset-y-0 left-0 transition-all duration-1000 ease-linear ${
-              timer.state === 'completed' ? 'bg-red-500' :
-              timer.progress < 0.33 ? 'bg-yellow-500 animate-pulse' :
-              'bg-gradient-to-r from-green-500 to-emerald-500'
+      {/* Spektakuläre Timer Bar at Bottom */}
+      <div className="w-full mt-auto">
+        <div className="relative w-full h-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 overflow-hidden shadow-2xl">
+          {/* Animated Background */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse"></div>
+
+          {/* Progress Bar */}
+          <div
+            className={`absolute inset-y-0 left-0 transition-all duration-300 ease-out ${
+              timer.state === 'completed'
+                ? 'bg-gradient-to-r from-red-600 via-red-500 to-red-600 animate-pulse'
+                : timer.progress < 0.33
+                  ? 'bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 animate-pulse shadow-glow-red'
+                  : timer.progress < 0.66
+                    ? 'bg-gradient-to-r from-yellow-500 via-green-400 to-green-500 shadow-glow-yellow'
+                    : 'bg-gradient-to-r from-green-500 via-emerald-400 to-cyan-500 shadow-glow-green'
             }`}
-            style={{ width: `${timer.progress * 100}%` }}
+            style={{ width: `${(1 - timer.progress) * 100}%` }}
           >
-            <div className="absolute inset-0 bg-white/20 animate-pulse"></div>
+            {/* Shimmer Effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"></div>
+
+            {/* Glow Effect */}
+            <div className="absolute inset-0 shadow-inner"></div>
           </div>
+
+          {/* Timer Text */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-white font-bold text-sm drop-shadow-lg">
-              {Math.ceil(timer.timeRemaining)}s
-            </span>
+            <div className="flex items-center gap-3">
+              <div className={`w-3 h-3 rounded-full animate-pulse ${
+                timer.state === 'completed' ? 'bg-red-400' :
+                timer.progress < 0.33 ? 'bg-red-400' :
+                timer.progress < 0.66 ? 'bg-yellow-400' :
+                'bg-green-400'
+              }`}></div>
+              <span className="text-white font-black text-3xl drop-shadow-2xl tracking-wider">
+                {Math.ceil(timer.timeRemaining)}s
+              </span>
+              <div className={`w-3 h-3 rounded-full animate-pulse ${
+                timer.state === 'completed' ? 'bg-red-400' :
+                timer.progress < 0.33 ? 'bg-red-400' :
+                timer.progress < 0.66 ? 'bg-yellow-400' :
+                'bg-green-400'
+              }`}></div>
+            </div>
           </div>
+
+          {/* Bottom Glow */}
+          <div className={`absolute bottom-0 left-0 right-0 h-1 blur-sm ${
+            timer.state === 'completed' ? 'bg-red-500' :
+            timer.progress < 0.33 ? 'bg-red-500' :
+            timer.progress < 0.66 ? 'bg-yellow-500' :
+            'bg-green-500'
+          }`}></div>
         </div>
       </div>
     </main>

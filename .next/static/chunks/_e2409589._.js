@@ -233,7 +233,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 'use client';
 ;
 function ResultReveal(param) {
-    let { fact, isCorrect } = param;
+    let { fact, isCorrect, autoMode = false } = param;
     if (isCorrect === null) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full max-w-6xl mx-auto mt-8 animate-slide-up",
@@ -241,39 +241,39 @@ function ResultReveal(param) {
             className: "relative group",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "\n          absolute -inset-1 rounded-3xl blur-xl opacity-50 transition-opacity duration-300\n          ".concat(isCorrect ? 'bg-gradient-correct' : 'bg-gradient-wrong', "\n        ")
+                    className: "\n          absolute -inset-1 rounded-3xl blur-xl opacity-75 transition-opacity duration-300 animate-pulse\n          ".concat(autoMode ? 'bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500' : isCorrect ? 'bg-gradient-correct' : 'bg-gradient-wrong', "\n        ")
                 }, void 0, false, {
                     fileName: "[project]/components/ResultReveal.tsx",
-                    lineNumber: 15,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "\n          relative glass-strong rounded-3xl p-10 border-2 shadow-2xl\n          ".concat(isCorrect ? 'border-quiz-correct shadow-glow-green' : 'border-quiz-wrong shadow-glow-red', "\n        "),
+                    className: "\n          relative glass-strong rounded-3xl p-10 border-2 shadow-2xl\n          ".concat(autoMode ? 'border-blue-500 shadow-glow-blue' : isCorrect ? 'border-quiz-correct shadow-glow-green' : 'border-quiz-wrong shadow-glow-red', "\n        "),
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        !autoMode && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center gap-6 mb-6",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "\n              text-7xl animate-bounce-slow\n              ".concat(isCorrect ? 'animate-wiggle' : '', "\n            "),
+                                    className: "\n                text-7xl animate-bounce-slow\n                ".concat(isCorrect ? 'animate-wiggle' : '', "\n              "),
                                     children: isCorrect ? '🎉' : '💭'
                                 }, void 0, false, {
                                     fileName: "[project]/components/ResultReveal.tsx",
-                                    lineNumber: 29,
-                                    columnNumber: 13
+                                    lineNumber: 34,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "\n              text-6xl font-black\n              ".concat(isCorrect ? 'text-quiz-correct' : 'text-quiz-wrong', "\n            "),
-                                    children: isCorrect ? 'Richtig!' : 'Nicht ganz...'
+                                    className: "\n                text-6xl font-black\n                ".concat(isCorrect ? 'text-quiz-correct' : 'text-quiz-wrong', "\n              "),
+                                    children: isCorrect ? 'Richtig!' : 'Leider falsch!'
                                 }, void 0, false, {
                                     fileName: "[project]/components/ResultReveal.tsx",
-                                    lineNumber: 35,
-                                    columnNumber: 13
+                                    lineNumber: 40,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ResultReveal.tsx",
-                            lineNumber: 28,
-                            columnNumber: 11
+                            lineNumber: 33,
+                            columnNumber: 13
                         }, this),
                         fact && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "glass rounded-2xl p-6 mt-6",
@@ -285,7 +285,7 @@ function ResultReveal(param) {
                                         children: "💡"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ResultReveal.tsx",
-                                        lineNumber: 46,
+                                        lineNumber: 52,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -296,47 +296,47 @@ function ResultReveal(param) {
                                                 children: "Wussten Sie:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/ResultReveal.tsx",
-                                                lineNumber: 48,
+                                                lineNumber: 54,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/components/ResultReveal.tsx",
-                                                lineNumber: 49,
+                                                lineNumber: 55,
                                                 columnNumber: 19
                                             }, this),
                                             fact
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/ResultReveal.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 53,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/ResultReveal.tsx",
-                                lineNumber: 45,
+                                lineNumber: 51,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/ResultReveal.tsx",
-                            lineNumber: 44,
+                            lineNumber: 50,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ResultReveal.tsx",
-                    lineNumber: 21,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/ResultReveal.tsx",
-            lineNumber: 13,
+            lineNumber: 14,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/ResultReveal.tsx",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
@@ -692,43 +692,89 @@ function ScreenQuizPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-auto",
+                        className: "mt-auto w-full",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative w-full h-4 bg-gray-800/50 rounded-full overflow-hidden backdrop-blur-sm",
+                            className: "relative w-full h-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 overflow-hidden shadow-2xl",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute inset-y-0 left-0 transition-all duration-1000 ease-linear ".concat(quizState.timerState === 'completed' ? 'bg-red-500' : quizState.progress < 0.33 ? 'bg-yellow-500 animate-pulse' : 'bg-gradient-to-r from-green-500 to-emerald-500'),
-                                    style: {
-                                        width: "".concat(quizState.progress * 100, "%")
-                                    },
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute inset-0 bg-white/20 animate-pulse"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/screen/quiz/page.tsx",
-                                        lineNumber: 189,
-                                        columnNumber: 15
-                                    }, this)
+                                    className: "absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-pulse"
                                 }, void 0, false, {
                                     fileName: "[project]/app/screen/quiz/page.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 182,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-y-0 left-0 transition-all duration-300 ease-out ".concat(quizState.timerState === 'completed' ? 'bg-gradient-to-r from-red-600 via-red-500 to-red-600 animate-pulse' : quizState.progress < 0.33 ? 'bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 animate-pulse shadow-glow-red' : quizState.progress < 0.66 ? 'bg-gradient-to-r from-yellow-500 via-green-400 to-green-500 shadow-glow-yellow' : 'bg-gradient-to-r from-green-500 via-emerald-400 to-cyan-500 shadow-glow-green'),
+                                    style: {
+                                        width: "".concat((1 - quizState.progress) * 100, "%")
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/screen/quiz/page.tsx",
+                                            lineNumber: 198,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute inset-0 shadow-inner"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/screen/quiz/page.tsx",
+                                            lineNumber: 201,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/screen/quiz/page.tsx",
+                                    lineNumber: 185,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "absolute inset-0 flex items-center justify-center",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-white font-bold text-sm drop-shadow-lg",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-3",
                                         children: [
-                                            Math.ceil(quizState.timeRemaining),
-                                            "s"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-3 h-3 rounded-full animate-pulse ".concat(quizState.timerState === 'completed' ? 'bg-red-400' : quizState.progress < 0.33 ? 'bg-red-400' : quizState.progress < 0.66 ? 'bg-yellow-400' : 'bg-green-400')
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/screen/quiz/page.tsx",
+                                                lineNumber: 207,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-white font-black text-3xl drop-shadow-2xl tracking-wider",
+                                                children: [
+                                                    Math.ceil(quizState.timeRemaining),
+                                                    "s"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/app/screen/quiz/page.tsx",
+                                                lineNumber: 213,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "w-3 h-3 rounded-full animate-pulse ".concat(quizState.timerState === 'completed' ? 'bg-red-400' : quizState.progress < 0.33 ? 'bg-red-400' : quizState.progress < 0.66 ? 'bg-yellow-400' : 'bg-green-400')
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/screen/quiz/page.tsx",
+                                                lineNumber: 216,
+                                                columnNumber: 17
+                                            }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/screen/quiz/page.tsx",
-                                        lineNumber: 192,
+                                        lineNumber: 206,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/screen/quiz/page.tsx",
-                                    lineNumber: 191,
+                                    lineNumber: 205,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute bottom-0 left-0 right-0 h-1 blur-sm ".concat(quizState.timerState === 'completed' ? 'bg-red-500' : quizState.progress < 0.33 ? 'bg-red-500' : quizState.progress < 0.66 ? 'bg-yellow-500' : 'bg-green-500')
+                                }, void 0, false, {
+                                    fileName: "[project]/app/screen/quiz/page.tsx",
+                                    lineNumber: 226,
                                     columnNumber: 13
                                 }, this)
                             ]
