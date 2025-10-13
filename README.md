@@ -4,20 +4,20 @@ Ein barrierefreies Allgemeinwissen/Deutschland-Quiz speziell für Senior*innen m
 
 ## ✨ Features
 
-- **📺 Dual-Screen-Modus**: Separate Ansichten für Moderator (Laptop) und Publikum (TV/Beamer)
-- **🤖 Autopilot-Modus**: Automatischer Ablauf - Timer startet, Antwort wird aufgedeckt, 5s Pause, nächste Frage
-- **⏱️ 30-Sekunden-Timer**: Präziser Countdown mit automatischer Auflösung
-- **🎹 Tastenkürzel**: Vollständige Steuerung über Tastatur (A/B/C/D, Space, Enter, etc.)
-- **♿ Barrierefrei**: Große Schrift (72-96px), hoher Kontrast, Fokus-Ringe, TTS-Unterstützung
-- **🔊 Text-to-Speech**: Vorlesen von Fragen und Antworten (Web Speech API)
+- **🤖 Auto-Play-Modus**: Vollautomatischer Ablauf - Timer startet, Antwort wird aufgedeckt, automatische Weiterleitung
+- **⚙️ Anpassbare Einstellungen**:
+  - Timer-Dauer (10-30 Sekunden in 5-Sekunden-Schritten)
+  - Interaktive Antworten (optional anklickbar während Timer läuft)
+  - Fragenkategorien auswählbar
+- **🔤 Scrambled Letters**: Neue Kategorie zum Buchstaben-Entwirren
+- **♿ Barrierefrei**: Große Schrift (72-96px), hoher Kontrast, Fokus-Ringe
 - **📴 Offline-First**: Funktioniert komplett ohne Internet
 - **🎨 Modernes Design**: Glassmorphism, Gradients, Glow-Effekte, smooth Animationen
-- **🎯 121 Fragen**: Deutschland/Allgemeinwissen vorinstalliert
-- **🎨 Lucide Icons**: Professionelle Icons statt Emojis
-- **🎵 Sound-Effekte**: Intro, Success & Failure Sounds
-- **🚀 Automode**: Aktivierbar auf der Startseite - Quiz läuft komplett automatisch
+- **🎯 1400+ Fragen**: Deutschland/Allgemeinwissen + Scrambled Letters
+- **🎨 Lucide Icons**: Professionelle Icons
+- **🎵 Sound-Effekte**: Success & Failure Sounds
 - **💡 Fun Facts**: Interessante Zusatzinformationen nach jeder Frage
-- **🏆 Team-Scoring**: Optional mit editierbaren Team-Namen
+- **📂 15 Kategorien**: Deutschland, Geografie, Geschichte, Kultur, Politik, Allgemeinwissen, Natur, Sport, Musik, Literatur, Wissenschaft, Tiere, Lebensmittel, Europa, Scrambled Letters
 
 ## 🚀 Quick Start
 
@@ -26,12 +26,6 @@ Ein barrierefreies Allgemeinwissen/Deutschland-Quiz speziell für Senior*innen m
 ```bash
 # Dependencies installieren
 npm install
-
-# Datenbank initialisieren
-npm run db:push
-
-# Datenbank mit 30 Fragen füllen
-npm run db:seed
 
 # Entwicklungsserver starten
 npm run dev
@@ -42,11 +36,16 @@ Die Anwendung läuft dann auf `http://localhost:3000`
 ### Verwendung
 
 1. **Startseite öffnen**: `http://localhost:3000`
-2. **Presenter-Ansicht** (Laptop): Klick auf "🎮 Presenter-Ansicht"
-3. **TV-Ansicht** (Beamer): Klick auf "📺 TV-Ansicht" - auf zweitem Bildschirm/Beamer öffnen
-4. **Quiz starten**: In der Presenter-Ansicht mit `Space` oder `▶ Start` den Timer starten
-5. **Antworten**: Mit `A`, `B`, `C`, `D` Antworten auswählen
-6. **Navigation**: Mit `Enter` zur nächsten Frage
+2. **Einstellungen konfigurieren**: Klick auf "Einstellungen"
+   - Timer-Dauer wählen (10-30 Sekunden)
+   - Interaktive Antworten aktivieren/deaktivieren
+   - Gewünschte Fragenkategorien auswählen
+3. **Quiz starten**: Klick auf "Quiz Starten"
+4. **Quiz läuft automatisch**:
+   - Timer startet automatisch
+   - Antwort wird nach Ablauf aufgedeckt
+   - Nach 7 Sekunden automatisch zur nächsten Frage
+   - Optional: Antworten während Timer anklicken (wenn aktiviert)
 
 ## ⌨️ Tastenkürzel (Presenter-Ansicht)
 
@@ -88,26 +87,25 @@ Sounds liegen in `public/sounds/` und werden automatisch abgespielt.
 Quiz/
 ├── app/
 │   ├── api/
-│   │   ├── quiz/route.ts          # GET /api/quiz - Fragen abrufen
-│   │   └── session/route.ts       # POST /api/session - Voting-Session
-│   ├── presenter/quiz/page.tsx    # Presenter-Steuerung
-│   ├── screen/quiz/page.tsx       # TV-Ansicht
+│   │   └── quiz/route.ts          # GET /api/quiz - Fragen abrufen (mit Kategorie-Filter)
+│   ├── quiz/page.tsx              # Auto-Play Quiz
+│   ├── settings/page.tsx          # Einstellungen
 │   ├── globals.css                # Globale Styles
 │   ├── layout.tsx                 # Root Layout
-│   └── page.tsx                   # Startseite
+│   └── page.tsx                   # Startseite (Landing Page)
 ├── components/
-│   ├── BigTimer.tsx               # Timer-Komponente mit Ring
 │   ├── QuestionCard.tsx           # Frage-Anzeige
-│   ├── Choices.tsx                # Antwort-Buttons
-│   ├── ResultReveal.tsx           # Ergebnis-Anzeige
+│   ├── Choices.tsx                # Antwort-Buttons (4 Optionen)
+│   ├── ResultReveal.tsx           # Ergebnis-Anzeige mit Fun Facts
 │   └── TTSSpeaker.tsx             # Text-to-Speech Button
 ├── lib/
-│   ├── prisma.ts                  # Prisma Client
-│   └── useTimer.ts                # Timer Hook
-├── prisma/
-│   ├── schema.prisma              # Datenbank-Schema
-│   ├── seed.ts                    # Seed-Daten (30 Fragen)
-│   └── dev.db                     # SQLite Datenbank
+│   ├── questions-data.json        # 1400+ Fragen inkl. Scrambled Letters
+│   ├── useTimer.ts                # Timer Hook (konfigurierbar)
+│   └── useSounds.ts               # Sound-Effekte Hook
+├── sounds/
+│   ├── success.wav                # Erfolgs-Sound
+│   └── failure.mp3                # Fehler-Sound
+├── CHANGES.md                     # Dokumentation der Änderungen
 └── README.md
 ```
 
@@ -182,11 +180,19 @@ npm run db:seed
 
 ### Timer-Dauer ändern
 
-In der Presenter-Ansicht gibt es einen Button zum Umschalten zwischen 30s und 45s.
-Oder in `app/presenter/quiz/page.tsx`:
+Über die Einstellungsseite (`/settings`) kann die Timer-Dauer zwischen 10 und 30 Sekunden in 5-Sekunden-Schritten eingestellt werden. Die Einstellung wird automatisch in `localStorage` gespeichert.
+
+### Kategorien anpassen
+
+In `app/settings/page.tsx` können neue Kategorien hinzugefügt werden:
 
 ```typescript
-const [timerDuration, setTimerDuration] = useState(30); // Hier ändern
+const CATEGORIES = [
+  'Deutschland',
+  'Geografie',
+  // ... weitere Kategorien
+  'Deine neue Kategorie'
+];
 ```
 
 ### Farben anpassen
