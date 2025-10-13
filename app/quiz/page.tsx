@@ -6,9 +6,8 @@ import { Choices } from '@/components/Choices';
 import { ResultReveal } from '@/components/ResultReveal';
 import { useTimer } from '@/lib/useTimer';
 import { useSounds } from '@/lib/useSounds';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Settings, Home, Trophy, PartyPopper, Menu, X } from 'lucide-react';
+import { Trophy, PartyPopper } from 'lucide-react';
 
 interface Question {
   id: string;
@@ -35,7 +34,6 @@ export default function QuizPage() {
   const [isWaitingAfterReveal, setIsWaitingAfterReveal] = useState(false);
   const [settingsLoaded, setSettingsLoaded] = useState(false);
   const [showOutro, setShowOutro] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   const { playSuccess, playFailure } = useSounds();
 
@@ -178,17 +176,38 @@ export default function QuizPage() {
     }
   }, [showOutro, router]);
 
-  // Close menu on Escape key
+  // Keyboard shortcuts: Spacebar to pause/resume, Enter to reveal answer
   useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && menuOpen) {
-        setMenuOpen(false);
+    const handleKeyPress = (e: KeyboardEvent) => {
+      // Spacebar: Pause/Resume quiz
+      if (e.code === 'Space' || e.key === ' ') {
+        e.preventDefault(); // Prevent page scroll
+        if (timer.state === 'running') {
+          timer.pause();
+        } else if (timer.state === 'paused') {
+          timer.resume();
+        }
+      }
+
+      // Enter: Reveal answer immediately
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        if (correctIndex === null && !isWaitingAfterReveal) {
+          // Trigger reveal immediately
+          handleReveal();
+          setIsWaitingAfterReveal(true);
+          timer.stop(); // Stop the timer
+          setTimeout(() => {
+            setIsWaitingAfterReveal(false);
+            handleNextQuestion();
+          }, 3000);
+        }
       }
     };
 
-    document.addEventListener('keydown', handleEscape);
-    return () => document.removeEventListener('keydown', handleEscape);
-  }, [menuOpen]);
+    document.addEventListener('keydown', handleKeyPress);
+    return () => document.removeEventListener('keydown', handleKeyPress);
+  }, [timer, correctIndex, isWaitingAfterReveal, handleReveal, handleNextQuestion]);
 
   if (loading) {
     return (
@@ -280,59 +299,20 @@ export default function QuizPage() {
   if (!currentQuestion) return null;
 
   return (
-    <main className="min-h-screen bg-quiz-bg flex flex-col items-center justify-between p-8">
-      {/* Hamburger Menu */}
-      <div className="w-full max-w-7xl flex justify-end items-center mb-4 relative">
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="glass-strong rounded-2xl p-3 hover:bg-white/10 transition-all z-50"
-          aria-label="Menu"
-          aria-expanded={menuOpen}
-        >
-          {menuOpen ? (
-            <X className="w-6 h-6 text-white" />
-          ) : (
-            <Menu className="w-6 h-6 text-white" />
-          )}
-        </button>
-
-        {/* Menu Dropdown */}
-        {menuOpen && (
-          <>
-            {/* Backdrop - click outside to close */}
-            <div
-              className="fixed inset-0 z-30"
-              onClick={() => setMenuOpen(false)}
-              aria-hidden="true"
-            />
-
-            {/* Menu Content */}
-            <div className="absolute top-16 right-0 glass-strong rounded-2xl p-4 min-w-[200px] z-40 shadow-2xl">
-              <nav className="flex flex-col gap-3">
-                <Link
-                  href="/"
-                  className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all text-white"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  <Home className="w-5 h-5" />
-                  <span className="text-lg font-semibold">Startseite</span>
-                </Link>
-                <Link
-                  href="/settings"
-                  className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all text-white"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  <Settings className="w-5 h-5" />
-                  <span className="text-lg font-semibold">Einstellungen</span>
-                </Link>
-              </nav>
-            </div>
-          </>
-        )}
-      </div>
+    <main className="min-h-screen bg-quiz-bg flex flex-col items-center justify-center p-4 md:p-8 relative">
+      {/* Pause Indicator Overlay */}
+      {timer.state === 'paused' && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center">
+          <div className="glass-strong rounded-3xl p-12 text-center animate-pulse">
+            <div className="text-8xl font-bold text-quiz-highlight mb-4">⏸</div>
+            <div className="text-5xl font-bold text-white mb-2">PAUSIERT</div>
+            <div className="text-2xl text-white/70">Drücke Leertaste zum Fortfahren</div>
+          </div>
+        </div>
+      )}
 
       {/* Content */}
-      <div className="w-full max-w-7xl flex-1 flex flex-col justify-center space-y-8">
+      <div className="w-full max-w-7xl flex flex-col justify-center space-y-8">
         <QuestionCard
           prompt={currentQuestion.prompt}
           questionNumber={currentQuestionIndex + 1}
