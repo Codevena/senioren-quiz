@@ -43,14 +43,21 @@ export default function SettingsPage() {
     ? questionsData.filter(q => selectedCategories.some(cat => q.tags.includes(cat))).length
     : totalQuestions;
 
-  // Question limit options based on available questions
+  // Question limit options based on available questions (50-step increments)
   const getQuestionLimitOptions = () => {
-    const options = [10, 20, 30, 50, 100];
-    const validOptions = options.filter(opt => opt <= availableQuestions);
-    if (!validOptions.includes(availableQuestions)) {
-      validOptions.push(availableQuestions);
+    const options: number[] = [];
+    // Generate options in 50-step increments up to available questions
+    for (let i = 50; i <= availableQuestions; i += 50) {
+      options.push(i);
     }
-    return validOptions.sort((a, b) => a - b);
+    // Ensure we don't have duplicate of availableQuestions
+    if (options.length === 0 || options[options.length - 1] !== availableQuestions) {
+      // Only add if it's not already the last option
+      if (availableQuestions % 50 !== 0) {
+        options.push(availableQuestions);
+      }
+    }
+    return options;
   };
 
   // Load settings from localStorage on mount

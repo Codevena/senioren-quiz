@@ -7490,5 +7490,278 @@
     ],
     "difficulty": "MEDIUM",
     "type": "scrambled"
+  },
+  {
+    "id": "politik_009",
+    "prompt": "Wie viele Bundesländer hat Deutschland?",
+    "choices": [
+      "16",
+      "12",
+      "14",
+      "18"
+    ],
+    "answerIndex": 0,
+    "fact": "Deutschland besteht aus 16 Bundesländern, darunter drei Stadtstaaten: Berlin, Hamburg und Bremen.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "politik_010",
+    "prompt": "Wer wählt den Bundeskanzler in Deutschland?",
+    "choices": [
+      "Der Bundestag",
+      "Das Volk direkt",
+      "Der Bundesrat",
+      "Der Bundespräsident"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Bundeskanzler wird vom Bundestag gewählt, nicht direkt vom Volk.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "politik_011",
+    "prompt": "Wie lange dauert eine Legislaturperiode des Bundestages?",
+    "choices": [
+      "4 Jahre",
+      "5 Jahre",
+      "3 Jahre",
+      "6 Jahre"
+    ],
+    "answerIndex": 0,
+    "fact": "Eine Legislaturperiode des Deutschen Bundestages dauert vier Jahre.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "politik_012",
+    "prompt": "Welches Organ vertritt die Bundesländer auf Bundesebene?",
+    "choices": [
+      "Der Bundesrat",
+      "Der Bundestag",
+      "Das Bundesverfassungsgericht",
+      "Der Bundesgerichtshof"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Bundesrat ist die Vertretung der 16 Bundesländer auf Bundesebene.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "politik_013",
+    "prompt": "Ab welchem Alter darf man in Deutschland bei Bundestagswahlen wählen?",
+    "choices": [
+      "18 Jahre",
+      "16 Jahre",
+      "21 Jahre",
+      "20 Jahre"
+    ],
+    "answerIndex": 0,
+    "fact": "Das aktive Wahlrecht bei Bundestagswahlen beginnt mit Vollendung des 18. Lebensjahres.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "politik_014",
+    "prompt": "Wie heißt das deutsche Parlament?",
+    "choices": [
+      "Bundestag",
+      "Bundesrat",
+      "Reichstag",
+      "Landtag"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Deutsche Bundestag ist das Parlament der Bundesrepublik Deutschland.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "politik_015",
+    "prompt": "Wo hat das Bundesverfassungsgericht seinen Sitz?",
+    "choices": [
+      "Karlsruhe",
+      "Berlin",
+      "Bonn",
+      "München"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Bundesverfassungsgericht hat seinen Sitz in Karlsruhe, Baden-Württemberg.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "politik_016",
+    "prompt": "Welche Farben haben die Parteien CDU/CSU traditionell?",
+    "choices": [
+      "Schwarz",
+      "Rot",
+      "Grün",
+      "Gelb"
+    ],
+    "answerIndex": 0,
+    "fact": "Die CDU/CSU wird traditionell als 'schwarze' Partei bezeichnet.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "politik_017",
+    "prompt": "Wer ist das Staatsoberhaupt der Bundesrepublik Deutschland?",
+    "choices": [
+      "Der Bundespräsident",
+      "Der Bundeskanzler",
+      "Der Bundestagspräsident",
+      "Der Bundesratspräsident"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Bundespräsident ist das Staatsoberhaupt Deutschlands, hat aber vor allem repräsentative Aufgaben.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "politik_018",
+    "prompt": "Wie viele Stimmen hat jeder Wähler bei der Bundestagswahl?",
+    "choices": [
+      "Zwei Stimmen",
+      "Eine Stimme",
+      "Drei Stimmen",
+      "Vier Stimmen"
+    ],
+    "answerIndex": 0,
+    "fact": "Bei der Bundestagswahl hat jeder Wähler zwei Stimmen: die Erststimme für den Direktkandidaten und die Zweitstimme für die Partei.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "politik_019",
+    "prompt": "Welche Partei wird traditionell als 'rote' Partei bezeichnet?",
+    "choices": [
+      "SPD",
+      "CDU",
+      "FDP",
+      "Die Grünen"
+    ],
+    "answerIndex": 0,
+    "fact": "Die SPD (Sozialdemokratische Partei Deutschlands) wird traditionell als 'rote' Partei bezeichnet.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "politik_020",
+    "prompt": "Wie oft wird der Bundespräsident gewählt?",
+    "choices": [
+      "Alle 5 Jahre",
+      "Alle 4 Jahre",
+      "Alle 6 Jahre",
+      "Alle 8 Jahre"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Bundespräsident wird alle fünf Jahre von der Bundesversammlung gewählt.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "politik_021",
+    "prompt": "Welches Grundrecht steht an erster Stelle im Grundgesetz?",
+    "choices": [
+      "Die Würde des Menschen ist unantastbar",
+      "Alle Menschen sind vor dem Gesetz gleich",
+      "Jeder hat das Recht auf freie Meinungsäußerung",
+      "Die Wohnung ist unverletzlich"
+    ],
+    "answerIndex": 0,
+    "fact": "Artikel 1 des Grundgesetzes lautet: 'Die Würde des Menschen ist unantastbar.'",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "politik_022",
+    "prompt": "Welche Partei wird traditionell als 'gelbe' Partei bezeichnet?",
+    "choices": [
+      "FDP",
+      "SPD",
+      "CDU",
+      "Die Linke"
+    ],
+    "answerIndex": 0,
+    "fact": "Die FDP (Freie Demokratische Partei) wird traditionell als 'gelbe' Partei bezeichnet.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "EASY"
+  },
+  {
+    "id": "politik_023",
+    "prompt": "In welchem Jahr wurde das Grundgesetz verkündet?",
+    "choices": [
+      "1949",
+      "1945",
+      "1950",
+      "1948"
+    ],
+    "answerIndex": 0,
+    "fact": "Das Grundgesetz der Bundesrepublik Deutschland wurde am 23. Mai 1949 verkündet.",
+    "tags": [
+      "Politik",
+      "Deutschland",
+      "Geschichte"
+    ],
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "politik_024",
+    "prompt": "Wie viele Abgeordnete hat der Bundestag mindestens?",
+    "choices": [
+      "598",
+      "500",
+      "650",
+      "700"
+    ],
+    "answerIndex": 0,
+    "fact": "Der Bundestag hat laut Bundeswahlgesetz eine Regelgröße von 598 Abgeordneten, kann aber durch Überhang- und Ausgleichsmandate größer werden.",
+    "tags": [
+      "Politik",
+      "Deutschland"
+    ],
+    "difficulty": "HARD"
   }
 ]

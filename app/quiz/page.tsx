@@ -8,7 +8,7 @@ import { useTimer } from '@/lib/useTimer';
 import { useSounds } from '@/lib/useSounds';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Settings, Home, Trophy, PartyPopper } from 'lucide-react';
+import { Settings, Home, Trophy, PartyPopper, Menu, X } from 'lucide-react';
 
 interface Question {
   id: string;
@@ -35,6 +35,7 @@ export default function QuizPage() {
   const [isWaitingAfterReveal, setIsWaitingAfterReveal] = useState(false);
   const [settingsLoaded, setSettingsLoaded] = useState(false);
   const [showOutro, setShowOutro] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const { playSuccess, playFailure } = useSounds();
 
@@ -177,6 +178,18 @@ export default function QuizPage() {
     }
   }, [showOutro, router]);
 
+  // Close menu on Escape key
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [menuOpen]);
+
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-quiz-bg">
@@ -268,20 +281,54 @@ export default function QuizPage() {
 
   return (
     <main className="min-h-screen bg-quiz-bg flex flex-col items-center justify-between p-8">
-      {/* Top Bar */}
-      <div className="w-full max-w-7xl flex justify-between items-center mb-4">
-        <Link
-          href="/"
-          className="glass-strong rounded-2xl p-3 hover:bg-white/10 transition-all"
+      {/* Hamburger Menu */}
+      <div className="w-full max-w-7xl flex justify-end items-center mb-4 relative">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="glass-strong rounded-2xl p-3 hover:bg-white/10 transition-all z-50"
+          aria-label="Menu"
+          aria-expanded={menuOpen}
         >
-          <Home className="w-6 h-6 text-white" />
-        </Link>
-        <Link
-          href="/settings"
-          className="glass-strong rounded-2xl p-3 hover:bg-white/10 transition-all"
-        >
-          <Settings className="w-6 h-6 text-white" />
-        </Link>
+          {menuOpen ? (
+            <X className="w-6 h-6 text-white" />
+          ) : (
+            <Menu className="w-6 h-6 text-white" />
+          )}
+        </button>
+
+        {/* Menu Dropdown */}
+        {menuOpen && (
+          <>
+            {/* Backdrop - click outside to close */}
+            <div
+              className="fixed inset-0 z-30"
+              onClick={() => setMenuOpen(false)}
+              aria-hidden="true"
+            />
+
+            {/* Menu Content */}
+            <div className="absolute top-16 right-0 glass-strong rounded-2xl p-4 min-w-[200px] z-40 shadow-2xl">
+              <nav className="flex flex-col gap-3">
+                <Link
+                  href="/"
+                  className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all text-white"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <Home className="w-5 h-5" />
+                  <span className="text-lg font-semibold">Startseite</span>
+                </Link>
+                <Link
+                  href="/settings"
+                  className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/10 transition-all text-white"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <Settings className="w-5 h-5" />
+                  <span className="text-lg font-semibold">Einstellungen</span>
+                </Link>
+              </nav>
+            </div>
+          </>
+        )}
       </div>
 
       {/* Content */}
@@ -297,14 +344,13 @@ export default function QuizPage() {
           // Buchstabensalat: Show underscores or revealed word
           <div className="flex justify-center items-center min-h-[200px]">
             {correctIndex === null ? (
-              // Show underscores before reveal
+              // Show empty boxes with yellow borders (no underscore characters)
               <div className="flex gap-4">
                 {Array.from({ length: currentQuestion.choices[currentQuestion.answerIndex].length }).map((_, i) => (
                   <div
                     key={i}
-                    className="w-16 h-20 md:w-20 md:h-24 flex items-center justify-center text-6xl md:text-7xl font-bold text-white border-b-4 border-quiz-highlight"
+                    className="w-16 h-20 md:w-20 md:h-24 flex items-center justify-center border-b-4 border-quiz-highlight"
                   >
-                    _
                   </div>
                 ))}
               </div>
