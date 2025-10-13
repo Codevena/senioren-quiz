@@ -12,8 +12,9 @@ import { Trophy, PartyPopper } from 'lucide-react';
 interface Question {
   id: string;
   prompt: string;
-  choices: string[];
-  answerIndex: number;
+  choices?: string[]; // Optional for scrambled questions
+  answerIndex?: number; // Optional for scrambled questions
+  answer?: string; // For scrambled questions
   fact: string;
   tags: string[];
   difficulty: string;
@@ -134,11 +135,16 @@ export default function QuizPage() {
   const handleReveal = useCallback(() => {
     const current = questions[currentQuestionIndex];
     if (!current) return;
-    
-    setCorrectIndex(current.answerIndex);
+
+    // For scrambled questions, answerIndex might be undefined
+    // We use a placeholder value (0) since we don't use it for display
+    setCorrectIndex(current.answerIndex ?? 0);
     timer.pause();
 
-    if (selectedIndex === current.answerIndex) {
+    // For scrambled questions, we always play success since there's no selection
+    if (current.type === 'scrambled') {
+      playSuccess();
+    } else if (selectedIndex === current.answerIndex) {
       playSuccess();
     } else if (selectedIndex !== null) {
       playFailure();
@@ -326,7 +332,7 @@ export default function QuizPage() {
             {correctIndex === null ? (
               // Show empty boxes with yellow borders (no underscore characters)
               <div className="flex gap-4">
-                {Array.from({ length: currentQuestion.choices[currentQuestion.answerIndex].length }).map((_, i) => (
+                {Array.from({ length: currentQuestion.answer?.length || 0 }).map((_, i) => (
                   <div
                     key={i}
                     className="w-16 h-20 md:w-20 md:h-24 flex items-center justify-center border-b-4 border-quiz-highlight"
@@ -338,7 +344,7 @@ export default function QuizPage() {
               // Show revealed word
               <div className="glass-strong rounded-3xl p-12 text-center">
                 <div className="text-7xl md:text-8xl font-bold text-quiz-highlight mb-4 tracking-wider animate-pulse">
-                  {currentQuestion.choices[currentQuestion.answerIndex]}
+                  {currentQuestion.answer}
                 </div>
                 <div className="text-2xl text-white/70">
                   Das richtige Wort!

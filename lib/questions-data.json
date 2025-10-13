@@ -5693,1803 +5693,1203 @@
   },
   {
     "id": "scrambled_001",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: LBUMER",
-    "choices": [
-      "BLUMER",
-      "RUMBLE",
-      "BLUME",
-      "LUMBER"
-    ],
-    "answerIndex": 2,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: UELBM",
     "fact": "Blumen sind die Fortpflanzungsorgane von Pflanzen.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BLUME"
   },
   {
     "id": "scrambled_002",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: USHA",
-    "choices": [
-      "SHUA",
-      "HAUS",
-      "HASU",
-      "UHAS"
-    ],
-    "answerIndex": 1,
     "fact": "Ein Haus ist ein Gebäude zum Wohnen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "HAUS"
   },
   {
     "id": "scrambled_003",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: TGAER",
-    "choices": [
-      "GATER",
-      "TRAGE",
-      "GARTE",
-      "GARTEN"
-    ],
-    "answerIndex": 3,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: AGNRTE",
     "fact": "Ein Garten ist ein Stück Land zum Anbau von Pflanzen.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "GARTEN"
   },
   {
     "id": "scrambled_004",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: NONES",
-    "choices": [
-      "SONNE",
-      "NONES",
-      "SONEN",
-      "NOSEN"
-    ],
-    "answerIndex": 0,
     "fact": "Die Sonne ist der Stern im Zentrum unseres Sonnensystems.",
     "tags": [
       "Buchstabensalat",
       "Wissenschaft"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SONNE"
   },
   {
     "id": "scrambled_005",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: SERWAS",
-    "choices": [
-      "WASSER",
-      "SAWERS",
-      "WASERS",
-      "SWASER"
-    ],
-    "answerIndex": 0,
     "fact": "Wasser ist lebensnotwendig für alle bekannten Lebensformen.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "WASSER"
   },
   {
     "id": "scrambled_006",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: CHUBS",
-    "choices": [
-      "BUSCH",
-      "SCHUB",
-      "BUHCS",
-      "CHUBS"
-    ],
-    "answerIndex": 1,
     "fact": "Ein Schub ist eine plötzliche Bewegung oder ein Antrieb.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SCHUB"
   },
   {
     "id": "scrambled_007",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: CHUB",
-    "choices": [
-      "BUCH",
-      "CHUB",
-      "HUCB",
-      "BUHC"
-    ],
-    "answerIndex": 0,
     "fact": "Bücher sind eine wichtige Quelle für Wissen und Unterhaltung.",
     "tags": [
       "Buchstabensalat",
       "Kultur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BUCH"
   },
   {
     "id": "scrambled_008",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: MUAB",
-    "choices": [
-      "BAUM",
-      "MAUB",
-      "BUMA",
-      "MUBA"
-    ],
-    "answerIndex": 0,
     "fact": "Bäume produzieren Sauerstoff und sind wichtig für unser Ökosystem.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BAUM"
   },
   {
     "id": "scrambled_009",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TISCH",
-    "choices": [
-      "SICHT",
-      "TISCH",
-      "CHIST",
-      "STHIC"
-    ],
-    "answerIndex": 1,
     "fact": "Ein Tisch ist ein Möbelstück mit einer flachen Oberfläche.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "TISCH"
   },
   {
     "id": "scrambled_010",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: LUHST",
-    "choices": [
-      "LUHST",
-      "STUHL",
-      "HULST",
-      "STHUL"
-    ],
-    "answerIndex": 1,
     "fact": "Ein Stuhl ist ein Sitzmöbel mit Rückenlehne.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "STUHL"
   },
   {
     "id": "scrambled_011",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: RÜTE",
-    "choices": [
-      "TÜRE",
-      "RÜTE",
-      "TÜER",
-      "ERÜT"
-    ],
-    "answerIndex": 0,
     "fact": "Eine Türe ist ein bewegliches Element zum Verschließen von Öffnungen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "TÜRE"
   },
   {
     "id": "scrambled_012",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: NEFSTER",
-    "choices": [
-      "FENSTER",
-      "NEFSTER",
-      "STERNEF",
-      "FENSTRE"
-    ],
-    "answerIndex": 0,
     "fact": "Ein Fenster ist eine Öffnung in einer Wand, die Licht hereinlässt.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "FENSTER"
   },
   {
     "id": "scrambled_013",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: ZEKTA",
-    "choices": [
-      "KATZE",
-      "ZEKTA",
-      "TAKZE",
-      "KEZAT"
-    ],
-    "answerIndex": 0,
     "fact": "Katzen sind beliebte Haustiere und sehr geschickte Jäger.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "KATZE"
   },
   {
     "id": "scrambled_014",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: DNUH",
-    "choices": [
-      "HUND",
-      "DNUH",
-      "NHUD",
-      "UDHN"
-    ],
-    "answerIndex": 0,
     "fact": "Hunde sind treue Begleiter und werden oft als 'bester Freund des Menschen' bezeichnet.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "HUND"
   },
   {
     "id": "scrambled_015",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: GELVÖ",
-    "choices": [
-      "VÖGEL",
-      "GELVÖ",
-      "LÖVEG",
-      "VÖLGE"
-    ],
-    "answerIndex": 0,
     "fact": "Vögel sind die einzigen Tiere mit Federn.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "VÖGEL"
   },
   {
     "id": "scrambled_016",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TORB",
-    "choices": [
-      "BROT",
-      "TORB",
-      "ROBT",
-      "BORT"
-    ],
-    "answerIndex": 0,
     "fact": "Brot ist eines der ältesten Nahrungsmittel der Menschheit.",
     "tags": [
       "Buchstabensalat",
       "Lebensmittel"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BROT"
   },
   {
     "id": "scrambled_017",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: LHCIM",
-    "choices": [
-      "MILCH",
-      "LHCIM",
-      "CHLIM",
-      "LIMCH"
-    ],
-    "answerIndex": 0,
     "fact": "Milch ist ein wichtiges Nahrungsmittel und enthält viel Kalzium.",
     "tags": [
       "Buchstabensalat",
       "Lebensmittel"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "MILCH"
   },
   {
     "id": "scrambled_018",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: PLFEA",
-    "choices": [
-      "APFEL",
-      "PLFEA",
-      "FAPEL",
-      "LEAFP"
-    ],
-    "answerIndex": 0,
     "fact": "Äpfel sind gesund und enthalten viele Vitamine.",
     "tags": [
       "Buchstabensalat",
       "Lebensmittel"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "APFEL"
   },
   {
     "id": "scrambled_019",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: NEIRB",
-    "choices": [
-      "BIRNE",
-      "NEIRB",
-      "BRINE",
-      "INBER"
-    ],
-    "answerIndex": 0,
     "fact": "Birnen sind süße Früchte und gehören zur Familie der Rosengewächse.",
     "tags": [
       "Buchstabensalat",
       "Lebensmittel"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BIRNE"
   },
   {
     "id": "scrambled_020",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: TAUOT",
-    "choices": [
-      "AUTO",
-      "TAUOT",
-      "OUTA",
-      "ATUO"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: UTOA",
     "fact": "Das Auto ist eines der wichtigsten Verkehrsmittel der modernen Welt.",
     "tags": [
       "Buchstabensalat",
       "Verkehr"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "AUTO"
   },
   {
     "id": "scrambled_021",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: GUZFLUGE",
-    "choices": [
-      "FLUGZEUG",
-      "GUZFLUGE",
-      "ZEUGFLUG",
-      "FUGZEULG"
-    ],
-    "answerIndex": 0,
     "fact": "Flugzeuge ermöglichen schnelles Reisen über große Entfernungen.",
     "tags": [
       "Buchstabensalat",
       "Verkehr"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "FLUGZEUG"
   },
   {
     "id": "scrambled_022",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: CHIFFS",
-    "choices": [
-      "SCHIFF",
-      "CHIFFS",
-      "FISCHF",
-      "SHIFFC"
-    ],
-    "answerIndex": 0,
     "fact": "Schiffe sind wichtige Transportmittel für den Seehandel.",
     "tags": [
       "Buchstabensalat",
       "Verkehr"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SCHIFF"
   },
   {
     "id": "scrambled_023",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: GUZFAHRRAD",
-    "choices": [
-      "FAHRRAD",
-      "GUZFAHRRAD",
-      "RADFAHRG",
-      "FAHRRADG"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: FDARARH",
     "fact": "Das Fahrrad ist ein umweltfreundliches Fortbewegungsmittel.",
     "tags": [
       "Buchstabensalat",
       "Verkehr"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "FAHRRAD"
   },
   {
     "id": "scrambled_024",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: NENOS",
-    "choices": [
-      "SONNE",
-      "NENOS",
-      "SONEN",
-      "NOSEN"
-    ],
-    "answerIndex": 0,
     "fact": "Die Sonne ist der Stern im Zentrum unseres Sonnensystems.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SONNE"
   },
   {
     "id": "scrambled_025",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: NOMD",
-    "choices": [
-      "MOND",
-      "NOMD",
-      "DONM",
-      "MDON"
-    ],
-    "answerIndex": 0,
     "fact": "Der Mond ist der einzige natürliche Satellit der Erde.",
     "tags": [
       "Buchstabensalat",
       "Wissenschaft"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "MOND"
   },
   {
     "id": "scrambled_026",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: NRETS",
-    "choices": [
-      "STERN",
-      "NRETS",
-      "TRESN",
-      "SNERT"
-    ],
-    "answerIndex": 0,
     "fact": "Sterne sind leuchtende Himmelskörper aus heißem Gas.",
     "tags": [
       "Buchstabensalat",
       "Wissenschaft"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "STERN"
   },
   {
     "id": "scrambled_027",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: LEKOW",
-    "choices": [
-      "WOLKE",
-      "LEKOW",
-      "KOWEL",
-      "WELOK"
-    ],
-    "answerIndex": 0,
     "fact": "Wolken bestehen aus winzigen Wassertröpfchen oder Eiskristallen.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "WOLKE"
   },
   {
     "id": "scrambled_028",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: GENER",
-    "choices": [
-      "REGEN",
-      "GENER",
-      "NEGER",
-      "GREEN"
-    ],
-    "answerIndex": 0,
     "fact": "Regen ist wichtig für das Pflanzenwachstum und den Wasserkreislauf.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "REGEN"
   },
   {
     "id": "scrambled_029",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: EECNHS",
-    "choices": [
-      "SCHNEE",
-      "EECNHS",
-      "NESCHE",
-      "SCHENE"
-    ],
-    "answerIndex": 0,
     "fact": "Schnee entsteht, wenn Wasserdampf in der Atmosphäre gefriert.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SCHNEE"
   },
   {
     "id": "scrambled_030",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: DINW",
-    "choices": [
-      "WIND",
-      "DINW",
-      "NIDW",
-      "WDIN"
-    ],
-    "answerIndex": 0,
     "fact": "Wind entsteht durch Luftdruckunterschiede in der Atmosphäre.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "WIND"
   },
   {
     "id": "scrambled_031",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: GREB",
-    "choices": [
-      "BERG",
-      "GREB",
-      "BGER",
-      "REBG"
-    ],
-    "answerIndex": 0,
     "fact": "Berge sind natürliche Erhebungen der Erdoberfläche.",
     "tags": [
       "Buchstabensalat",
       "Geografie"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BERG"
   },
   {
     "id": "scrambled_032",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: LUSSF",
-    "choices": [
-      "FLUSS",
-      "LUSSF",
-      "SFLUS",
-      "FULSS"
-    ],
-    "answerIndex": 0,
     "fact": "Flüsse sind fließende Gewässer, die ins Meer münden.",
     "tags": [
       "Buchstabensalat",
       "Geografie"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "FLUSS"
   },
   {
     "id": "scrambled_033",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: ESE",
-    "choices": [
-      "SEE",
-      "ESE",
-      "EES",
-      "SES"
-    ],
-    "answerIndex": 0,
     "fact": "Ein See ist ein stehendes Binnengewässer.",
     "tags": [
       "Buchstabensalat",
       "Geografie"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SEE"
   },
   {
     "id": "scrambled_034",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: REEM",
-    "choices": [
-      "MEER",
-      "REEM",
-      "MERE",
-      "EREM"
-    ],
-    "answerIndex": 0,
     "fact": "Meere bedecken etwa 71% der Erdoberfläche.",
     "tags": [
       "Buchstabensalat",
       "Geografie"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "MEER"
   },
   {
     "id": "scrambled_035",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: LENIS",
-    "choices": [
-      "INSEL",
-      "LENIS",
-      "SILEN",
-      "NELIS"
-    ],
-    "answerIndex": 0,
     "fact": "Eine Insel ist ein Stück Land, das vollständig von Wasser umgeben ist.",
     "tags": [
       "Buchstabensalat",
       "Geografie"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "INSEL"
   },
   {
     "id": "scrambled_036",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: DALW",
-    "choices": [
-      "WALD",
-      "DALW",
-      "WDAL",
-      "LAWD"
-    ],
-    "answerIndex": 0,
     "fact": "Wälder sind wichtige Ökosysteme und produzieren Sauerstoff.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "WALD"
   },
   {
     "id": "scrambled_037",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: SEWIE",
-    "choices": [
-      "WIESE",
-      "SEWIE",
-      "WEISE",
-      "ESWI"
-    ],
-    "answerIndex": 0,
     "fact": "Wiesen sind Graslandschaften mit vielen verschiedenen Pflanzenarten.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "WIESE"
   },
   {
     "id": "scrambled_038",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: DELFD",
-    "choices": [
-      "FELD",
-      "DELFD",
-      "FLED",
-      "LEDF"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: ELDF",
     "fact": "Felder werden landwirtschaftlich genutzt, um Nahrungsmittel anzubauen.",
     "tags": [
       "Buchstabensalat",
       "Natur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "FELD"
   },
   {
     "id": "scrambled_039",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: PFERD",
-    "choices": [
-      "PFERD",
-      "DREPF",
-      "FERPD",
-      "PREFD"
-    ],
-    "answerIndex": 0,
     "fact": "Pferde sind Säugetiere und wurden früher als Arbeitstiere eingesetzt.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "PFERD"
   },
   {
     "id": "scrambled_040",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: HUKH",
-    "choices": [
-      "HUHN",
-      "HUKH",
-      "HHUN",
-      "NUHN"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: HUNH",
     "fact": "Hühner sind Vögel, die Eier legen und als Nutztiere gehalten werden.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "HUHN"
   },
   {
     "id": "scrambled_041",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: HCWIENS",
-    "choices": [
-      "SCHWEIN",
-      "HCWIENS",
-      "WEINSCH",
-      "SCHWINE"
-    ],
-    "answerIndex": 0,
     "fact": "Schweine sind intelligente Tiere und werden als Nutztiere gehalten.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SCHWEIN"
   },
   {
     "id": "scrambled_042",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: HAFCS",
-    "choices": [
-      "SCHAF",
-      "HAFCS",
-      "FSCAH",
-      "CHAFS"
-    ],
-    "answerIndex": 0,
     "fact": "Schafe liefern Wolle und werden seit Jahrtausenden domestiziert.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SCHAF"
   },
   {
     "id": "scrambled_043",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: GEZIE",
-    "choices": [
-      "ZIEGE",
-      "GEZIE",
-      "EIZEG",
-      "GIZEE"
-    ],
-    "answerIndex": 0,
     "fact": "Ziegen sind Wiederkäuer und können in bergigen Regionen leben.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "ZIEGE"
   },
   {
     "id": "scrambled_044",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: SAMU",
-    "choices": [
-      "MAUS",
-      "SAMU",
-      "UAMS",
-      "AMUS"
-    ],
-    "answerIndex": 0,
     "fact": "Mäuse sind kleine Nagetiere, die fast überall auf der Welt vorkommen.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "MAUS"
   },
   {
     "id": "scrambled_045",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TERAT",
-    "choices": [
-      "RATTE",
-      "TERAT",
-      "ATRET",
-      "TARTE"
-    ],
-    "answerIndex": 0,
     "fact": "Ratten sind intelligente Nagetiere, die in vielen Umgebungen leben können.",
     "tags": [
       "Buchstabensalat",
       "Tiere"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "RATTE"
   },
   {
     "id": "scrambled_046",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: CHSU",
-    "choices": [
-      "SCHUH",
-      "CHSU",
-      "UHSC",
-      "SCUH"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: HCUSH",
     "fact": "Schuhe schützen unsere Füße beim Gehen und Laufen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SCHUH"
   },
   {
     "id": "scrambled_047",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: SEHÖ",
-    "choices": [
-      "HOSE",
-      "SEHÖ",
-      "ÖSEH",
-      "HEOS"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: ESOH",
     "fact": "Die Hose ist ein Kleidungsstück für die Beine.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "HOSE"
   },
   {
     "id": "scrambled_048",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: DEMH",
-    "choices": [
-      "HEMD",
-      "DEMH",
-      "MEDH",
-      "HDEM"
-    ],
-    "answerIndex": 0,
     "fact": "Das Hemd ist ein Kleidungsstück für den Oberkörper.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "HEMD"
   },
   {
     "id": "scrambled_049",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: CKEJO",
-    "choices": [
-      "JACKE",
-      "CKEJO",
-      "KEJAC",
-      "JOCKE"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: CAJEK",
     "fact": "Eine Jacke hält uns warm und schützt vor Wind und Wetter.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "JACKE"
   },
   {
     "id": "scrambled_050",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: TUHH",
-    "choices": [
-      "HUT",
-      "TUHH",
-      "UHTH",
-      "HTUH"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: TUH",
     "fact": "Ein Hut schützt den Kopf vor Sonne und Regen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "HUT"
   },
   {
     "id": "scrambled_051",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: LABLE",
-    "choices": [
-      "BALL",
-      "LABLE",
-      "BLLA",
-      "ALBL"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: LBAL",
     "fact": "Ein Ball ist ein rundes Spielgerät für viele Sportarten.",
     "tags": [
       "Buchstabensalat",
       "Sport"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BALL"
   },
   {
     "id": "scrambled_052",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: PILES",
-    "choices": [
-      "SPIEL",
-      "PILES",
-      "LIEPS",
-      "PLEIS"
-    ],
-    "answerIndex": 0,
     "fact": "Spielen ist wichtig für die Entwicklung und macht Spaß.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SPIEL"
   },
   {
     "id": "scrambled_053",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: KISUM",
-    "choices": [
-      "MUSIK",
-      "KISUM",
-      "MUSIK",
-      "SIMUK"
-    ],
-    "answerIndex": 0,
     "fact": "Musik ist eine Kunstform aus Tönen und Rhythmen.",
     "tags": [
       "Buchstabensalat",
       "Musik"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "MUSIK"
   },
   {
     "id": "scrambled_054",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: DELI",
-    "choices": [
-      "LIED",
-      "DELI",
-      "ILDE",
-      "LEID"
-    ],
-    "answerIndex": 0,
     "fact": "Ein Lied ist ein musikalisches Werk mit Text und Melodie.",
     "tags": [
       "Buchstabensalat",
       "Musik"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "LIED"
   },
   {
     "id": "scrambled_055",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: ZANT",
-    "choices": [
-      "TANZ",
-      "ZANT",
-      "NATZ",
-      "ANTZ"
-    ],
-    "answerIndex": 0,
     "fact": "Tanzen ist eine rhythmische Bewegung zur Musik.",
     "tags": [
       "Buchstabensalat",
       "Musik"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "TANZ"
   },
   {
     "id": "scrambled_056",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: CHUBH",
-    "choices": [
-      "BUCH",
-      "CHUBH",
-      "HCUB",
-      "UBCH"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: BCHU",
     "fact": "Bücher sind wichtige Quellen für Wissen und Unterhaltung.",
     "tags": [
       "Buchstabensalat",
       "Literatur"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BUCH"
   },
   {
     "id": "scrambled_057",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: EITEZ",
-    "choices": [
-      "ZEITUNG",
-      "EITEZ",
-      "TIEEZ",
-      "ZITEE"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: UTGIZNE",
     "fact": "Zeitungen informieren uns über aktuelle Ereignisse.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "ZEITUNG"
   },
   {
     "id": "scrambled_058",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: FIRBE",
-    "choices": [
-      "BRIEF",
-      "FIRBE",
-      "BIFER",
-      "REFIB"
-    ],
-    "answerIndex": 0,
     "fact": "Ein Brief ist eine schriftliche Nachricht an eine Person.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BRIEF"
   },
   {
     "id": "scrambled_059",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TPOS",
-    "choices": [
-      "POST",
-      "TPOS",
-      "OPTS",
-      "SPOT"
-    ],
-    "answerIndex": 0,
     "fact": "Die Post befördert Briefe und Pakete.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "POST"
   },
   {
     "id": "scrambled_060",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: LEFETON",
-    "choices": [
-      "TELEFON",
-      "LEFETON",
-      "TONELEF",
-      "FONETEL"
-    ],
-    "answerIndex": 0,
     "fact": "Das Telefon ermöglicht Kommunikation über große Entfernungen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "TELEFON"
   },
   {
     "id": "scrambled_061",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: PUTERMOC",
-    "choices": [
-      "COMPUTER",
-      "PUTERMOC",
-      "COMPTURE",
-      "TERCOMPU"
-    ],
-    "answerIndex": 0,
     "fact": "Computer sind elektronische Geräte zur Datenverarbeitung.",
     "tags": [
       "Buchstabensalat",
       "Wissenschaft"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "COMPUTER"
   },
   {
     "id": "scrambled_062",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: HCULS",
-    "choices": [
-      "SCHULE",
-      "HCULS",
-      "LUHCS",
-      "SCHUL"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: HSCULE",
     "fact": "In der Schule lernen Kinder und Jugendliche wichtige Fähigkeiten.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SCHULE"
   },
   {
     "id": "scrambled_063",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: RERHELH",
-    "choices": [
-      "LEHRER",
-      "RERHELH",
-      "HERLEHR",
-      "LEHRHER"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: ELHERR",
     "fact": "Lehrer unterrichten und vermitteln Wissen an Schüler.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "LEHRER"
   },
   {
     "id": "scrambled_064",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: RELÜHCS",
-    "choices": [
-      "SCHÜLER",
-      "RELÜHCS",
-      "LÜHCSER",
-      "SCHÜREL"
-    ],
-    "answerIndex": 0,
     "fact": "Schüler besuchen die Schule, um zu lernen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SCHÜLER"
   },
   {
     "id": "scrambled_065",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TIFTS",
-    "choices": [
-      "STIFT",
-      "TIFTS",
-      "FSTIT",
-      "TISFT"
-    ],
-    "answerIndex": 0,
     "fact": "Mit einem Stift kann man schreiben und zeichnen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "STIFT"
   },
   {
     "id": "scrambled_066",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: REPAPI",
-    "choices": [
-      "PAPIER",
-      "REPAPI",
-      "PIAPER",
-      "APIPER"
-    ],
-    "answerIndex": 0,
     "fact": "Papier wird aus Holzfasern hergestellt und zum Schreiben verwendet.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "PAPIER"
   },
   {
     "id": "scrambled_067",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: HEFT",
-    "choices": [
-      "HEFT",
-      "FETH",
-      "THEF",
-      "EHFT"
-    ],
-    "answerIndex": 0,
     "fact": "Ein Heft ist ein gebundenes Schreibheft für Notizen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "HEFT"
   },
   {
     "id": "scrambled_068",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: FELTA",
-    "choices": [
-      "TAFEL",
-      "FELTA",
-      "LEFAT",
-      "AFTEL"
-    ],
-    "answerIndex": 0,
     "fact": "Eine Tafel ist eine Schreibfläche in Klassenzimmern.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "TAFEL"
   },
   {
     "id": "scrambled_069",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: RUHH",
-    "choices": [
-      "UHR",
-      "RUHH",
-      "HURH",
-      "RHUH"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: HUR",
     "fact": "Eine Uhr zeigt uns die Zeit an.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "UHR"
   },
   {
     "id": "scrambled_070",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TIZE",
-    "choices": [
-      "ZEIT",
-      "TIZE",
-      "IETZ",
-      "ZIET"
-    ],
-    "answerIndex": 0,
     "fact": "Zeit ist eine fundamentale Größe in der Physik.",
     "tags": [
       "Buchstabensalat",
       "Wissenschaft"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "ZEIT"
   },
   {
     "id": "scrambled_071",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: GAT",
-    "choices": [
-      "TAG",
-      "GAT",
-      "ATG",
-      "TGA"
-    ],
-    "answerIndex": 0,
     "fact": "Ein Tag hat 24 Stunden.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "TAG"
   },
   {
     "id": "scrambled_072",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: CHANT",
-    "choices": [
-      "NACHT",
-      "CHANT",
-      "TANCH",
-      "NACTH"
-    ],
-    "answerIndex": 0,
     "fact": "Die Nacht ist die dunkle Tageszeit ohne Sonnenlicht.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "NACHT"
   },
   {
     "id": "scrambled_073",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: GROMEN",
-    "choices": [
-      "MORGEN",
-      "GROMEN",
-      "MONGRE",
-      "GENORM"
-    ],
-    "answerIndex": 0,
     "fact": "Der Morgen ist der Beginn des Tages.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "MORGEN"
   },
   {
     "id": "scrambled_074",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: DABEN",
-    "choices": [
-      "ABEND",
-      "DABEN",
-      "BENDA",
-      "NEABD"
-    ],
-    "answerIndex": 0,
     "fact": "Der Abend ist die Zeit zwischen Nachmittag und Nacht.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "ABEND"
   },
   {
     "id": "scrambled_075",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: RÜHF",
-    "choices": [
-      "FRÜH",
-      "RÜHF",
-      "HÜRF",
-      "FÜRH"
-    ],
-    "answerIndex": 0,
     "fact": "Früh bedeutet am Anfang des Tages oder einer Zeitspanne.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "FRÜH"
   },
   {
     "id": "scrambled_076",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TÄPS",
-    "choices": [
-      "SPÄT",
-      "TÄPS",
-      "PSTÄ",
-      "ÄTSP"
-    ],
-    "answerIndex": 0,
     "fact": "Spät bedeutet am Ende des Tages oder einer Zeitspanne.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SPÄT"
   },
   {
     "id": "scrambled_077",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: RJAH",
-    "choices": [
-      "JAHR",
-      "RJAH",
-      "HARJ",
-      "AJHR"
-    ],
-    "answerIndex": 0,
     "fact": "Ein Jahr hat 365 Tage (oder 366 in einem Schaltjahr).",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "JAHR"
   },
   {
     "id": "scrambled_078",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TAMON",
-    "choices": [
-      "MONAT",
-      "TAMON",
-      "NOMTA",
-      "MONTA"
-    ],
-    "answerIndex": 0,
     "fact": "Ein Monat ist etwa ein Zwölftel eines Jahres.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "MONAT"
   },
   {
     "id": "scrambled_079",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: CHOWE",
-    "choices": [
-      "WOCHE",
-      "CHOWE",
-      "OWCHE",
-      "WEHOC"
-    ],
-    "answerIndex": 0,
     "fact": "Eine Woche hat sieben Tage.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "WOCHE"
   },
   {
     "id": "scrambled_080",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: DETNSU",
-    "choices": [
-      "STUNDE",
-      "DETNSU",
-      "UNSTDE",
-      "TUNDSE"
-    ],
-    "answerIndex": 0,
     "fact": "Eine Stunde hat 60 Minuten.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "STUNDE"
   },
   {
     "id": "scrambled_081",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TUMINE",
-    "choices": [
-      "MINUTE",
-      "TUMINE",
-      "MINUET",
-      "UNMITE"
-    ],
-    "answerIndex": 0,
     "fact": "Eine Minute hat 60 Sekunden.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "MINUTE"
   },
   {
     "id": "scrambled_082",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: FARBE",
-    "choices": [
-      "FARBE",
-      "BERAF",
-      "AFREB",
-      "REBAF"
-    ],
-    "answerIndex": 0,
     "fact": "Farben machen unsere Welt bunt und interessant.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "FARBE"
   },
   {
     "id": "scrambled_083",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: TOR",
-    "choices": [
-      "ROT",
-      "TOR",
-      "ORT",
-      "RTO"
-    ],
-    "answerIndex": 0,
     "fact": "Rot ist eine Grundfarbe und die Farbe des Feuers.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "ROT"
   },
   {
     "id": "scrambled_084",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: UALB",
-    "choices": [
-      "BLAU",
-      "UALB",
-      "LAUB",
-      "BULA"
-    ],
-    "answerIndex": 0,
     "fact": "Blau ist die Farbe des Himmels und des Meeres.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BLAU"
   },
   {
     "id": "scrambled_085",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: NÜRG",
-    "choices": [
-      "GRÜN",
-      "NÜRG",
-      "GÜRNR",
-      "RÜGN"
-    ],
-    "answerIndex": 0,
     "fact": "Grün ist die Farbe der Natur und der Pflanzen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "GRÜN"
   },
   {
     "id": "scrambled_086",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: BELG",
-    "choices": [
-      "GELB",
-      "BELG",
-      "LEGG",
-      "GEBL"
-    ],
-    "answerIndex": 0,
     "fact": "Gelb ist die Farbe der Sonne und vieler Blumen.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "GELB"
   },
   {
     "id": "scrambled_087",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: WCHAZRS",
-    "choices": [
-      "SCHWARZ",
-      "WCHAZRS",
-      "SCHWARZW",
-      "ZCHWARS"
-    ],
-    "answerIndex": 0,
     "fact": "Schwarz ist die dunkelste Farbe und absorbiert alles Licht.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SCHWARZ"
   },
   {
     "id": "scrambled_088",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: SSIWE",
-    "choices": [
-      "WEISS",
-      "SSIWE",
-      "WEISE",
-      "SWEIS"
-    ],
-    "answerIndex": 0,
     "fact": "Weiß ist die hellste Farbe und reflektiert alles Licht.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "WEISS"
   },
   {
     "id": "scrambled_089",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: NAGEOR",
-    "choices": [
-      "ORANGE",
-      "NAGEOR",
-      "GENAOR",
-      "RANOGE"
-    ],
-    "answerIndex": 0,
     "fact": "Orange ist eine Mischfarbe aus Rot und Gelb.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "ORANGE"
   },
   {
     "id": "scrambled_090",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: LILA",
-    "choices": [
-      "LILA",
-      "ALIL",
-      "IALI",
-      "LAIL"
-    ],
-    "answerIndex": 0,
     "fact": "Lila ist eine Mischfarbe aus Rot und Blau.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "LILA"
   },
   {
     "id": "scrambled_091",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: ROSA",
-    "choices": [
-      "ROSA",
-      "ASOR",
-      "SORA",
-      "OSAR"
-    ],
-    "answerIndex": 0,
     "fact": "Rosa ist eine helle Variante der Farbe Rot.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "ROSA"
   },
   {
     "id": "scrambled_092",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: NUARB",
-    "choices": [
-      "BRAUN",
-      "NUARB",
-      "UNBAR",
-      "RANUB"
-    ],
-    "answerIndex": 0,
     "fact": "Braun ist die Farbe der Erde und vieler Bäume.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "BRAUN"
   },
   {
     "id": "scrambled_093",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: UARG",
-    "choices": [
-      "GRAU",
-      "UARG",
-      "RAUG",
-      "GUAR"
-    ],
-    "answerIndex": 0,
     "fact": "Grau ist eine neutrale Farbe zwischen Schwarz und Weiß.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "GRAU"
   },
   {
     "id": "scrambled_094",
-    "prompt": "Welches Wort ergibt sich aus den Buchstaben: LOLD",
-    "choices": [
-      "GOLD",
-      "LOLD",
-      "DLOG",
-      "OLDG"
-    ],
-    "answerIndex": 0,
+    "prompt": "Welches Wort ergibt sich aus den Buchstaben: LODG",
     "fact": "Gold ist ein wertvolles Edelmetall mit goldgelber Farbe.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "GOLD"
   },
   {
     "id": "scrambled_095",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: REBLIS",
-    "choices": [
-      "SILBER",
-      "REBLIS",
-      "LIBSER",
-      "SERBIL"
-    ],
-    "answerIndex": 0,
     "fact": "Silber ist ein Edelmetall mit silberweißer Farbe.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "SILBER"
   },
   {
     "id": "scrambled_096",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: MLIAFIE",
-    "choices": [
-      "FAMILIE",
-      "MLIAFIE",
-      "ILFAMIE",
-      "FAMIELI"
-    ],
-    "answerIndex": 0,
     "fact": "Die Familie ist die kleinste soziale Einheit der Gesellschaft.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "FAMILIE"
   },
   {
     "id": "scrambled_097",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: RETVA",
-    "choices": [
-      "VATER",
-      "RETVA",
-      "TAVER",
-      "VERAT"
-    ],
-    "answerIndex": 0,
     "fact": "Der Vater ist ein männlicher Elternteil.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "VATER"
   },
   {
     "id": "scrambled_098",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: RETUTM",
-    "choices": [
-      "MUTTER",
-      "RETUTM",
-      "TUMTER",
-      "MUTTER"
-    ],
-    "answerIndex": 0,
     "fact": "Die Mutter ist ein weiblicher Elternteil.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "MUTTER"
   },
   {
     "id": "scrambled_099",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: DINK",
-    "choices": [
-      "KIND",
-      "DINK",
-      "NKID",
-      "KIDN"
-    ],
-    "answerIndex": 0,
     "fact": "Ein Kind ist ein junger Mensch.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "EASY",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "KIND"
   },
   {
     "id": "scrambled_100",
     "prompt": "Welches Wort ergibt sich aus den Buchstaben: DUNFER",
-    "choices": [
-      "FREUND",
-      "DUNFER",
-      "FUNRED",
-      "REFUND"
-    ],
-    "answerIndex": 0,
     "fact": "Ein Freund ist eine Person, mit der man eine enge Beziehung hat.",
     "tags": [
       "Buchstabensalat",
       "Allgemeinwissen"
     ],
     "difficulty": "MEDIUM",
-    "type": "scrambled"
+    "type": "scrambled",
+    "answer": "FREUND"
   },
   {
     "id": "politik_009",
