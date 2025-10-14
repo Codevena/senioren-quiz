@@ -7,6 +7,7 @@ import { ResultReveal } from '@/components/ResultReveal';
 import { useTimer } from '@/lib/useTimer';
 import { useSounds } from '@/lib/useSounds';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { Trophy, PartyPopper } from 'lucide-react';
 
 interface Question {
@@ -354,13 +355,15 @@ export default function QuizPage() {
           </div>
         ) : (
           // Regular questions: Show choice buttons
-          <Choices
-            choices={currentQuestion.choices}
-            selectedIndex={selectedIndex}
-            correctIndex={correctIndex}
-            onSelect={interactiveAnswers ? handleSelectAnswer : undefined}
-            disabled={!interactiveAnswers || correctIndex !== null}
-          />
+          currentQuestion.choices && (
+            <Choices
+              choices={currentQuestion.choices}
+              selectedIndex={selectedIndex}
+              correctIndex={correctIndex}
+              onSelect={interactiveAnswers ? handleSelectAnswer : undefined}
+              disabled={!interactiveAnswers || correctIndex !== null}
+            />
+          )
         )}
 
         {correctIndex !== null && (
