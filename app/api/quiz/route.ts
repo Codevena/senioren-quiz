@@ -12,9 +12,21 @@ export async function GET(request: NextRequest) {
     let filteredQuestions = [...questionsData];
 
     if (tags.length > 0) {
-      filteredQuestions = filteredQuestions.filter(q =>
-        tags.some(tag => q.tags.includes(tag.trim()))
-      );
+      const isBuchstabensalatSelected = tags.includes('Buchstabensalat');
+
+      filteredQuestions = filteredQuestions.filter(q => {
+        const hasBuchstabensalatTag = q.tags.includes('Buchstabensalat');
+
+        // Special handling for Buchstabensalat questions:
+        // - If Buchstabensalat is NOT selected, exclude all Buchstabensalat questions
+        // - If Buchstabensalat IS selected, include all Buchstabensalat questions
+        if (hasBuchstabensalatTag) {
+          return isBuchstabensalatSelected;
+        }
+
+        // For non-Buchstabensalat questions, use normal tag matching
+        return tags.some(tag => q.tags.includes(tag.trim()));
+      });
     }
 
     if (difficulty) {
